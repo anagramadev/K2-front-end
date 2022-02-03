@@ -80,7 +80,7 @@
     @apply text-[21px] leading-[24px] flex items-center;
   }
   .k2-roundcon {
-    @apply w-[40px] h-[40px] rounded-full flex justify-center items-center;
+    @apply w-[40px] h-[40px] rounded-full inline-flex justify-center items-center;
   }
   .input {
     @apply w-full border border-k2_Sgrey bg-transparent focus:outline-none focus:border-k2_DSgrey placeholder:text-k2_black focus:placeholder:text-opacity-20 font-hv400;
@@ -98,19 +98,32 @@
     @apply input-checkbox input-radiobox h-6 w-6;
   }
 }
+
 /* -------- Custom utilities styles -------- */
 @layer utilities {
-  .k2-btn-red {
-    @apply bg-k2_red text-k2_white;
+  .k2-btn-red,
+  .k2-roundcon-red {
+    @apply bg-k2_red text-k2_white hover:bg-k2_black transition-all;
   }
-  .k2-btn-cream {
-    @apply bg-k2_cream text-[#ACA195];
+  .k2-btn-cream,
+  .k2-roundcon-cream {
+    @apply bg-k2_cream text-darkCream hover:bg-darkCream hover:text-k2_cream transition-all;
   }
-  .k2-btn-black {
-    @apply bg-k2_black text-k2_white;
+  .k2-btn-black,
+  .k2-roundcon-black {
+    @apply bg-k2_black text-k2_white hover:bg-k2_red  transition-all;
   }
-  .k2-link {
-    @apply text-[21px] leading-[24px];
+  .k2-link-red,
+  .k2-linkon-red {
+    @apply text-[21px] leading-[24px] text-k2_red hover:text-k2_black;
+  }
+  .k2-link-cream,
+  .k2-linkon-cream {
+    @apply text-[21px] leading-[24px] text-darkCream hover:hover:text-k2_cream;
+  }
+  .k2-link-black,
+  .k2-linkon-black {
+    @apply text-[21px] leading-[24px] text-k2_black hover:text-k2_red;
   }
   .input-lg {
     @apply h-20 px-8 py-8 rounded-2xl text-[24px];
