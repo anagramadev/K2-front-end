@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* -------- Custom Base styles -------- */
+@layer base {
+  @font-face {
+    font-family: "Halvar300";
+    src: url("../font/HalvarMittel-Lt.woff2") format("woff2"),
+      url("../font/HalvarMittel-Lt.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Halvar400";
+    src: url("../font/HalvarMittel-Rg.woff2") format("woff2"),
+      url("../font/HalvarMittel-Rg.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Halvar500";
+    src: url("../font/HalvarMittel-Md.woff2") format("woff2"),
+      url("../font/HalvarMittel-Md.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Halvar700";
+    src: url("../font/HalvarMittel-Bd.woff2") format("woff2"),
+      url("../font/HalvarMittel-Bd.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  h1 {
+    @apply text-xl font-hv700;
+  }
+  h2 {
+    @apply text-lg font-hv700;
+  }
+  h3 {
+    @apply text-md font-hv500;
+  }
+  h4 {
+    @apply text-sm font-hv500;
+  }
+  h5 {
+    @apply text-xs font-hv500;
+  }
+  h6 {
+    @apply text-xxs font-hv500;
+  }
+  p,
+  a,
+  li,
+  label,
+  button {
+    @apply text-xxs font-hv400 text-k2_black;
+  }
+  label {
+    @apply text-xxs tracking-normal;
+  }
+}
+/* -------- Custom Components styles -------- */
+@layer components {
+  .text-light {
+    @apply text-k2_DSgrey font-hv300 leading-6 text-[18px];
+  }
+
+  .k2-btn {
+    @apply px-5 py-2 rounded-full bg-k2_red text-k2_white text-[21px] leading-[24px] flex items-center;
+  }
+  .k2-linkon {
+    @apply text-[21px] leading-[24px] flex items-center;
+  }
+  .k2-roundcon {
+    @apply w-[40px] h-[40px] rounded-full flex justify-center items-center;
+  }
+  .input {
+    @apply w-full border border-k2_Sgrey bg-transparent focus:outline-none focus:border-k2_DSgrey placeholder:text-k2_black focus:placeholder:text-opacity-20 font-hv400;
+  }
+  .input-checkbox {
+    @apply h-8 w-8 rounded-md border border-k2_Sgrey cursor-pointer mr-2 peer-focus:border-k2_DSgrey peer-checked:bg-tick;
+  }
+  .input-checkbox-sm {
+    @apply input-checkbox h-6 w-6 rounded-[4px];
+  }
+  .input-radiobox {
+    @apply input-checkbox rounded-full peer-checked:bg-radio;
+  }
+  .input-radiobox-sm {
+    @apply input-checkbox input-radiobox h-6 w-6;
+  }
+}
+/* -------- Custom utilities styles -------- */
+@layer utilities {
+  .k2-btn-red {
+    @apply bg-k2_red text-k2_white;
+  }
+  .k2-btn-cream {
+    @apply bg-k2_cream text-[#ACA195];
+  }
+  .k2-btn-black {
+    @apply bg-k2_black text-k2_white;
+  }
+  .k2-link {
+    @apply text-[21px] leading-[24px];
+  }
+  .input-lg {
+    @apply h-20 px-8 py-8 rounded-2xl text-[24px];
+  }
+  .input-md {
+    @apply h-16 px-6 py-5 rounded-xl text-[21px];
+  }
+  .input-sm {
+    @apply h-12 px-4 py-3 rounded-lg text-[18px];
+  }
+  .input-select-lg {
+    @apply h-20 px-4 py-4 rounded-2xl text-[24px];
+  }
+  .input-select-md {
+    @apply h-16 px-4 py-4 rounded-xl text-[21px];
+  }
+  .input-select-sm {
+    @apply h-12 px-3 py-2 rounded-lg text-[18px];
+  }
+  .bg-tick {
+    background-image: url(../img/tick.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 14px;
+  }
+  .bg-radio {
+    background-image: url(../img/radio.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 65%;
+  }
+}

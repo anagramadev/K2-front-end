@@ -1,0 +1,8 @@
+{
+  "tailwindCSS.colorDecorators": true,
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#003333",
+    "titleBar.activeBackground": "#004848",
+    "titleBar.activeForeground": "#E4FFFF"
+  }
+}
