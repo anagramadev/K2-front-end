@@ -1,5 +1,7 @@
-# Swiss Institute for Alternative Thinking
+# K2 Systems.
 
-<img src="src/img/cover.png" alt="Swiss Institute for Alternative Thinking" width="100%"/>
+## Innovative mounting system from a strong team.
 
-:point_right: [Swiss Institute for Alternative Thinking](https://siatdev.netlify.app/)
+<img src="img/cover.png" alt="Swiss Institute for Alternative Thinking" width="100%"/>
+
+:point_right: [K2 Systems](https://k2dev.netlify.app/public/)
