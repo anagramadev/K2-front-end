@@ -72,9 +72,12 @@
   .text-light {
     @apply text-k2_DSgrey font-hv300 leading-6 text-[18px];
   }
+  .text-label {
+    @apply text-[16px] font-hv400 uppercase tracking-wider leading-8 text-k2_DSgrey;
+  }
 
   .k2-btn {
-    @apply px-5 py-2 rounded-full bg-k2_red text-k2_white text-[21px] leading-[24px] flex items-center;
+    @apply px-5 py-2 rounded-full bg-k2_red text-k2_white text-[21px] leading-[24px] inline-flex items-center;
   }
   .k2-linkon {
     @apply text-[21px] leading-[24px] flex items-center;
@@ -154,5 +157,13 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 65%;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
