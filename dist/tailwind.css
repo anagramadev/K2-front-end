@@ -105,9 +105,9 @@
   .k2-roundcon-red {
     @apply bg-k2_red text-k2_white hover:bg-k2_black transition-all;
   }
-  .k2-btn-cream,
-  .k2-roundcon-cream {
-    @apply bg-k2_cream text-darkCream hover:bg-darkCream hover:text-k2_cream transition-all;
+  .k2-btn-dis,
+  .k2-roundcon-dis {
+    @apply bg-k2_cream text-darkCream;
   }
   .k2-btn-black,
   .k2-roundcon-black {
@@ -117,9 +117,9 @@
   .k2-linkon-red {
     @apply text-[21px] leading-[24px] text-k2_red hover:text-k2_black;
   }
-  .k2-link-cream,
-  .k2-linkon-cream {
-    @apply text-[21px] leading-[24px] text-darkCream hover:hover:text-k2_cream;
+  .k2-link-dis,
+  .k2-linkon-dis {
+    @apply text-[21px] leading-[24px] text-darkCream;
   }
   .k2-link-black,
   .k2-linkon-black {
