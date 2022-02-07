@@ -39,29 +39,29 @@
     font-display: swap;
   }
   h1 {
-    @apply text-xl font-hv700;
+    @apply text-mb-xl 2xl:text-xl font-hv700;
   }
   h2 {
-    @apply text-lg font-hv700;
+    @apply text-mb-lg 2xl:text-lg font-hv700;
   }
   h3 {
-    @apply text-md font-hv500;
+    @apply text-mb-md  2xl:text-md font-hv500;
   }
   h4 {
-    @apply text-sm font-hv500;
+    @apply text-mb-sm 2xl:text-sm font-hv500;
   }
   h5 {
     @apply text-xs font-hv500;
   }
   h6 {
-    @apply text-xxs font-hv500;
+    @apply text-mb-xs 2xl:text-xxs font-hv500;
   }
   p,
   a,
   li,
   label,
   button {
-    @apply text-xxs font-hv400 text-k2_black;
+    @apply text-mb-xs 2xl:text-xxs font-hv400 text-k2_black;
   }
   label {
     @apply text-xxs tracking-normal;
@@ -77,10 +77,10 @@
   }
 
   .k2-btn {
-    @apply px-5 py-2 rounded-full bg-k2_red text-k2_white text-[21px] leading-[24px] inline-flex items-center;
+    @apply px-5 py-2 rounded-full bg-k2_red text-k2_white leading-[24px] inline-flex items-center;
   }
   .k2-linkon {
-    @apply text-[21px] leading-[24px] flex items-center;
+    @apply leading-[24px] flex items-center;
   }
   .k2-roundcon {
     @apply w-[40px] h-[40px] rounded-full inline-flex justify-center items-center;
