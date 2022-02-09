@@ -39,29 +39,29 @@
     font-display: swap;
   }
   h1 {
-    @apply text-mb-xl 2xl:text-xl font-hv700;
+    @apply text-mb-xl xl:text-lp-xl 2xl:text-xl font-hv700;
   }
   h2 {
-    @apply text-mb-lg 2xl:text-lg font-hv700;
+    @apply text-mb-lg xl:text-lp-xl 2xl:text-lg font-hv700;
   }
   h3 {
-    @apply text-mb-md  2xl:text-md font-hv500;
+    @apply text-mb-md xl:text-lp-lg  2xl:text-md font-hv500;
   }
   h4 {
-    @apply text-mb-sm 2xl:text-sm font-hv500;
+    @apply text-mb-sm xl:text-lp-md 2xl:text-sm font-hv500;
   }
   h5 {
     @apply text-xs font-hv500;
   }
   h6 {
-    @apply text-mb-xs 2xl:text-xxs font-hv500;
+    @apply text-mb-xs xl:text-xxs font-hv500;
   }
   p,
   a,
   li,
   label,
   button {
-    @apply text-mb-xs 2xl:text-xxs font-hv400 text-k2_black;
+    @apply text-mb-xs xl:text-xxs font-hv400 text-black;
   }
   label {
     @apply text-xxs tracking-normal;
@@ -70,14 +70,14 @@
 /* -------- Custom Components styles -------- */
 @layer components {
   .text-light {
-    @apply text-k2_DSgrey font-hv300 leading-6 text-[18px];
+    @apply text-darkGrey font-hv300 leading-6 text-[18px];
   }
   .text-label {
-    @apply text-[16px] font-hv400 uppercase tracking-wider leading-8 text-k2_DSgrey;
+    @apply text-[16px] font-hv400 uppercase tracking-wider leading-8 text-darkGrey;
   }
 
   .k2-btn {
-    @apply px-5 py-2 rounded-full bg-k2_red text-k2_white leading-[24px] inline-flex items-center;
+    @apply px-5 py-2 rounded-full bg-red text-white leading-[24px] inline-flex items-center;
   }
   .k2-linkon {
     @apply leading-[24px] flex items-center;
@@ -86,10 +86,10 @@
     @apply w-[40px] h-[40px] rounded-full inline-flex justify-center items-center;
   }
   .input {
-    @apply w-full border border-k2_Sgrey bg-transparent focus:outline-none focus:border-k2_DSgrey placeholder:text-k2_black focus:placeholder:text-opacity-20 font-hv400;
+    @apply w-full border border-silverGrey bg-transparent focus:outline-none focus:border-darkGrey placeholder:text-black focus:placeholder:text-opacity-20 font-hv400;
   }
   .input-checkbox {
-    @apply h-8 w-8 rounded-md border border-k2_Sgrey cursor-pointer mr-2 peer-focus:border-k2_DSgrey peer-checked:bg-tick;
+    @apply h-8 w-8 rounded-md border border-silverGrey cursor-pointer mr-2 peer-focus:border-darkGrey peer-checked:bg-tick;
   }
   .input-checkbox-sm {
     @apply input-checkbox h-6 w-6 rounded-[4px];
@@ -106,19 +106,19 @@
 @layer utilities {
   .k2-btn-red,
   .k2-roundcon-red {
-    @apply bg-k2_red text-k2_white hover:bg-k2_black transition-all;
+    @apply bg-red text-white hover:bg-black transition-all;
   }
   .k2-btn-dis,
   .k2-roundcon-dis {
-    @apply bg-k2_cream text-darkCream;
+    @apply bg-cream text-darkCream;
   }
   .k2-btn-black,
   .k2-roundcon-black {
-    @apply bg-k2_black text-k2_white hover:bg-k2_red  transition-all;
+    @apply bg-black text-white hover:bg-red  transition-all;
   }
   .k2-link-red,
   .k2-linkon-red {
-    @apply text-[21px] leading-[24px] text-k2_red hover:text-k2_black;
+    @apply text-[21px] leading-[24px] text-red hover:text-black;
   }
   .k2-link-dis,
   .k2-linkon-dis {
@@ -126,7 +126,7 @@
   }
   .k2-link-black,
   .k2-linkon-black {
-    @apply text-[21px] leading-[24px] text-k2_black hover:text-k2_red;
+    @apply text-[21px] leading-[24px] text-black hover:text-red;
   }
   .input-lg {
     @apply h-20 px-8 py-8 rounded-2xl text-[24px];
