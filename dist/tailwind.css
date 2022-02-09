@@ -76,13 +76,13 @@
     @apply text-[16px] font-hv400 uppercase tracking-wider leading-8 text-darkGrey;
   }
 
-  .k2-btn {
+  .bttn {
     @apply px-5 py-2 rounded-full bg-red text-white leading-[24px] inline-flex items-center;
   }
-  .k2-linkon {
+  .linkon {
     @apply leading-[24px] flex items-center;
   }
-  .k2-roundcon {
+  .roundcon {
     @apply w-[40px] h-[40px] rounded-full inline-flex justify-center items-center;
   }
   .input {
@@ -104,28 +104,28 @@
 
 /* -------- Custom utilities styles -------- */
 @layer utilities {
-  .k2-btn-red,
-  .k2-roundcon-red {
+  .bttn-red,
+  .roundcon-red {
     @apply bg-red text-white hover:bg-black transition-all;
   }
-  .k2-btn-dis,
-  .k2-roundcon-dis {
+  .bttn-dis,
+  .roundcon-dis {
     @apply bg-cream text-darkCream;
   }
-  .k2-btn-black,
-  .k2-roundcon-black {
+  .bttn-black,
+  .roundcon-black {
     @apply bg-black text-white hover:bg-red  transition-all;
   }
-  .k2-link-red,
-  .k2-linkon-red {
+  .link-red,
+  .linkon-red {
     @apply text-[21px] leading-[24px] text-red hover:text-black;
   }
-  .k2-link-dis,
-  .k2-linkon-dis {
+  .link-dis,
+  .linkon-dis {
     @apply text-[21px] leading-[24px] text-darkCream;
   }
-  .k2-link-black,
-  .k2-linkon-black {
+  .link-black,
+  .linkon-black {
     @apply text-[21px] leading-[24px] text-black hover:text-red;
   }
   .input-lg {

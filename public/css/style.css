@@ -595,7 +595,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(88 95 105 / var(--tw-text-opacity));
 }
-.k2-btn {
+.bttn {
   display: inline-flex;
   align-items: center;
   border-radius: 9999px;
@@ -609,12 +609,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.k2-linkon {
+.linkon {
   display: flex;
   align-items: center;
   line-height: 24px;
 }
-.k2-roundcon {
+.roundcon {
   display: inline-flex;
   height: 40px;
   width: 40px;
@@ -1355,7 +1355,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 .opacity-0 {
   opacity: 0;
 }
-.k2-btn-red, .k2-roundcon-red {
+.bttn-red, .roundcon-red {
   --tw-bg-opacity: 1;
   background-color: rgb(253 0 0 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
@@ -1364,17 +1364,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.k2-btn-red:hover, .k2-roundcon-red:hover {
+.bttn-red:hover, .roundcon-red:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(25 25 25 / var(--tw-bg-opacity));
 }
-.k2-btn-dis, .k2-roundcon-dis {
+.bttn-dis, .roundcon-dis {
   --tw-bg-opacity: 1;
   background-color: rgb(242 235 227 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(172 161 149 / var(--tw-text-opacity));
 }
-.k2-btn-black, .k2-roundcon-black {
+.bttn-black, .roundcon-black {
   --tw-bg-opacity: 1;
   background-color: rgb(25 25 25 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
@@ -1383,33 +1383,33 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.k2-btn-black:hover, .k2-roundcon-black:hover {
+.bttn-black:hover, .roundcon-black:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(253 0 0 / var(--tw-bg-opacity));
 }
-.k2-link-red, .k2-linkon-red {
+.link-red, .linkon-red {
   font-size: 21px;
   line-height: 24px;
   --tw-text-opacity: 1;
   color: rgb(253 0 0 / var(--tw-text-opacity));
 }
-.k2-link-red:hover, .k2-linkon-red:hover {
+.link-red:hover, .linkon-red:hover {
   --tw-text-opacity: 1;
   color: rgb(25 25 25 / var(--tw-text-opacity));
 }
-.k2-link-dis, .k2-linkon-dis {
+.link-dis, .linkon-dis {
   font-size: 21px;
   line-height: 24px;
   --tw-text-opacity: 1;
   color: rgb(172 161 149 / var(--tw-text-opacity));
 }
-.k2-link-black, .k2-linkon-black {
+.link-black, .linkon-black {
   font-size: 21px;
   line-height: 24px;
   --tw-text-opacity: 1;
   color: rgb(25 25 25 / var(--tw-text-opacity));
 }
-.k2-link-black:hover, .k2-linkon-black:hover {
+.link-black:hover, .linkon-black:hover {
   --tw-text-opacity: 1;
   color: rgb(253 0 0 / var(--tw-text-opacity));
 }
