@@ -24,6 +24,11 @@ footerLinks.forEach((p) => {
   const minus = p.querySelector("svg > path:last-of-type");
   const LinkList = p.nextElementSibling;
   p.addEventListener("click", () => {
+    footerLinks.forEach((p) => {
+      p.querySelector("svg > path:last-of-type").classList.remove("hidden");
+      p.nextElementSibling.classList.add("hidden");
+    });
+
     minus.classList.toggle("hidden");
     LinkList.classList.toggle("hidden");
   });
@@ -31,4 +36,4 @@ footerLinks.forEach((p) => {
 
 initIcons();
 
-console.log("hello world");
+console.log("hello0");
