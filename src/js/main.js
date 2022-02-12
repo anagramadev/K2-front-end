@@ -2,6 +2,7 @@ import { initIcons } from "@47nordmedia/k2-systems-ui-library/dist/icons";
 
 const menuButton = document.querySelector(".menu-toggle");
 const navBlock = document.querySelector("nav");
+const html = document.querySelector("html");
 const body = document.querySelector("body");
 
 menuButton.addEventListener("click", function () {
@@ -12,6 +13,7 @@ menuButton.addEventListener("click", function () {
     this.innerHTML = "Menü";
   }
   body.classList.toggle("relative");
+  html.classList.toggle("overflow-hidden");
   body.classList.toggle("overflow-hidden");
   navBlock.classList.toggle("inline-flex");
   navBlock.classList.toggle("hidden");
