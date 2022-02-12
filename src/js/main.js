@@ -20,17 +20,26 @@ menuButton.addEventListener("click", function () {
 
 const footerLinks = document.querySelectorAll("p.footerLinks , p.menuLink");
 
-footerLinks.forEach((p) => {
+let curr;
+footerLinks.forEach((p, i) => {
   const minus = p.querySelector("svg > path:last-of-type");
   const LinkList = p.nextElementSibling;
-  p.addEventListener("click", () => {
-    footerLinks.forEach((p) => {
-      p.querySelector("svg > path:last-of-type").classList.remove("hidden");
-      p.nextElementSibling.classList.add("hidden");
-    });
 
-    minus.classList.toggle("hidden");
-    LinkList.classList.toggle("hidden");
+  p.addEventListener("click", () => {
+    if (curr === i) {
+      minus.classList.toggle("hidden");
+      LinkList.classList.toggle("hidden");
+    } else {
+      footerLinks.forEach((p) => {
+        p.querySelector("svg > path:last-of-type").classList.remove("hidden");
+        p.nextElementSibling.classList.add("hidden");
+      });
+
+      minus.classList.toggle("hidden");
+      LinkList.classList.toggle("hidden");
+    }
+
+    curr = i;
   });
 });
 
