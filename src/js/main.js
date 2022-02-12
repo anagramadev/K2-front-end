@@ -12,8 +12,7 @@ menuButton.addEventListener("click", function () {
   } else {
     this.innerHTML = "Menü";
   }
-  body.classList.toggle("relative");
-  html.classList.toggle("overflow-hidden");
+  body.classList.toggle("h-screen");
   body.classList.toggle("overflow-hidden");
   navBlock.classList.toggle("inline-flex");
   navBlock.classList.toggle("hidden");

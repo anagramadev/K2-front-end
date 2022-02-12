@@ -1283,6 +1283,10 @@ label {
   height: 100%;
 }
 
+.h-\[80vh\] {
+  height: 80vh;
+}
+
 .max-h-80 {
   max-height: 20rem;
 }
