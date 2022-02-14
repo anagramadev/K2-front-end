@@ -47,4 +47,4 @@ footerLinks.forEach((p, i) => {
 
 initIcons();
 
-console.log("hello");
+console.log("hellooooo");
