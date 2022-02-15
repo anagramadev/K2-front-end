@@ -59,7 +59,24 @@ stickyNavLinks.forEach((a) => {
     a.firstElementChild.classList.add("bg-red");
   });
 });
+
+// Tabs
+const tabBtns = document.querySelectorAll(".tab-btn");
+const tabBlock = document.querySelectorAll(".tab-block");
+
+tabBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    tabBtns.forEach((btn) => {
+      btn.classList.remove("border-b-2");
+      btn.classList.remove("border-white");
+      btn.classList.remove("text-white");
+    });
+    btn.classList.add("border-b-2");
+    btn.classList.add("border-white");
+    btn.classList.add("text-white");
+  });
+});
 // Icons func
 initIcons();
 
-console.log("hello");
+console.log("hellooo");

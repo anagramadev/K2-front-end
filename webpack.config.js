@@ -9,7 +9,7 @@ module.exports = (env) => {
       path: path.resolve(__dirname, "public/js"),
     },
     // watch: env.development ? true : false,
-    watch: false,
+    watch: true,
     mode: env.development ? "development" : "production",
     module: {
       rules: [
