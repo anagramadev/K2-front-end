@@ -1,9 +1,9 @@
 import { initIcons } from "@47nordmedia/k2-systems-ui-library/dist/icons";
 
+// Mobile menu button
 const menuButton = document.querySelector(".menu-toggle");
 const navBlock = document.querySelector("nav");
 const body = document.querySelector("body");
-
 if (menuButton) {
   menuButton.addEventListener("click", function () {
     this.classList.toggle("show");
@@ -16,6 +16,52 @@ if (menuButton) {
     body.classList.toggle("fixed");
     navBlock.classList.toggle("inline-flex");
     navBlock.classList.toggle("hidden");
+  });
+}
+// // Nav items hover
+// const mainNavLiniks = document.querySelectorAll(".main-nav > li");
+// mainNavLiniks.forEach((link) => {
+//   const hoverBox = link.querySelector(".hover-box");
+//   link.addEventListener("mouseover", (e) => {
+//     link.classList.add("lg:hover:border-red");
+//     link.classList.add("group");
+//     if (e.target === hoverBox) {
+//       link.classList.remove("group");
+//       link.classList.remove("lg:hover:border-red");
+//     }
+//   });
+// });
+
+const sliders = document.querySelectorAll(".drag-scroll");
+
+if (sliders) {
+  sliders.forEach((div) => {
+    let mouseDown = false;
+    let startX, scrollLeft;
+
+    let startDragging = function (e) {
+      mouseDown = true;
+      startX = e.pageX - div.offsetLeft;
+      scrollLeft = div.scrollLeft;
+      div.style.cursor = "grabbing";
+    };
+    let stopDragging = function (event) {
+      mouseDown = false;
+      div.style.cursor = "grab";
+    };
+
+    div.addEventListener("mousemove", (e) => {
+      e.preventDefault();
+      if (!mouseDown) {
+        return;
+      }
+      const x = e.pageX - div.offsetLeft;
+      const scroll = x - startX;
+      div.scrollLeft = scrollLeft - scroll;
+    });
+    div.addEventListener("mousedown", startDragging, false);
+    div.addEventListener("mouseup", stopDragging, false);
+    div.addEventListener("mouseleave", stopDragging, false);
   });
 }
 
@@ -49,17 +95,18 @@ if (footerLinks) {
 // sticky-nav
 const stickyNavLinks = document.querySelectorAll(".sticky-nav > a");
 
-stickyNavLinks.forEach((a) => {
-  a.addEventListener("click", () => {
-    stickyNavLinks.forEach((a) => {
-      a.firstElementChild.classList.remove("bg-red");
-      a.firstElementChild.classList.add("bg-cream");
+if (stickyNavLinks) {
+  stickyNavLinks.forEach((a) => {
+    a.addEventListener("click", () => {
+      stickyNavLinks.forEach((a) => {
+        a.firstElementChild.classList.remove("bg-red");
+        a.firstElementChild.classList.add("bg-cream");
+      });
+      a.firstElementChild.classList.remove("bg-cream");
+      a.firstElementChild.classList.add("bg-red");
     });
-    a.firstElementChild.classList.remove("bg-cream");
-    a.firstElementChild.classList.add("bg-red");
   });
-});
-
+}
 // Tabs
 const tabBtns = document.querySelectorAll(".tab-btn");
 const tabBlock = document.querySelectorAll(".tab-block");
