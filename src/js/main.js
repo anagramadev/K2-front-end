@@ -18,20 +18,7 @@ if (menuButton) {
     navBlock.classList.toggle("hidden");
   });
 }
-// // Nav items hover
-// const mainNavLiniks = document.querySelectorAll(".main-nav > li");
-// mainNavLiniks.forEach((link) => {
-//   const hoverBox = link.querySelector(".hover-box");
-//   link.addEventListener("mouseover", (e) => {
-//     link.classList.add("lg:hover:border-red");
-//     link.classList.add("group");
-//     if (e.target === hoverBox) {
-//       link.classList.remove("group");
-//       link.classList.remove("lg:hover:border-red");
-//     }
-//   });
-// });
-
+// Horizontal slider -----------
 const sliders = document.querySelectorAll(".drag-scroll");
 
 if (sliders) {
@@ -65,7 +52,7 @@ if (sliders) {
   });
 }
 
-// links accordion
+// links accordion -----------
 const footerLinks = document.querySelectorAll("p.footerLinks , p.menuLink");
 
 if (footerLinks) {
@@ -87,12 +74,11 @@ if (footerLinks) {
         minus.classList.toggle("hidden");
         LinkList.classList.toggle("hidden");
       }
-
       curr = i;
     });
   });
 }
-// sticky-nav
+// sticky-nav ------------
 const stickyNavLinks = document.querySelectorAll(".sticky-nav > a");
 
 if (stickyNavLinks) {
@@ -107,7 +93,7 @@ if (stickyNavLinks) {
     });
   });
 }
-// Tabs
+// Tabs -----------
 const tabBtns = document.querySelectorAll(".tab-btn");
 const tabBlock = document.querySelectorAll(".tab-block");
 
@@ -116,14 +102,20 @@ tabBtns.forEach((btn) => {
     tabBtns.forEach((btn) => {
       btn.classList.remove("border-b-2");
       btn.classList.remove("border-white");
-      btn.classList.remove("text-white");
+      btn.style.color = "#D9E670";
     });
     btn.classList.add("border-b-2");
     btn.classList.add("border-white");
-    btn.classList.add("text-white");
+    btn.style.color = "#fff";
+    tabBlock.forEach((block) => {
+      block.classList.add("hidden");
+      if (btn.dataset.tab === block.dataset.tab) {
+        block.classList.remove("hidden");
+      }
+    });
   });
 });
-// Icons func
+// Icons func -----------
 initIcons();
 
 console.log("hellooo");
