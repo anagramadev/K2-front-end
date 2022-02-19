@@ -14,7 +14,8 @@ if (menuButton) {
     }
     body.classList.toggle("w-screen");
     body.classList.toggle("fixed");
-    body.classList.toggle("overflow-y-hidden");
+    body.classList.toggle("top-0");
+    body.classList.toggle("left-0");
     navBlock.classList.toggle("inline-flex");
     navBlock.classList.toggle("hidden");
   });
