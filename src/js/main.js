@@ -79,6 +79,58 @@ if (footerLinks) {
     });
   });
 }
+// Roof accordion ------------
+const accordionBtn = document.querySelectorAll(".acc-btn");
+const expandBtn = document.querySelector(".exp-btn");
+if (expandBtn) {
+  expandBtn.addEventListener("click", () => {
+    accordionBtn.forEach((blk) => {
+      blk.nextElementSibling.classList.add("block");
+      blk.nextElementSibling.classList.remove("hidden");
+      blk.querySelector(".btn-svg").style.transform = "rotate(135deg)";
+    });
+  });
+  accordionBtn.forEach((block, i) => {
+    const accordionBlock = block.nextElementSibling;
+    const accordionSVG = block.querySelector(".btn-svg");
+
+    block.addEventListener("click", () => {
+      accordionBlock.classList.toggle("hidden");
+      if (accordionBlock.classList.contains("hidden")) {
+        accordionSVG.style.transform = "rotate(0deg)";
+      } else {
+        accordionSVG.style.transform = "rotate(135deg)";
+      }
+    });
+  });
+}
+// let curr;
+// accordionBtn.forEach((block, i) => {
+//   const accordionBlock = block.nextElementSibling;
+//   const accordionSVG = block.querySelector(".btn-svg");
+
+//   block.addEventListener("click", () => {
+//     if (curr === i) {
+//       accordionBlock.classList.toggle("flex");
+//       accordionBlock.classList.toggle("hidden");
+//     } else {
+//       accordionBtn.forEach((blk) => {
+//         blk.nextElementSibling.classList.remove("flex");
+//         blk.nextElementSibling.classList.add("hidden");
+//         accordionSVG.style.transform = "rotate(0deg)";
+//       });
+//       accordionBlock.classList.remove("hidden");
+//       accordionBlock.classList.add("flex");
+//     }
+//     if (accordionBlock.classList.contains("flex")) {
+//       accordionSVG.style.transform = "rotate(135deg)";
+//     } else {
+//       accordionSVG.style.transform = "rotate(0deg)";
+//     }
+//     curr = i;
+//   });
+// });
+
 // sticky-nav ------------
 const stickyNavLinks = document.querySelectorAll(".sticky-nav > a");
 
@@ -95,27 +147,35 @@ if (stickyNavLinks) {
   });
 }
 // Tabs -----------
+const careerTabs = document.querySelector(".career-tabs");
+const productTabs = document.querySelector(".product-tabs");
 const tabBtns = document.querySelectorAll(".tab-btn");
-const tabBlock = document.querySelectorAll(".tab-block");
+const tabBlocks = document.querySelectorAll(".tab-block");
 
-tabBtns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    tabBtns.forEach((btn) => {
-      btn.classList.remove("border-b-2");
-      btn.classList.remove("border-white");
-      btn.style.color = "#D9E670";
-    });
-    btn.classList.add("border-b-2");
-    btn.classList.add("border-white");
-    btn.style.color = "#fff";
-    tabBlock.forEach((block) => {
-      block.classList.add("hidden");
-      if (btn.dataset.tab === block.dataset.tab) {
-        block.classList.remove("hidden");
-      }
+function tabBlockFunc(colorName1, colorHex2, colorHex3) {
+  tabBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      tabBtns.forEach((btn) => {
+        btn.classList.remove("border-b-2");
+        btn.classList.remove(`border-${colorName1}`);
+        btn.style.color = colorHex3;
+      });
+      btn.classList.add("border-b-2");
+      btn.classList.add(`border-${colorName1}`);
+      btn.style.color = colorHex2;
+      tabBlocks.forEach((block) => {
+        block.classList.add("hidden");
+        if (btn.dataset.tab === block.dataset.tab) {
+          block.classList.remove("hidden");
+        }
+      });
     });
   });
-});
+}
+
+careerTabs && tabBlockFunc("white", "#FFFFFF", "#D9E670");
+productTabs && tabBlockFunc("red", "#FD0000", "#191919");
+
 // Icons func -----------
 initIcons();
 
