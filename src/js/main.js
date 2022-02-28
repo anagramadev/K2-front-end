@@ -84,25 +84,38 @@ const accordionBtn = document.querySelectorAll(".acc-btn");
 const expandBtn = document.querySelector(".exp-btn");
 if (expandBtn) {
   expandBtn.addEventListener("click", () => {
-    accordionBtn.forEach((blk) => {
-      blk.nextElementSibling.classList.add("block");
-      blk.nextElementSibling.classList.remove("hidden");
-      blk.querySelector(".btn-svg").style.transform = "rotate(135deg)";
-    });
+    expandBtn.classList.toggle("open");
+    const btnText = expandBtn.querySelector("span");
+    const btnArw = expandBtn.querySelector("svg");
+    if (expandBtn.classList.contains("open")) {
+      btnText.innerHTML = "Collapse all";
+      btnArw.style.transform = "rotate(180deg)";
+      accordionBtn.forEach((blk) => {
+        blk.nextElementSibling.style.maxHeight = `${blk.nextElementSibling.scrollHeight}px`;
+        blk.querySelector(".btn-svg").style.transform = "rotate(135deg)";
+      });
+    } else {
+      btnText.innerHTML = "Expand all";
+      btnArw.style.transform = "rotate(0deg)";
+      accordionBtn.forEach((blk) => {
+        blk.nextElementSibling.style.maxHeight = "0px";
+        blk.querySelector(".btn-svg").style.transform = "rotate(0deg)";
+      });
+    }
   });
   accordionBtn.forEach((block, i) => {
     const accordionBlock = block.nextElementSibling;
     const blkHeight = block.nextElementSibling.scrollHeight;
     const accordionSVG = block.querySelector(".btn-svg");
-    console.log(blkHeight);
 
     block.addEventListener("click", () => {
-      accordionBlock.classList.toggle(`max-h-[${blkHeight}px]`);
-      // accordionBlock.classList.toggle("hidden");
-      if (accordionBlock.classList.contains("hidden")) {
-        accordionSVG.style.transform = "rotate(0deg)";
-      } else {
+      accordionBlock.classList.toggle("active");
+      if (accordionBlock.classList.contains("active")) {
+        accordionBlock.style.maxHeight = `${blkHeight}px`;
         accordionSVG.style.transform = "rotate(135deg)";
+      } else {
+        accordionBlock.style.maxHeight = "0px";
+        accordionSVG.style.transform = "rotate(0deg)";
       }
     });
   });
