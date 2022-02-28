@@ -92,10 +92,13 @@ if (expandBtn) {
   });
   accordionBtn.forEach((block, i) => {
     const accordionBlock = block.nextElementSibling;
+    const blkHeight = block.nextElementSibling.scrollHeight;
     const accordionSVG = block.querySelector(".btn-svg");
+    console.log(blkHeight);
 
     block.addEventListener("click", () => {
-      accordionBlock.classList.toggle("hidden");
+      accordionBlock.classList.toggle(`max-h-[${blkHeight}px]`);
+      // accordionBlock.classList.toggle("hidden");
       if (accordionBlock.classList.contains("hidden")) {
         accordionSVG.style.transform = "rotate(0deg)";
       } else {
@@ -131,6 +134,27 @@ if (expandBtn) {
 //   });
 // });
 
+// Banner slider -------------
+const BannerSlider = document.querySelector(".banner-slider");
+const bSlideLeft = document.querySelector(".b-slide-left");
+const bSlideRight = document.querySelector(".b-slide-right");
+if (BannerSlider) {
+  bSlideRight.addEventListener("click", (e) => {
+    BannerSlider.scrollBy({
+      top: 0,
+      left: BannerSlider.offsetWidth,
+      behavior: "smooth",
+    });
+  });
+  bSlideLeft.addEventListener("click", (e) => {
+    BannerSlider.scrollBy({
+      top: 0,
+      left: -BannerSlider.offsetWidth,
+      behavior: "smooth",
+    });
+  });
+}
+
 // sticky-nav ------------
 const stickyNavLinks = document.querySelectorAll(".sticky-nav > a");
 
@@ -143,6 +167,7 @@ if (stickyNavLinks) {
       });
       a.firstElementChild.classList.remove("bg-cream");
       a.firstElementChild.classList.add("bg-red");
+      console.log(a.firstElementChild);
     });
   });
 }

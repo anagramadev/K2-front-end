@@ -476,28 +476,30 @@
         class="sticky top-0 mt-16 lg:mt-20 -mx-4 lg:mx-0 bg-lightGrey z-10"
       >
         <div class="overflow-x-scroll no-scrollbar px-4 lg:px-0 py-4">
-          <div class="flex w-[800px] lg:w-auto sticky-nav">
-            <a href="#overview" class="inline-flex items-center mr-8"
+          <div class="flex w-max lg:w-auto sticky-nav">
+            <a href="#overview" class="inline-flex items-center group mr-8"
               ><span
-                class="inline-block w-2 h-2 rounded-full bg-red mr-2"
+                class="inline-block w-2 h-2 rounded-full group-hover:bg-red bg-red mr-2"
               ></span>
               Overview</a
             >
-            <a href="#featured" class="inline-flex items-center mr-8"
+            <a href="#featured" class="inline-flex items-center group mr-8"
               ><span
-                class="inline-block w-2 h-2 rounded-full bg-cream mr-2"
+                class="inline-block w-2 h-2 rounded-full group-hover:bg-red bg-cream mr-2"
               ></span>
               Featured projects</a
             >
-            <a href="#losungen" class="inline-flex items-center mr-8"
+            <a href="#losungen" class="inline-flex items-center group mr-8"
               ><span
-                class="inline-block w-2 h-2 rounded-full bg-cream mr-2"
+                class="inline-block w-2 h-2 rounded-full group-hover:bg-red bg-cream mr-2"
               ></span>
               Lösungen</a
             >
-            <a href="#produktkatalog" class="inline-flex items-center mr-8"
+            <a
+              href="#produktkatalog"
+              class="inline-flex items-center group mr-8"
               ><span
-                class="inline-block w-2 h-2 rounded-full bg-cream mr-2"
+                class="inline-block w-2 h-2 rounded-full group-hover:bg-red bg-cream mr-2"
               ></span>
               Produktkatalog</a
             >
@@ -540,7 +542,7 @@
       <section id="featured" class="pt-32 lg:pt-48 product-tabs">
         <div class="overflow-x-scroll no-scrollbar -mx-4 lg:mx-0">
           <div
-            class="flex items-start justify-start lg:justify-between w-[800px] lg:w-auto sticky-nav"
+            class="flex items-start justify-start lg:justify-between w-max lg:w-auto sticky-nav"
           >
             <p
               data-tab="name1"
@@ -599,7 +601,7 @@
           </div>
           <div class="flex-1 mt-12 lg:mt-0">
             <img
-              src="./img/professional.jpg"
+              src="./img/greenroof.jpg"
               alt="Unsere Philosophie: Es geht nur gemeinsam"
             />
           </div>
@@ -639,7 +641,7 @@
           </div>
           <div class="flex-1 mt-12 lg:mt-0">
             <img
-              src="./img/tab2.jpg"
+              src="./img/greenroof.jpg"
               alt="Unsere Philosophie: Es geht nur gemeinsam"
             />
           </div>
@@ -677,7 +679,7 @@
           </div>
           <div class="flex-1 mt-12 lg:mt-0">
             <img
-              src="./img/tab3.jpg"
+              src="./img/greenroof.jpg"
               alt="Unsere Philosophie: Es geht nur gemeinsam"
             />
           </div>
@@ -688,7 +690,9 @@
         <div class="flex flex-col lg:flex-row">
           <div class="flex-1 mr-0 lg:mr-8">
             <div class="mb-8 lg:mb-10">
-              <img src="./img/solutionflatroof.jpg" alt="solutionflatroof" />
+              <a href="#">
+                <img src="./img/solutionflatroof.jpg" alt="solutionflatroof" />
+              </a>
             </div>
             <p
               class="mb-6 lg:mb-8 flex items-center text-base lg:text-md font-medium 2xl:text-lg"
@@ -722,7 +726,12 @@
           </div>
           <div class="flex-1 mr-0 mt-20 lg:mr-8 lg:mt-0">
             <div class="mb-8 lg:mb-10">
-              <img src="./img/solutionpitchroof.jpg" alt="solutionpitchroof" />
+              <a href="#">
+                <img
+                  src="./img/solutionpitchroof.jpg"
+                  alt="solutionpitchroof"
+                />
+              </a>
             </div>
             <p
               class="mb-6 lg:mb-8 flex items-center text-base lg:text-md font-medium 2xl:text-lg"
@@ -754,12 +763,14 @@
               </svg>
             </a>
           </div>
-          <div class="flex-1 mr-0 mt-20 lg:mr-8 lg:mt-0">
+          <div class="flex-1 mr-0 mt-20 lg:mt-0">
             <div class="mb-8 lg:mb-10">
-              <img
-                src="./img/solutionspecialroof.jpg"
-                alt="solutionspecialroof"
-              />
+              <a href="#">
+                <img
+                  src="./img/solutionspecialroof.jpg"
+                  alt="solutionspecialroof"
+                />
+              </a>
             </div>
             <p
               class="mb-6 lg:mb-8 flex items-center text-base lg:text-md font-medium 2xl:text-lg"
@@ -839,7 +850,7 @@
       </section>
       <section id="referenzen" class="pt-32 lg:pt-60">
         <h3 class="w-full lg:w-1/3 mb-7">Referenzen</h3>
-        <p class="w-full lg:w-1/3">
+        <p class="w-full lg:w-5/12 2xl:w-1/3">
           Wir liefern seit 2004 Montagesysteme: Weltweit aus Baden-Württemberg
           Entdecken Sie unsere Referenzen.
         </p>
