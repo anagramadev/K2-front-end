@@ -147,27 +147,6 @@ if (expandBtn) {
 //   });
 // });
 
-// Banner slider -------------
-const BannerSlider = document.querySelector(".banner-slider");
-const bSlideLeft = document.querySelector(".b-slide-left");
-const bSlideRight = document.querySelector(".b-slide-right");
-if (BannerSlider) {
-  bSlideRight.addEventListener("click", (e) => {
-    BannerSlider.scrollBy({
-      top: 0,
-      left: BannerSlider.offsetWidth,
-      behavior: "smooth",
-    });
-  });
-  bSlideLeft.addEventListener("click", (e) => {
-    BannerSlider.scrollBy({
-      top: 0,
-      left: -BannerSlider.offsetWidth,
-      behavior: "smooth",
-    });
-  });
-}
-
 // sticky-nav ------------
 const stickyNavLinks = document.querySelectorAll(".sticky-nav > a");
 
@@ -213,6 +192,8 @@ function tabBlockFunc(colorName1, colorHex2, colorHex3) {
 
 careerTabs && tabBlockFunc("white", "#FFFFFF", "#D9E670");
 productTabs && tabBlockFunc("red", "#FD0000", "#191919");
+
+// Banner slider ---------------
 
 // Icons func -----------
 initIcons();
