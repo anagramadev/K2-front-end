@@ -54,7 +54,9 @@ if (sliders) {
 }
 
 // links accordion -----------
-const footerLinks = document.querySelectorAll("p.footerLinks , p.menuLink");
+const footerLinks = document.querySelectorAll(
+  "p.footerLinks , p.menuLink , p.prodAccordion"
+);
 
 if (footerLinks) {
   let curr;
@@ -79,6 +81,29 @@ if (footerLinks) {
     });
   });
 }
+// Accordion with imgs -----------
+const acoordionTitles = document.querySelectorAll(".accordion-titles");
+
+if (acoordionTitles) {
+  acoordionTitles.forEach((titlesBlock) => {
+    const singleTitle = titlesBlock.querySelectorAll("p.prodAccordion");
+    const acoordionImgs =
+      titlesBlock.nextElementSibling.querySelectorAll("img");
+    singleTitle.forEach((title) => {
+      title.addEventListener("click", function () {
+        const titleNo = this.dataset.title;
+        acoordionImgs.forEach((img) => {
+          const imgNo = img.dataset.img;
+          img.classList.add("hidden");
+          if (titleNo === imgNo) {
+            img.classList.remove("hidden");
+          }
+        });
+      });
+    });
+  });
+}
+
 // Roof accordion ------------
 const accordionBtn = document.querySelectorAll(".acc-btn");
 const expandBtn = document.querySelector(".exp-btn");
@@ -88,14 +113,15 @@ if (expandBtn) {
     const btnText = expandBtn.querySelector("span");
     const btnArw = expandBtn.querySelector("svg");
     if (expandBtn.classList.contains("open")) {
-      btnText.innerHTML = "Collapse all";
+      btnText.innerHTML = btnText.dataset.closetxt;
       btnArw.style.transform = "rotate(180deg)";
       accordionBtn.forEach((blk) => {
         blk.nextElementSibling.style.maxHeight = `${blk.nextElementSibling.scrollHeight}px`;
         blk.querySelector(".btn-svg").style.transform = "rotate(135deg)";
       });
     } else {
-      btnText.innerHTML = "Expand all";
+      btnText.innerHTML = btnText.dataset.opentxt;
+
       btnArw.style.transform = "rotate(0deg)";
       accordionBtn.forEach((blk) => {
         blk.nextElementSibling.style.maxHeight = "0px";
@@ -120,32 +146,6 @@ if (expandBtn) {
     });
   });
 }
-// let curr;
-// accordionBtn.forEach((block, i) => {
-//   const accordionBlock = block.nextElementSibling;
-//   const accordionSVG = block.querySelector(".btn-svg");
-
-//   block.addEventListener("click", () => {
-//     if (curr === i) {
-//       accordionBlock.classList.toggle("flex");
-//       accordionBlock.classList.toggle("hidden");
-//     } else {
-//       accordionBtn.forEach((blk) => {
-//         blk.nextElementSibling.classList.remove("flex");
-//         blk.nextElementSibling.classList.add("hidden");
-//         accordionSVG.style.transform = "rotate(0deg)";
-//       });
-//       accordionBlock.classList.remove("hidden");
-//       accordionBlock.classList.add("flex");
-//     }
-//     if (accordionBlock.classList.contains("flex")) {
-//       accordionSVG.style.transform = "rotate(135deg)";
-//     } else {
-//       accordionSVG.style.transform = "rotate(0deg)";
-//     }
-//     curr = i;
-//   });
-// });
 
 // sticky-nav ------------
 const stickyNavLinks = document.querySelectorAll(".sticky-nav > a");
@@ -159,27 +159,25 @@ if (stickyNavLinks) {
       });
       a.firstElementChild.classList.remove("bg-cream");
       a.firstElementChild.classList.add("bg-red");
-      console.log(a.firstElementChild);
     });
   });
 }
 // Tabs -----------
-const careerTabs = document.querySelector(".career-tabs");
-const productTabs = document.querySelector(".product-tabs");
 const tabBtns = document.querySelectorAll(".tab-btn");
 const tabBlocks = document.querySelectorAll(".tab-block");
-
-function tabBlockFunc(colorName1, colorHex2, colorHex3) {
+if (tabBtns) {
   tabBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
+    btn.addEventListener("click", function () {
       tabBtns.forEach((btn) => {
         btn.classList.remove("border-b-2");
-        btn.classList.remove(`border-${colorName1}`);
-        btn.style.color = colorHex3;
+        btn.classList.remove(`border-${btn.dataset.activecolor}`);
+        btn.classList.remove(`text-${btn.dataset.activecolor}`);
+        btn.classList.add(`text-${btn.dataset.textcolor}`);
       });
       btn.classList.add("border-b-2");
-      btn.classList.add(`border-${colorName1}`);
-      btn.style.color = colorHex2;
+      btn.classList.add(`border-${btn.dataset.activecolor}`);
+      btn.classList.remove(`text-${btn.dataset.textcolor}`);
+      btn.classList.add(`text-${btn.dataset.activecolor}`);
       tabBlocks.forEach((block) => {
         block.classList.add("hidden");
         if (btn.dataset.tab === block.dataset.tab) {
@@ -190,9 +188,28 @@ function tabBlockFunc(colorName1, colorHex2, colorHex3) {
   });
 }
 
-careerTabs && tabBlockFunc("white", "#FFFFFF", "#D9E670");
-productTabs && tabBlockFunc("red", "#FD0000", "#191919");
+// Embaded video ---------------
+const playBtn = document.querySelectorAll(".vid-play");
+const vidContainer = document.querySelector(".vid-container");
+const vidPlayer = document.querySelector(".vid-player");
 
+playBtn.forEach((play) => {
+  play.addEventListener("click", () => {
+    vidContainer.classList.toggle("opacity-0");
+    vidContainer.classList.toggle("invisible");
+    vidPlayer.classList.toggle("left-full");
+    vidPlayer.classList.toggle("left-0");
+  });
+});
+
+vidContainer.addEventListener("click", (e) => {
+  if (e.target === vidContainer) {
+    vidPlayer.classList.toggle("left-full");
+    vidPlayer.classList.toggle("left-0");
+    vidContainer.classList.toggle("opacity-0");
+    vidContainer.classList.toggle("invisible");
+  }
+});
 // Banner slider ---------------
 
 // Icons func -----------
