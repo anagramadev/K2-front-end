@@ -451,19 +451,19 @@
     </header>
     <main class="mt-24 lg:mt-40">
       <section>
-        <div class="flex items-center mb-12">
-          <h2>Dome 6 systems</h2>
+        <div class="flex items-center mb-8 lg:mb-12">
+          <h2 class="w-1/2 lg:w-auto">Dome 6 systems</h2>
           <span
-            class="icon icon-flatroof-64 text-darkGrey w-16 h-16 ml-12"
+            class="icon icon-flatroof-64 text-darkGrey w-16 h-16 ml-12 hidden lg:block"
           ></span>
           <span
-            class="icon icon-concrete-64 text-darkGrey w-16 h-16 ml-5"
+            class="icon icon-concrete-64 text-darkGrey w-16 h-16 ml-5 hidden lg:block"
           ></span>
           <span
-            class="icon icon-flatroof-64 text-darkGrey w-16 h-16 ml-5"
+            class="icon icon-flatroof-64 text-darkGrey w-16 h-16 ml-5 hidden lg:block"
           ></span>
           <span
-            class="icon icon-slidetiltroof-64 text-darkGrey w-16 h-16 ml-5"
+            class="icon icon-slidetiltroof-64 text-darkGrey w-16 h-16 ml-5 hidden lg:block"
           ></span>
         </div>
         <p class="w-full lg:w-5/12 2xl:w-2/6">
@@ -472,9 +472,9 @@
         </p>
       </section>
       <section
-        class="sticky top-0 mt-16 lg:mt-20 -mx-4 lg:mx-0 bg-lightGrey z-10"
+        class="sticky top-0 mt-10 lg:mt-20 -mx-4 lg:-mx-8 bg-lightGrey z-10"
       >
-        <div class="overflow-x-scroll no-scrollbar px-4 lg:px-0 py-4">
+        <div class="overflow-x-scroll no-scrollbar px-4 lg:px-8 py-4">
           <div class="flex w-max lg:w-auto sticky-nav">
             <a href="#overview" class="inline-flex items-center group mr-8"
               ><span
@@ -510,7 +510,7 @@
             >
           </div>
         </div>
-        <div class="px-4 lg:px-0">
+        <div class="px-4 lg:px-8">
           <div class="border-b border-medGrey"></div>
         </div>
       </section>
@@ -523,48 +523,60 @@
         <img
           src="./img/solaroofsm.jpg"
           alt="solar roof"
-          class="block lg:hidden"
+          class="block lg:hidden w-screen"
         />
-        <div class="mt-28 flex">
-          <div class="flex-1 border-l border-medGrey pl-8">
-            <p class="w-full lg:w-10/12 2xl:w-8/12">
-              <span class="font-medium">80% pre-assembled and 70% faster </span>
-              to install thanks to improved components
-            </p>
-          </div>
-          <div class="flex-1 border-l border-medGrey pl-8">
-            <p class="w-full lg:w-10/12 2xl:w-8/12">
-              <span class="font-medium">For more flexibility – </span>also
-              available with long rails (unmounted) for on-site assembly
-            </p>
-          </div>
-          <div class="flex-1 border-l border-medGrey pl-8">
-            <p class="w-full lg:w-10/12 2xl:w-8/12">
-              <span class="font-medium"
-                >The handy Dome Speed Spacer distance gauge </span
-              >provides time-saving rail alignment
-            </p>
-          </div>
-          <div class="flex-1 border-l border-medGrey pl-8">
-            <p class="w-full lg:w-10/12 2xl:w-8/12">
-              <span class="font-medium"
-                >Secure anchoring with fixed connection for roofs < 10°
-              </span>
-              and low load reserves
-            </p>
+        <div class="-mx-4 lg:mx-0 overflow-x-scroll no-scrollbar">
+          <div class="mt-20 lg:mt-28 flex w-max lg:w-auto">
+            <div
+              class="w-[300px] lg:w-auto lg:flex-1 border-l border-medGrey pl-4 mx-4 lg:mr-0 lg:pl-8"
+            >
+              <p class="w-full lg:w-10/12 2xl:w-8/12">
+                <span class="font-medium"
+                  >80% pre-assembled and 70% faster
+                </span>
+                to install thanks to improved components
+              </p>
+            </div>
+            <div
+              class="w-[300px] lg:w-auto lg:flex-1 border-l border-medGrey pl-4 mr-4 lg:mr-0 lg:pl-8"
+            >
+              <p class="w-full lg:w-10/12 2xl:w-8/12">
+                <span class="font-medium">For more flexibility – </span>also
+                available with long rails (unmounted) for on-site assembly
+              </p>
+            </div>
+            <div
+              class="w-[300px] lg:w-auto lg:flex-1 border-l border-medGrey pl-4 mr-4 lg:mr-0 lg:pl-8"
+            >
+              <p class="w-full lg:w-10/12 2xl:w-8/12">
+                <span class="font-medium"
+                  >The handy Dome Speed Spacer distance gauge </span
+                >provides time-saving rail alignment
+              </p>
+            </div>
+            <div
+              class="w-[300px] lg:w-auto lg:flex-1 border-x border-medGrey pl-4 mr-4 lg:mr-0 lg:pl-8"
+            >
+              <p class="w-full lg:w-10/12 2xl:w-8/12">
+                <span class="font-medium"
+                  >Secure anchoring with fixed connection for roofs < 10°
+                </span>
+                and low load reserves
+              </p>
+            </div>
           </div>
         </div>
       </section>
-      <section class="flex items-center pt-32 lg:pt-60">
+      <section class="flex flex-col lg:flex-row items-center pt-28 lg:pt-60">
         <div class="flex-1 flex items-center justify-center">
           <img
             src="./img/lap1.jpg"
             alt="K2 Base: Easy, fast and safe planning"
           />
         </div>
-        <div class="flex-1">
-          <div class="w-8/12">
-            <h4 class="pr-32">K2 Base: Easy, fast and safe planning</h4>
+        <div class="flex-1 mt-8 lg:mt-0">
+          <div class="w-full lg:w-10/12 2xl:8/12">
+            <h4 class="pr-0 lg:pr-32">K2 Base: Easy, fast and safe planning</h4>
             <p class="my-8">
               Quick and easy planning in five steps of K2 mounting systems for
               pitched and flat roofs. Our free planning tool K2 Base has a
@@ -966,17 +978,18 @@
           />
         </div>
       </section>
-      <section class="pt-32 lg:pt-60 overflow-x-hidden">
-        <h3 class="w-full lg:w-1/3 mb-16">Videos</h3>
+      <section class="pt-32 lg:pt-60 -mx-4 lg:-mx-8 overflow-x-hidden">
+        <h3 class="w-full lg:w-1/3 pl-4 lg:pl-8 mb-8 lg:mb-16">Videos</h3>
         <div class="flex overflow-x-scroll no-scrollbar drag-scroll">
           <div
-            class="basis-[30%] flex-shrink-0 border-l border-medGrey pl-8 mr-8"
+            class="basis-[300px] lg:basis-[30%] flex-shrink-0 border-x border-medGrey px-4 ml-4 lg:ml-8 lg:px-8"
           >
             <div class="relative group">
               <div
                 class="absolute left-0 top-0 w-full h-full flex items-center justify-center"
               >
                 <button
+                  data-vid="https://www.youtube.com/embed/w4lDgeFTYWI"
                   class="bttn w-14 h-14 group-hover:w-28 bttn-red flex items-center justify-center vid-play"
                 >
                   <span class="text-0xs group-hover:text-base">Play</span>
@@ -1011,14 +1024,15 @@
             </p>
           </div>
           <div
-            class="basis-[30%] flex-shrink-0 border-l border-medGrey pl-8 mr-8"
+            class="basis-[300px] lg:basis-[30%] flex-shrink-0 border-r border-medGrey px-4 lg:ml-0 lg:px-8"
           >
             <div class="relative group">
               <div
                 class="absolute left-0 top-0 w-full h-full flex items-center justify-center"
               >
                 <button
-                  class="bttn w-14 h-14 group-hover:w-28 bttn-red flex items-center justify-center"
+                  data-vid="https://www.youtube.com/embed/eermo-glzRE"
+                  class="bttn w-14 h-14 group-hover:w-28 bttn-red flex items-center justify-center vid-play"
                 >
                   <span class="text-0xs group-hover:text-base">Play</span>
                   <svg
@@ -1052,14 +1066,15 @@
             </p>
           </div>
           <div
-            class="basis-[30%] flex-shrink-0 border-l border-medGrey pl-8 mr-8"
+            class="basis-[300px] lg:basis-[30%] flex-shrink-0 border-r border-medGrey px-4 lg:ml-0 lg:px-8"
           >
             <div class="relative group">
               <div
                 class="absolute left-0 top-0 w-full h-full flex items-center justify-center"
               >
                 <button
-                  class="bttn w-14 h-14 group-hover:w-28 bttn-red flex items-center justify-center"
+                  data-vid="https://www.youtube.com/embed/pFONeSO_Kjk"
+                  class="bttn w-14 h-14 group-hover:w-28 bttn-red flex items-center justify-center vid-play"
                 >
                   <span class="text-0xs group-hover:text-base">Play</span>
                   <svg
@@ -1093,14 +1108,15 @@
             </p>
           </div>
           <div
-            class="basis-[30%] flex-shrink-0 border-l border-medGrey pl-8 mr-8"
+            class="basis-[300px] lg:basis-[30%] flex-shrink-0 border-r border-medGrey px-4 mr-4 lg:mr-8 lg:px-8"
           >
             <div class="relative group">
               <div
                 class="absolute left-0 top-0 w-full h-full flex items-center justify-center"
               >
                 <button
-                  class="bttn w-14 h-14 group-hover:w-28 bttn-red flex items-center justify-center"
+                  data-vid="https://www.youtube.com/embed/Poj0mDP3esA"
+                  class="bttn w-14 h-14 group-hover:w-28 bttn-red flex items-center justify-center vid-play"
                 >
                   <span class="text-0xs group-hover:text-base">Play</span>
                   <svg
@@ -1135,15 +1151,15 @@
           </div>
         </div>
         <div
-          class="fixed flex justify-end left-0 opacity-0 invisible top-0 w-full h-full bg-black/50 z-10 overflow-hidden vid-container"
+          class="fixed flex justify-end left-0 opacity-0 invisible top-0 w-full h-full bg-black/30 z-10 overflow-hidden vid-container"
         >
           <div
-            class="w-10/12 bg-white p-8 relative left-full transition-all duration-300 vid-player"
+            class="w-full xl:w-10/12 bg-white p-4 relative left-full transition-all duration-300 vid-player"
           >
-            <button class="mb-8">Close</button>
+            <button class="mb-4">Close</button>
             <iframe
+              class="aspect-video h-auto"
               width="100%"
-              height="100%"
               src="https://www.youtube.com/embed/w4lDgeFTYWI"
               title="YouTube video player"
               frameborder="0"
@@ -1155,39 +1171,56 @@
       </section>
       <section id="referenzen" class="pt-32 lg:pt-60">
         <h3 class="w-full lg:w-1/3 mb-7">Referenzen</h3>
-        <div class="relative mt-12 lg:mt-16">
-          <div class="flex overflow-hidden banner-slider">
-            <div class="basis-full flex-shrink-0 h-[600px] lg:h-auto">
-              <img
-                src="./img/reference1.jpg"
-                alt="Referenzen"
-                class="w-full h-full object-cover"
-              />
-            </div>
-            <div class="basis-full flex-shrink-0 h-[600px] lg:h-auto">
-              <img
-                src="./img/com_banner.jpg"
-                alt="Referenzen"
-                class="w-full h-full object-cover"
-              />
-            </div>
-            <div class="basis-full flex-shrink-0 h-[600px] lg:h-auto">
-              <img
-                src="./img/com_banner2.jpg"
-                alt="Referenzen"
-                class="w-full h-full object-cover"
-              />
-            </div>
-            <div class="basis-full flex-shrink-0 h-[600px] lg:h-auto">
-              <img
-                src="./img/com_banner3.jpg"
-                alt="Referenzen"
-                class="w-full h-full object-cover"
-              />
+        <div class="relative mt-8 lg:mt-16">
+          <div class="carousel flex relative overflow-hidden">
+            <div
+              class="flex flex-shrink-0 transition-all duration-500 banner-slider"
+            >
+              <div
+                data-slide="1"
+                class="flex-shrink-0 h-[600px] lg:h-auto slide"
+              >
+                <img
+                  src="./img/reference1.jpg"
+                  alt="Referenzen"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div
+                data-slide="2"
+                class="flex-shrink-0 h-[600px] lg:h-auto slide"
+              >
+                <img
+                  src="./img/com_banner.jpg"
+                  alt="Referenzen"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div
+                data-slide="3"
+                class="flex-shrink-0 h-[600px] lg:h-auto slide"
+              >
+                <img
+                  src="./img/com_banner2.jpg"
+                  alt="Referenzen"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div
+                data-slide="4"
+                class="flex-shrink-0 h-[600px] lg:h-auto slide"
+              >
+                <img
+                  src="./img/com_banner3.jpg"
+                  alt="Referenzen"
+                  class="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
+
           <div class="absolute w-full bottom-4 lg:bottom-10 text-center">
-            <div class="bttn bttn-red">
+            <div class="bttn bttn-red slider-control">
               <svg
                 width="14"
                 height="14"
@@ -1203,7 +1236,7 @@
                 />
               </svg>
 
-              <span>Img 1/4</span>
+              <p>Img <span>1</span>/<span>4</span></p>
               <svg
                 width="14"
                 height="14"
@@ -1228,8 +1261,10 @@
             <h3 class="w-full lg:w-4/6 mb-6 lg:mb-0">
               Downloads & Technical data
             </h3>
-            <p class="pt-8 w-full lg:w-5/6 2xl:w-4/6">Everything at glance</p>
-            <ul class="list-disc list-inside mt-6">
+            <p class="pt-0 lg:pt-8 w-full lg:w-5/6 2xl:w-4/6">
+              Everything at glance
+            </p>
+            <ul class="list-disc list-outside pl-4 lg:list-inside lg:pl-0 mt-6">
               <li>We share all technical data in our K2 Catalogue</li>
               <li>See technical system data as well as component’s data</li>
               <li>Assembly instructions and technical drawings</li>

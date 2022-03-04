@@ -192,26 +192,126 @@ if (tabBtns) {
 const playBtn = document.querySelectorAll(".vid-play");
 const vidContainer = document.querySelector(".vid-container");
 const vidPlayer = document.querySelector(".vid-player");
-
+const VidSrc = vidContainer.querySelector("iframe");
+const VidClose = vidContainer.querySelector("button");
 playBtn.forEach((play) => {
   play.addEventListener("click", () => {
     vidContainer.classList.toggle("opacity-0");
     vidContainer.classList.toggle("invisible");
     vidPlayer.classList.toggle("left-full");
     vidPlayer.classList.toggle("left-0");
+    body.classList.add("overflow-hidden");
+    VidSrc.setAttribute("src", play.dataset.vid);
   });
 });
 
 vidContainer.addEventListener("click", (e) => {
-  if (e.target === vidContainer) {
+  if (e.target === vidContainer || e.target === VidClose) {
     vidPlayer.classList.toggle("left-full");
     vidPlayer.classList.toggle("left-0");
     vidContainer.classList.toggle("opacity-0");
     vidContainer.classList.toggle("invisible");
+    body.classList.remove("overflow-hidden");
+    VidSrc.setAttribute("src", "");
   }
 });
 // Banner slider ---------------
+const carousel = document.querySelector(".carousel");
+const slider = document.querySelector(".banner-slider");
+const slides = document.querySelectorAll(".banner-slider > .slide");
+const slideSingleCount = document.querySelector(
+  ".slider-control > p > span:first-of-type"
+);
+const slideSumCount = document.querySelector(
+  ".slider-control > p > span:last-of-type"
+);
+const next = document.querySelector(".b-slide-right");
+const prev = document.querySelector(".b-slide-left");
+let direction;
 
+slides.forEach((slide) => {
+  slide.style.flexBasis = `${100 / slides.length}%`;
+});
+slideSumCount.innerHTML = slides.length;
+
+next.addEventListener("click", function () {
+  direction = -1;
+  carousel.style.justifyContent = "flex-start";
+  slider.style.transform = `translate(-${100 / slides.length}%)`;
+});
+
+prev.addEventListener("click", function () {
+  direction = 1;
+  if (direction === -1) {
+    direction = 1;
+    slider.appendChild(slider.firstElementChild);
+  }
+  carousel.style.justifyContent = "flex-end";
+  slider.style.transform = `translate(${100 / slides.length}%)`;
+});
+
+slider.addEventListener(
+  "transitionend",
+  function () {
+    if (direction === 1) {
+      slider.prepend(slider.lastElementChild);
+      slideSingleCount.innerHTML = slider.lastElementChild.dataset.slide;
+    } else {
+      slider.appendChild(slider.firstElementChild);
+      slideSingleCount.innerHTML = slider.firstElementChild.dataset.slide;
+    }
+
+    slider.style.transition = "none";
+    slider.style.transform = "translate(0)";
+    setTimeout(() => {
+      slider.style.transition = "all 0.5s";
+    });
+  },
+  false
+);
+slider.addEventListener("touchstart", handleTouchStart, false);
+slider.addEventListener("touchmove", handleTouchMove, false);
+
+let xDown = null;
+let yDown = null;
+
+const getTouches = (evt) => evt.touches;
+
+function handleTouchStart(evt) {
+  const firstTouch = getTouches(evt)[0];
+  xDown = firstTouch.clientX;
+  yDown = firstTouch.clientY;
+}
+
+function handleTouchMove(evt) {
+  if (!xDown || !yDown) {
+    return;
+  }
+
+  let xUp = evt.touches[0].clientX;
+  let yUp = evt.touches[0].clientY;
+
+  let xDiff = xDown - xUp;
+  let yDiff = yDown - yUp;
+
+  if (Math.abs(xDiff) > Math.abs(yDiff)) {
+    if (xDiff > 0) {
+      direction = -1;
+      carousel.style.justifyContent = "flex-start";
+      slider.style.transform = `translate(-${100 / slides.length}%)`;
+    } else {
+      direction = 1;
+      if (direction === -1) {
+        direction = 1;
+        slider.appendChild(slider.firstElementChild);
+      }
+      carousel.style.justifyContent = "flex-end";
+      slider.style.transform = `translate(${100 / slides.length}%)`;
+    }
+  }
+  xDown = null;
+  yDown = null;
+}
 // Icons func -----------
 initIcons();
 
