@@ -54,13 +54,11 @@ if (sliders) {
 }
 
 // links accordion -----------
-const footerLinks = document.querySelectorAll(
-  "p.footerLinks , p.menuLink , p.prodAccordion"
-);
+const footerLinks = document.querySelectorAll("p.footerLinks , p.menuLink");
 
-if (footerLinks) {
+function acrdFunc(titles) {
   let curr;
-  footerLinks.forEach((p, i) => {
+  titles.forEach((p, i) => {
     const minus = p.querySelector("svg > path:last-of-type");
     const LinkList = p.nextElementSibling;
 
@@ -69,7 +67,7 @@ if (footerLinks) {
         minus.classList.toggle("hidden");
         LinkList.classList.toggle("hidden");
       } else {
-        footerLinks.forEach((p) => {
+        titles.forEach((p) => {
           p.querySelector("svg > path:last-of-type").classList.remove("hidden");
           p.nextElementSibling.classList.add("hidden");
         });
@@ -81,12 +79,42 @@ if (footerLinks) {
     });
   });
 }
+footerLinks && acrdFunc(footerLinks);
 // Accordion with imgs -----------
 const acoordionTitles = document.querySelectorAll(".accordion-titles");
 
 if (acoordionTitles) {
   acoordionTitles.forEach((titlesBlock) => {
     const singleTitle = titlesBlock.querySelectorAll("p.prodAccordion");
+    let curr;
+    singleTitle.forEach((p, i) => {
+      p.addEventListener("click", () => {
+        const minus = p.querySelector("svg > path:last-of-type");
+        const nextBlock = p.nextElementSibling;
+        const nextBlockHeight = p.nextElementSibling.scrollHeight;
+        console.log(nextBlock);
+        if (curr === i) {
+          minus.classList.toggle("hidden");
+          if (minus.classList.contains("hidden")) {
+            nextBlock.style.maxHeight = `${nextBlockHeight}px`;
+          } else {
+            nextBlock.style.maxHeight = "0px";
+          }
+          // nextBlock.classList.toggle("hidden");
+        } else {
+          singleTitle.forEach((p) => {
+            p.querySelector("svg > path:last-of-type").classList.remove(
+              "hidden"
+            );
+            p.nextElementSibling.style.maxHeight = "0px";
+          });
+
+          minus.classList.toggle("hidden");
+          nextBlock.style.maxHeight = `${nextBlockHeight}px`;
+        }
+        curr = i;
+      });
+    });
     const acoordionImgs =
       titlesBlock.nextElementSibling.querySelectorAll("img");
     singleTitle.forEach((title) => {
