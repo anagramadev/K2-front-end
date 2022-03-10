@@ -217,19 +217,24 @@ if (tabBtns) {
 }
 
 // Embaded video ---------------
-const playBtn = document.querySelectorAll(".vid-play");
+const playBtn = document.querySelectorAll(".vid-play, .list-vid");
+
 const vidContainer = document.querySelector(".vid-container");
 const vidPlayer = document.querySelector(".vid-player");
 const VidSrc = vidContainer.querySelector("iframe");
 const VidClose = vidContainer.querySelector("button");
+
+function vidOpenFunc(prm) {
+  vidContainer.classList.toggle("opacity-0");
+  vidContainer.classList.toggle("invisible");
+  vidPlayer.classList.toggle("left-full");
+  vidPlayer.classList.toggle("left-0");
+  body.classList.add("overflow-hidden");
+  VidSrc.setAttribute("src", prm.dataset.vid);
+}
 playBtn.forEach((play) => {
   play.addEventListener("click", () => {
-    vidContainer.classList.toggle("opacity-0");
-    vidContainer.classList.toggle("invisible");
-    vidPlayer.classList.toggle("left-full");
-    vidPlayer.classList.toggle("left-0");
-    body.classList.add("overflow-hidden");
-    VidSrc.setAttribute("src", play.dataset.vid);
+    vidOpenFunc(play);
   });
 });
 
