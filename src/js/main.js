@@ -179,13 +179,20 @@ if (expandBtn) {
 const stickyNavLinks = document.querySelectorAll(".sticky-nav > a");
 
 if (stickyNavLinks) {
+  let alterColor;
+  if (body.classList.contains("bg-cream")) {
+    console.log(body.classList);
+    alterColor = "bg-white";
+  }
+  const defColor = alterColor || "bg-cream";
+
   stickyNavLinks.forEach((a) => {
     a.addEventListener("click", () => {
       stickyNavLinks.forEach((a) => {
         a.firstElementChild.classList.remove("bg-red");
-        a.firstElementChild.classList.add("bg-cream");
+        a.firstElementChild.classList.add(defColor);
       });
-      a.firstElementChild.classList.remove("bg-cream");
+      a.firstElementChild.classList.remove(defColor);
       a.firstElementChild.classList.add("bg-red");
     });
   });
