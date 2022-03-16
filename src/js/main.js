@@ -54,7 +54,9 @@ if (sliders) {
 }
 
 // links accordion -----------
-const footerLinks = document.querySelectorAll("p.footerLinks , p.menuLink");
+const footerLinks = document.querySelectorAll(
+  "p.footerLinks , p.menuLink , h4.vidTitle"
+);
 
 function acrdFunc(titles) {
   let curr;
@@ -224,37 +226,46 @@ if (tabBtns) {
 }
 
 // Embaded video ---------------
-const playBtn = document.querySelectorAll(".vid-play, .list-vid");
+const eachItem = document.querySelectorAll(".vid-play, .list-popup");
 
-const vidContainer = document.querySelector(".vid-container");
-const vidPlayer = document.querySelector(".vid-player");
-const VidSrc = vidContainer.querySelector("iframe");
-const VidClose = vidContainer.querySelector("button");
+const modalContainer = document.querySelector(".modal-container");
+const modalPlayer = document.querySelector(".modal-wrapper");
+const embededSrc = modalContainer.querySelector(".modal-embeded > iframe");
+const modalClose = modalContainer.querySelector("button.close-btn");
 
-function vidOpenFunc(prm) {
-  vidContainer.classList.toggle("opacity-0");
-  vidContainer.classList.toggle("invisible");
-  vidPlayer.classList.toggle("left-full");
-  vidPlayer.classList.toggle("left-0");
-  body.classList.add("overflow-hidden");
-  VidSrc.setAttribute("src", prm.dataset.vid);
+function vidOpenFunc() {
+  modalContainer.classList.toggle("opacity-0");
+  modalContainer.classList.toggle("invisible");
+  modalPlayer.classList.toggle("left-full");
+  modalPlayer.classList.toggle("left-0");
+  body.classList.toggle("overflow-hidden");
 }
-playBtn.forEach((play) => {
-  play.addEventListener("click", () => {
-    vidOpenFunc(play);
+if (modalContainer) {
+  eachItem.forEach((item) => {
+    item.addEventListener("click", () => {
+      vidOpenFunc();
+      embededSrc && embededSrc.setAttribute("src", item.dataset.vid);
+    });
   });
-});
 
-vidContainer.addEventListener("click", (e) => {
-  if (e.target === vidContainer || e.target === VidClose) {
-    vidPlayer.classList.toggle("left-full");
-    vidPlayer.classList.toggle("left-0");
-    vidContainer.classList.toggle("opacity-0");
-    vidContainer.classList.toggle("invisible");
-    body.classList.remove("overflow-hidden");
-    VidSrc.setAttribute("src", "");
-  }
-});
+  modalContainer.addEventListener("click", (e) => {
+    if (e.target === modalContainer || e.target === modalClose) {
+      vidOpenFunc();
+      embededSrc && embededSrc.setAttribute("src", "");
+    }
+  });
+
+  // For post ID view
+  const listItem = document.querySelectorAll(".list-popup");
+
+  listItem.forEach((item) => {
+    item.addEventListener("click", () => {
+      document.querySelector(
+        ".postid-no"
+      ).innerHTML = `<h4>List ID no - ${item.dataset.postid}</h4>`;
+    });
+  });
+}
 // Banner slider ---------------
 const carousel = document.querySelector(".carousel");
 const slider = document.querySelector(".banner-slider");

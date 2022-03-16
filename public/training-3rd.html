@@ -473,6 +473,7 @@
           />
         </div>
       </section>
+      <!-- Sticky nav -->
       <section class="sticky top-0 mt-10 lg:mt-20 -mx-4 bg-white lg:-mx-8 z-10">
         <div class="overflow-x-scroll no-scrollbar px-4 lg:px-8 py-4">
           <div class="flex w-max lg:w-auto sticky-nav">
@@ -500,6 +501,7 @@
           <div class="border-b border-silverGrey"></div>
         </div>
       </section>
+      <!-- Section bronze -->
       <section id="bronze" class="pt-28 lg:pt-36">
         <div class="flex items-center justify-between">
           <h3 class="flex items-center">
@@ -540,8 +542,8 @@
         <div class="mt-10">
           <ul>
             <li
-              class="py-5 border-y border-silverGrey cursor-pointer list-vid"
-              data-vid="https://www.youtube.com/embed/eermo-glzRE"
+              class="py-5 border-y border-silverGrey cursor-pointer list-popup"
+              data-postid="1"
             >
               <div class="w-full flex items-center justify-between">
                 <div class="flex items-center basis-10/12 lg:basis-8/12">
@@ -594,6 +596,7 @@
           </div>
         </div>
       </section>
+      <!-- Section silver -->
       <section id="silver" class="pt-28 lg:pt-36">
         <div class="flex items-center justify-between">
           <h3 class="flex items-center">
@@ -634,8 +637,8 @@
         <div class="mt-10">
           <ul>
             <li
-              class="py-5 border-y border-silverGrey cursor-pointer list-vid"
-              data-vid="https://www.youtube.com/embed/eermo-glzRE"
+              class="py-5 border-y border-silverGrey cursor-pointer list-popup"
+              data-postid="2"
             >
               <div class="w-full flex items-center justify-between">
                 <div class="flex items-center basis-10/12 lg:basis-8/12">
@@ -664,8 +667,8 @@
               </div>
             </li>
             <li
-              class="py-5 border-b border-silverGrey cursor-pointer list-vid"
-              data-vid="https://www.youtube.com/embed/eermo-glzRE"
+              class="py-5 border-b border-silverGrey cursor-pointer list-popup"
+              data-postid="3"
             >
               <div class="w-full flex items-center justify-between">
                 <div class="flex items-center basis-10/12 lg:basis-8/12">
@@ -696,8 +699,8 @@
               </div>
             </li>
             <li
-              class="py-5 border-b border-silverGrey cursor-pointer list-vid"
-              data-vid="https://www.youtube.com/embed/eermo-glzRE"
+              class="py-5 border-b border-silverGrey cursor-pointer list-popup"
+              data-postid="4"
             >
               <div class="w-full flex items-center justify-between">
                 <div class="flex items-center basis-10/12 lg:basis-8/12">
@@ -726,8 +729,8 @@
               </div>
             </li>
             <li
-              class="py-5 border-b border-silverGrey cursor-pointer list-vid"
-              data-vid="https://www.youtube.com/embed/eermo-glzRE"
+              class="py-5 border-b border-silverGrey cursor-pointer list-popup"
+              data-postid="5"
             >
               <div class="w-full flex items-center justify-between">
                 <div class="flex items-center basis-10/12 lg:basis-8/12">
@@ -782,6 +785,7 @@
           </div>
         </div>
       </section>
+      <!-- Section Gold -->
       <section id="gold" class="pt-28 lg:pt-36">
         <div class="flex items-center justify-between">
           <h3 class="flex items-center">
@@ -824,8 +828,8 @@
         <div class="mt-10">
           <ul>
             <li
-              class="py-5 border-y border-silverGrey cursor-pointer list-vid"
-              data-vid="https://www.youtube.com/embed/eermo-glzRE"
+              class="py-5 border-y border-silverGrey cursor-pointer list-popup"
+              data-postid="6"
             >
               <div class="w-full flex items-center justify-between">
                 <div class="flex items-center basis-10/12 lg:basis-8/12">
@@ -856,8 +860,8 @@
               </div>
             </li>
             <li
-              class="py-5 border-b border-silverGrey cursor-pointer list-vid"
-              data-vid="https://www.youtube.com/embed/eermo-glzRE"
+              class="py-5 border-b border-silverGrey cursor-pointer list-popup"
+              data-postid="7"
             >
               <div class="w-full flex items-center justify-between">
                 <div class="flex items-center basis-10/12 lg:basis-8/12">
@@ -912,22 +916,333 @@
           </div>
         </div>
       </section>
+      <!-- pop up -->
       <div
-        class="fixed flex justify-end left-0 top-0 w-full h-full bg-black/30 z-10 overflow-hidden vid-container opacity-0 invisible"
+        class="fixed flex justify-end left-0 top-0 w-full h-full bg-black/30 z-10 overflow-hidden modal-container opacity-0 invisible"
       >
         <div
-          class="w-full xl:w-10/12 bg-white pt-4 px-4 lg:px-8 relative transition-all duration-300 vid-player left-full"
+          class="w-full xl:w-6/12 bg-white px-4 lg:px-8 relative transition-all duration-300 modal-wrapper overflow-y-scroll no-scrollbar left-full"
         >
-          <button class="mb-4">Close</button>
-          <iframe
-            class="aspect-video h-auto"
-            width="100%"
-            src=""
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen=""
-          ></iframe>
+          <div class="bg-white py-4 lg:py-8 mb-4 sticky z-10 top-0">
+            <button class="close-btn">Close</button>
+          </div>
+          <div class="postid-no py-4 mb-4"></div>
+          <!-- only title + video combo -->
+          <div class="hidden">
+            <h4 class="text-md font-medium">Ensure equipotential bonding</h4>
+            <div class="mt-8">
+              <iframe
+                class="aspect-video h-auto"
+                width="100%"
+                src="https://www.youtube.com/embed/eermo-glzRE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen=""
+              ></iframe>
+            </div>
+          </div>
+          <!-- only title + video accordion combo -->
+          <div class="hidden">
+            <div>
+              <h4
+                class="mb-4 lg:mb-2 text-base lg:text-md font-medium flex items-center cursor-pointer vidTitle"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="mr-4"
+                >
+                  <circle cx="12" cy="12" r="11.5" stroke="#FD0000" />
+                  <path d="M7 12H17" stroke="#FD0000" />
+                  <path d="M12 17L12 7" stroke="#FD0000" class="hidden" />
+                </svg>
+                Ensure equipotential bonding
+              </h4>
+              <div class="mt-8">
+                <iframe
+                  class="aspect-video h-auto"
+                  width="100%"
+                  src="https://www.youtube.com/embed/eermo-glzRE"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen=""
+                ></iframe>
+              </div>
+            </div>
+            <div>
+              <h4
+                class="mb-4 lg:mb-2 text-base lg:text-md font-medium flex items-center cursor-pointer vidTitle"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="mr-4"
+                >
+                  <circle cx="12" cy="12" r="11.5" stroke="#FD0000" />
+                  <path d="M7 12H17" stroke="#FD0000" />
+                  <path d="M12 17L12 7" stroke="#FD0000" />
+                </svg>
+                Ensure lightning protection
+              </h4>
+              <div class="mt-8 hidden">
+                <iframe
+                  class="aspect-video h-auto"
+                  width="100%"
+                  src="https://www.youtube.com/embed/eermo-glzRE"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen=""
+                ></iframe>
+              </div>
+            </div>
+            <div>
+              <h4
+                class="mb-4 lg:mb-2 text-base lg:text-md font-medium flex items-center cursor-pointer vidTitle"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="mr-4"
+                >
+                  <circle cx="12" cy="12" r="11.5" stroke="#FD0000" />
+                  <path d="M7 12H17" stroke="#FD0000" />
+                  <path d="M12 17L12 7" stroke="#FD0000" />
+                </svg>
+                Safety regulations and standards
+              </h4>
+              <div class="mt-8 hidden">
+                <iframe
+                  class="aspect-video h-auto"
+                  width="100%"
+                  src="https://www.youtube.com/embed/eermo-glzRE"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen=""
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <!-- only title + paragraph combo -->
+          <div class="hidden">
+            <h4 class="text-base lg:text-md font-medium">
+              Ensure equipotential bonding
+            </h4>
+            <div class="mt-8">
+              <div class="mt-8 w-full lg:w-8/12">
+                <p class="mb-8">
+                  Ground mounted systems cannot be planned in K2 Base. However,
+                  we have systems for ground-mounting in our range. All data and
+                  information can be found here. If the A/P rack systems are not
+                  sufficient for your purposes, our technical sales department
+                  will advise you on the N rack system. Write to us at
+                  service@k2-systems.de.
+                </p>
+                <p>
+                  If the input fields are grayed out and you can no longer edit
+                  them, it means that the status of the project has been marked
+                  as "Planned" or "Realized". If you still want to edit the
+                  project, do the following.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- only title + img + paragraph combo -->
+          <div class="hidden">
+            <h4 class="text-base lg:text-md font-medium">
+              Ensure equipotential bonding
+            </h4>
+            <div class="mt-8">
+              <img src="img/bonding.jpg" alt="Ensure equipotential bonding" />
+              <div class="mt-8 w-full lg:w-8/12">
+                <p class="mb-8">
+                  Ground mounted systems cannot be planned in K2 Base. However,
+                  we have systems for ground-mounting in our range. All data and
+                  information can be found here. If the A/P rack systems are not
+                  sufficient for your purposes, our technical sales department
+                  will advise you on the N rack system. Write to us at
+                  service@k2-systems.de.
+                </p>
+                <p>
+                  If the input fields are grayed out and you can no longer edit
+                  them, it means that the status of the project has been marked
+                  as "Planned" or "Realized". If you still want to edit the
+                  project, do the following.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- combo all -->
+          <div class="">
+            <div>
+              <h4
+                class="mb-4 lg:mb-2 text-base lg:text-md font-medium flex items-center cursor-pointer vidTitle"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="mr-4"
+                >
+                  <circle cx="12" cy="12" r="11.5" stroke="#FD0000" />
+                  <path d="M7 12H17" stroke="#FD0000" />
+                  <path d="M12 17L12 7" stroke="#FD0000" class="hidden" />
+                </svg>
+                Ensure equipotential bonding
+              </h4>
+              <div class="mt-8 pb-8">
+                <iframe
+                  class="aspect-video h-auto"
+                  width="100%"
+                  src="https://www.youtube.com/embed/eermo-glzRE"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen=""
+                ></iframe>
+                <div class="mt-8">
+                  <img
+                    src="img/bonding.jpg"
+                    alt="Ensure equipotential bonding"
+                  />
+                  <div class="mt-8 w-full lg:w-8/12">
+                    <p class="mb-8">
+                      Ground mounted systems cannot be planned in K2 Base.
+                      However, we have systems for ground-mounting in our range.
+                      All data and information can be found here. If the A/P
+                      rack systems are not sufficient for your purposes, our
+                      technical sales department will advise you on the N rack
+                      system. Write to us at service@k2-systems.de.
+                    </p>
+                    <p>
+                      If the input fields are grayed out and you can no longer
+                      edit them, it means that the status of the project has
+                      been marked as "Planned" or "Realized". If you still want
+                      to edit the project, do the following.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h4
+                class="mb-4 lg:mb-2 text-base lg:text-md font-medium flex items-center cursor-pointer vidTitle"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="mr-4"
+                >
+                  <circle cx="12" cy="12" r="11.5" stroke="#FD0000" />
+                  <path d="M7 12H17" stroke="#FD0000" />
+                  <path d="M12 17L12 7" stroke="#FD0000" />
+                </svg>
+                Ensure lightning protection
+              </h4>
+              <div class="mt-8 pb-8 hidden">
+                <iframe
+                  class="aspect-video h-auto"
+                  width="100%"
+                  src="https://www.youtube.com/embed/eermo-glzRE"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen=""
+                ></iframe>
+                <div class="mt-8">
+                  <img
+                    src="img/bonding.jpg"
+                    alt="Ensure equipotential bonding"
+                  />
+                  <div class="mt-8 w-full lg:w-8/12">
+                    <p class="mb-8">
+                      Ground mounted systems cannot be planned in K2 Base.
+                      However, we have systems for ground-mounting in our range.
+                      All data and information can be found here. If the A/P
+                      rack systems are not sufficient for your purposes, our
+                      technical sales department will advise you on the N rack
+                      system. Write to us at service@k2-systems.de.
+                    </p>
+                    <p>
+                      If the input fields are grayed out and you can no longer
+                      edit them, it means that the status of the project has
+                      been marked as "Planned" or "Realized". If you still want
+                      to edit the project, do the following.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h4
+                class="mb-4 lg:mb-2 text-base lg:text-md font-medium flex items-center cursor-pointer vidTitle"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="mr-4"
+                >
+                  <circle cx="12" cy="12" r="11.5" stroke="#FD0000" />
+                  <path d="M7 12H17" stroke="#FD0000" />
+                  <path d="M12 17L12 7" stroke="#FD0000" />
+                </svg>
+                Safety regulations and standards
+              </h4>
+              <div class="mt-8 pb-8 hidden">
+                <iframe
+                  class="aspect-video h-auto"
+                  width="100%"
+                  src="https://www.youtube.com/embed/eermo-glzRE"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen=""
+                ></iframe>
+                <div class="mt-8">
+                  <img
+                    src="img/bonding.jpg"
+                    alt="Ensure equipotential bonding"
+                  />
+                  <div class="mt-8 w-full lg:w-8/12">
+                    <p class="mb-8">
+                      Ground mounted systems cannot be planned in K2 Base.
+                      However, we have systems for ground-mounting in our range.
+                      All data and information can be found here. If the A/P
+                      rack systems are not sufficient for your purposes, our
+                      technical sales department will advise you on the N rack
+                      system. Write to us at service@k2-systems.de.
+                    </p>
+                    <p>
+                      If the input fields are grayed out and you can no longer
+                      edit them, it means that the status of the project has
+                      been marked as "Planned" or "Realized". If you still want
+                      to edit the project, do the following.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>

@@ -1146,21 +1146,23 @@
           </div>
         </div>
         <div
-          class="fixed flex justify-end left-0 opacity-0 invisible top-0 w-full h-full bg-black/30 z-10 overflow-hidden vid-container"
+          class="fixed flex justify-end left-0 opacity-0 invisible top-0 w-full h-full bg-black/30 z-10 overflow-hidden modal-container"
         >
           <div
-            class="w-full xl:w-10/12 bg-white pt-4 px-8 relative left-full transition-all duration-300 vid-player"
+            class="w-full xl:w-10/12 bg-white pt-4 px-8 relative left-full transition-all duration-300 modal-wrapper"
           >
-            <button class="mb-4">Close</button>
-            <iframe
-              class="aspect-video h-auto"
-              width="100%"
-              src="https://www.youtube.com/embed/w4lDgeFTYWI"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+            <button class="mb-4 close-btn">Close</button>
+            <div class="modal-embeded">
+              <iframe
+                class="aspect-video h-auto"
+                width="100%"
+                src="https://www.youtube.com/embed/w4lDgeFTYWI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
