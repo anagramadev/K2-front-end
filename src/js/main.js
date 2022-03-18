@@ -230,17 +230,17 @@ const eachItem = document.querySelectorAll(".vid-play, .list-popup");
 
 const modalContainer = document.querySelector(".modal-container");
 const modalPlayer = document.querySelector(".modal-wrapper");
-const embededSrc = modalContainer.querySelector(".modal-embeded > iframe");
-const modalClose = modalContainer.querySelector("button.close-btn");
-
-function vidOpenFunc() {
-  modalContainer.classList.toggle("opacity-0");
-  modalContainer.classList.toggle("invisible");
-  modalPlayer.classList.toggle("left-full");
-  modalPlayer.classList.toggle("left-0");
-  body.classList.toggle("overflow-hidden");
-}
 if (modalContainer) {
+  const embededSrc = modalContainer.querySelector(".modal-embeded > iframe");
+  const modalClose = modalContainer.querySelector("button.close-btn");
+
+  function vidOpenFunc() {
+    modalContainer.classList.toggle("opacity-0");
+    modalContainer.classList.toggle("invisible");
+    modalPlayer.classList.toggle("left-full");
+    modalPlayer.classList.toggle("left-0");
+    body.classList.toggle("overflow-hidden");
+  }
   eachItem.forEach((item) => {
     item.addEventListener("click", () => {
       vidOpenFunc();
@@ -278,91 +278,97 @@ const slideSumCount = document.querySelector(
 );
 const next = document.querySelector(".b-slide-right");
 const prev = document.querySelector(".b-slide-left");
-let direction;
 
-slides.forEach((slide) => {
-  slide.style.flexBasis = `${100 / slides.length}%`;
-});
-slideSumCount.innerHTML = slides.length;
+if (carousel) {
+  let direction;
 
-next.addEventListener("click", function () {
-  direction = -1;
-  carousel.style.justifyContent = "flex-start";
-  slider.style.transform = `translate(-${100 / slides.length}%)`;
-});
+  slides.forEach((slide) => {
+    slide.style.flexBasis = `${100 / slides.length}%`;
+  });
+  if (slideSumCount) slideSumCount.innerHTML = slides.length;
 
-prev.addEventListener("click", function () {
-  direction = 1;
-  if (direction === -1) {
+  next.addEventListener("click", function () {
+    direction = -1;
+    carousel.style.justifyContent = "flex-start";
+    slider.style.transform = `translate(-${100 / slides.length}%)`;
+  });
+
+  prev.addEventListener("click", function () {
     direction = 1;
-    slider.appendChild(slider.firstElementChild);
-  }
-  carousel.style.justifyContent = "flex-end";
-  slider.style.transform = `translate(${100 / slides.length}%)`;
-});
-
-slider.addEventListener(
-  "transitionend",
-  function () {
-    if (direction === 1) {
-      slider.prepend(slider.lastElementChild);
-      slideSingleCount.innerHTML = slider.lastElementChild.dataset.slide;
-    } else {
-      slider.appendChild(slider.firstElementChild);
-      slideSingleCount.innerHTML = slider.firstElementChild.dataset.slide;
-    }
-
-    slider.style.transition = "none";
-    slider.style.transform = "translate(0)";
-    setTimeout(() => {
-      slider.style.transition = "all 0.5s";
-    });
-  },
-  false
-);
-slider.addEventListener("touchstart", handleTouchStart, false);
-slider.addEventListener("touchmove", handleTouchMove, false);
-
-let xDown = null;
-let yDown = null;
-
-const getTouches = (evt) => evt.touches;
-
-function handleTouchStart(evt) {
-  const firstTouch = getTouches(evt)[0];
-  xDown = firstTouch.clientX;
-  yDown = firstTouch.clientY;
-}
-
-function handleTouchMove(evt) {
-  if (!xDown || !yDown) {
-    return;
-  }
-
-  let xUp = evt.touches[0].clientX;
-  let yUp = evt.touches[0].clientY;
-
-  let xDiff = xDown - xUp;
-  let yDiff = yDown - yUp;
-
-  if (Math.abs(xDiff) > Math.abs(yDiff)) {
-    if (xDiff > 0) {
-      direction = -1;
-      carousel.style.justifyContent = "flex-start";
-      slider.style.transform = `translate(-${100 / slides.length}%)`;
-    } else {
+    if (direction === -1) {
       direction = 1;
-      if (direction === -1) {
-        direction = 1;
-        slider.appendChild(slider.firstElementChild);
-      }
-      carousel.style.justifyContent = "flex-end";
-      slider.style.transform = `translate(${100 / slides.length}%)`;
+      slider.appendChild(slider.firstElementChild);
     }
+    carousel.style.justifyContent = "flex-end";
+    slider.style.transform = `translate(${100 / slides.length}%)`;
+  });
+
+  slider.addEventListener(
+    "transitionend",
+    function () {
+      if (direction === 1) {
+        slider.prepend(slider.lastElementChild);
+        if (slideSingleCount)
+          slideSingleCount.innerHTML = slider.lastElementChild.dataset.slide;
+      } else {
+        slider.appendChild(slider.firstElementChild);
+        if (slideSingleCount)
+          slideSingleCount.innerHTML = slider.firstElementChild.dataset.slide;
+      }
+
+      slider.style.transition = "none";
+      slider.style.transform = "translate(0)";
+      setTimeout(() => {
+        slider.style.transition = "all 0.5s";
+      });
+    },
+    false
+  );
+  slider.addEventListener("touchstart", handleTouchStart, false);
+  slider.addEventListener("touchmove", handleTouchMove, false);
+
+  let xDown = null;
+  let yDown = null;
+
+  const getTouches = (evt) => evt.touches;
+
+  function handleTouchStart(evt) {
+    const firstTouch = getTouches(evt)[0];
+    xDown = firstTouch.clientX;
+    yDown = firstTouch.clientY;
   }
-  xDown = null;
-  yDown = null;
+
+  function handleTouchMove(evt) {
+    if (!xDown || !yDown) {
+      return;
+    }
+
+    let xUp = evt.touches[0].clientX;
+    let yUp = evt.touches[0].clientY;
+
+    let xDiff = xDown - xUp;
+    let yDiff = yDown - yUp;
+
+    if (Math.abs(xDiff) > Math.abs(yDiff)) {
+      if (xDiff > 0) {
+        direction = -1;
+        carousel.style.justifyContent = "flex-start";
+        slider.style.transform = `translate(-${100 / slides.length}%)`;
+      } else {
+        direction = 1;
+        if (direction === -1) {
+          direction = 1;
+          slider.appendChild(slider.firstElementChild);
+        }
+        carousel.style.justifyContent = "flex-end";
+        slider.style.transform = `translate(${100 / slides.length}%)`;
+      }
+    }
+    xDown = null;
+    yDown = null;
+  }
 }
+
 // Icons func -----------
 initIcons();
 
