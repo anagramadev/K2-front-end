@@ -232,6 +232,7 @@ const modalContainer = document.querySelector(".modal-container");
 const modalPlayer = document.querySelector(".modal-wrapper");
 if (modalContainer) {
   const embededSrc = modalContainer.querySelector(".modal-embeded > iframe");
+  const contentBoxs = modalContainer.querySelectorAll(".content-box");
   const modalClose = modalContainer.querySelector("button.close-btn");
 
   function vidOpenFunc() {
@@ -245,6 +246,15 @@ if (modalContainer) {
     item.addEventListener("click", () => {
       vidOpenFunc();
       embededSrc && embededSrc.setAttribute("src", item.dataset.vid);
+      if (contentBoxs) {
+        const itemId = item.dataset.postid;
+        contentBoxs.forEach((box) => {
+          box.classList.add("hidden");
+          if (box.dataset.cobid === itemId) {
+            box.classList.remove("hidden");
+          }
+        });
+      }
     });
   });
 
@@ -280,27 +290,27 @@ const next = document.querySelector(".b-slide-right");
 const prev = document.querySelector(".b-slide-left");
 
 if (carousel) {
-  let direction;
+  let direction = 1;
 
   slides.forEach((slide) => {
-    slide.style.flexBasis = `${100 / slides.length}%`;
+    slide.style.flexBasis = `${100}%`;
   });
   if (slideSumCount) slideSumCount.innerHTML = slides.length;
 
   next.addEventListener("click", function () {
     direction = -1;
-    carousel.style.justifyContent = "flex-start";
-    slider.style.transform = `translate(-${100 / slides.length}%)`;
+    slider.style.justifyContent = "flex-start";
+    slider.style.transform = `translate(-${100}%)`;
   });
 
   prev.addEventListener("click", function () {
-    direction = 1;
+    // direction = 1;
     if (direction === -1) {
       direction = 1;
       slider.appendChild(slider.firstElementChild);
     }
-    carousel.style.justifyContent = "flex-end";
-    slider.style.transform = `translate(${100 / slides.length}%)`;
+    slider.style.justifyContent = "flex-end";
+    slider.style.transform = `translate(${100}%)`;
   });
 
   slider.addEventListener(
@@ -352,16 +362,16 @@ if (carousel) {
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
       if (xDiff > 0) {
         direction = -1;
-        carousel.style.justifyContent = "flex-start";
-        slider.style.transform = `translate(-${100 / slides.length}%)`;
+        slider.style.justifyContent = "flex-start";
+        slider.style.transform = `translate(-${100}%)`;
       } else {
         direction = 1;
         if (direction === -1) {
           direction = 1;
           slider.appendChild(slider.firstElementChild);
         }
-        carousel.style.justifyContent = "flex-end";
-        slider.style.transform = `translate(${100 / slides.length}%)`;
+        slider.style.justifyContent = "flex-end";
+        slider.style.transform = `translate(${100}%)`;
       }
     }
     xDown = null;
