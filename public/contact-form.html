@@ -456,7 +456,10 @@
       <section class="flex flex-col lg:flex-row">
         <div class="flex-1 flex flex-col justify-center">
           <div class="w-full lg:w-5/6 2xl:w-4/6">
-            <h2>Kontakt-formular</h2>
+            <h2>
+              Kontakt- <br />
+              formular
+            </h2>
             <p class="mt-8">
               Sie haben Fragen oder Anregungen? Gern helfen wir Ihnen weiter.
               Bitte wählen Sie unten das Thema, zu dem wir Sie unterstützen
@@ -473,35 +476,37 @@
         </div>
       </section>
       <section class="my-10 lg:my-28 border-b border-silverGrey"></section>
-      <section class="flex">
+      <section class="flex flex-col lg:flex-row">
         <div class="flex-1">
-          <p class="w-full lg:w-6/12">
+          <p class="w-full lg:w-8/12 2xl:w-6/12">
             * Pflichtfelder bitte ausfüllen Die hier angegebenen Daten werden
             gemäß unserer
             <span class="text-red">Datenschutzbestimmungen verarbeitet</span>.
           </p>
         </div>
-        <div class="flex-1">
+        <div class="flex-1 mt-12 lg:mt-0">
           <form action="">
             <input
               type="text"
               placeholder="Firmenname *"
-              class="input input-md mb-8"
+              class="input input-sm lg:input-md mb-4 lg:mb-8"
             />
             <input
               type="text"
               placeholder="Firmenname *"
-              class="input input-md mb-8"
+              class="input input-sm lg:input-md mb-4 lg:mb-8"
             />
             <input
               type="text"
               placeholder="Firmierung"
-              class="input input-md mb-8"
+              class="input input-sm lg:input-md mb-4 lg:mb-8"
             />
-            <div class="flex gap-x-8 mb-8">
+            <div
+              class="flex flex-col lg:flex-row gap-x-0 lg:gap-x-8 mb-4 lg:mb-8"
+            >
               <div class="basis-4/12 relative">
                 <select
-                  class="appearance-none cursor-pointer input input-select-md"
+                  class="appearance-none cursor-pointer input input-select-sm lg:input-select-md mb-4 lg:mb-0"
                 >
                   <option selected="">Anrede *</option>
                   <option value="1">One</option>
@@ -511,7 +516,7 @@
                 <svg
                   width="9"
                   height="5"
-                  class="absolute top-7 right-4"
+                  class="absolute top-5 lg:top-7 right-4"
                   viewBox="0 0 9 5"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -523,55 +528,61 @@
                 <input
                   type="text"
                   placeholder="Name, Vorname *"
-                  class="input input-md"
+                  class="input input-sm lg:input-md"
                 />
               </div>
             </div>
             <input
               type="text"
               placeholder="Abteilung"
-              class="input input-md mb-8"
+              class="input input-sm lg:input-md mb-4 lg:mb-8"
             />
-            <div class="flex gap-x-8 mb-8">
+            <div
+              class="flex flex-col lg:flex-row gap-x-0 lg:gap-x-8 mb-4 lg:mb-8"
+            >
               <div class="basis-8/12">
                 <input
                   type="text"
                   placeholder="Straße *"
-                  class="input input-md"
+                  class="input input-sm lg:input-md mb-4 lg:mb-4"
                 />
               </div>
               <div class="basis-4/12">
-                <input type="text" placeholder="PLZ *" class="input input-md" />
+                <input
+                  type="text"
+                  placeholder="PLZ *"
+                  class="input input-sm lg:input-md"
+                />
               </div>
             </div>
             <input
               type="text"
               placeholder="Ort *"
-              class="input input-md mb-8"
+              class="input input-sm lg:input-md mb-4 lg:mb-8"
             />
             <input
               type="text"
               placeholder="Land *"
-              class="input input-md mb-8"
+              class="input input-sm lg:input-md mb-4 lg:mb-8"
             />
             <input
               type="text"
               placeholder="Telefon"
-              class="input input-md mb-8"
+              class="input input-sm lg:input-md mb-4 lg:mb-8"
             />
             <input
               type="email"
               placeholder="E-mail *"
-              class="input input-md mb-8"
+              class="input input-sm lg:input-md mb-4 lg:mb-8"
             />
             <input
               type="text"
               placeholder="Betreff *"
-              class="input input-md mb-8"
+              class="input input-sm lg:input-md mb-4 lg:mb-8"
             />
             <textarea
               placeholder="Ihre Nachricht *"
-              class="!h-80 input input-md mb-8"
+              class="!h-80 input input-sm lg:input-md mb-4 lg:mb-8"
             ></textarea>
             <button type="submit" class="bttn bttn-red">
               Send message
@@ -581,11 +592,11 @@
         </div>
       </section>
       <section class="pt-28 lg:pt-56">
-        <h3 class="mb-14">Mehr</h3>
+        <h3 class="mb-9 lg:mb-14">Mehr</h3>
         <div
           class="grid grid-cols-1 lg:grid-cols-2 gap-x-0 lg:gap-x-8 gap-y-4 lg:gap-y-8"
         >
-          <div>
+          <div class="mb-20 lg:mb-0">
             <img
               src="./img/contact-grid4.jpg"
               alt="Ansprechpartnerin (global):"
