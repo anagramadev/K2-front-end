@@ -137,28 +137,29 @@ if (acoordionTitles) {
 // Roof accordion ------------
 const accordionBtn = document.querySelectorAll(".acc-btn");
 const expandBtn = document.querySelector(".exp-btn");
-if (expandBtn) {
-  expandBtn.addEventListener("click", () => {
-    expandBtn.classList.toggle("open");
-    const btnText = expandBtn.querySelector("span");
-    const btnArw = expandBtn.querySelector("svg");
-    if (expandBtn.classList.contains("open")) {
-      btnText.innerHTML = btnText.dataset.closetxt;
-      btnArw.style.transform = "rotate(180deg)";
-      accordionBtn.forEach((blk) => {
-        blk.nextElementSibling.style.maxHeight = `${blk.nextElementSibling.scrollHeight}px`;
-        blk.querySelector(".btn-svg").style.transform = "rotate(135deg)";
-      });
-    } else {
-      btnText.innerHTML = btnText.dataset.opentxt;
+if (expandBtn || accordionBtn) {
+  expandBtn &&
+    expandBtn.addEventListener("click", () => {
+      expandBtn.classList.toggle("open");
+      const btnText = expandBtn.querySelector("span");
+      const btnArw = expandBtn.querySelector("svg");
+      if (expandBtn.classList.contains("open")) {
+        btnText.innerHTML = btnText.dataset.closetxt;
+        btnArw.style.transform = "rotate(180deg)";
+        accordionBtn.forEach((blk) => {
+          blk.nextElementSibling.style.maxHeight = `${blk.nextElementSibling.scrollHeight}px`;
+          blk.querySelector(".btn-svg").style.transform = "rotate(135deg)";
+        });
+      } else {
+        btnText.innerHTML = btnText.dataset.opentxt;
 
-      btnArw.style.transform = "rotate(0deg)";
-      accordionBtn.forEach((blk) => {
-        blk.nextElementSibling.style.maxHeight = "0px";
-        blk.querySelector(".btn-svg").style.transform = "rotate(0deg)";
-      });
-    }
-  });
+        btnArw.style.transform = "rotate(0deg)";
+        accordionBtn.forEach((blk) => {
+          blk.nextElementSibling.style.maxHeight = "0px";
+          blk.querySelector(".btn-svg").style.transform = "rotate(0deg)";
+        });
+      }
+    });
   accordionBtn.forEach((block, i) => {
     const accordionBlock = block.nextElementSibling;
     const blkHeight = block.nextElementSibling.scrollHeight;
@@ -226,12 +227,16 @@ if (tabBtns) {
 }
 
 // Embaded video ---------------
-const eachItem = document.querySelectorAll(".vid-play, .list-popup");
+const eachItem = document.querySelectorAll(
+  ".vid-play, .list-popup, .testi-popup"
+);
 
 const modalContainer = document.querySelector(".modal-container");
 const modalPlayer = document.querySelector(".modal-wrapper");
 if (modalContainer) {
+  const embeded = modalContainer.querySelector(".modal-embeded");
   const embededSrc = modalContainer.querySelector(".modal-embeded > iframe");
+  const testiContent = modalContainer.querySelector(".testi-content");
   const contentBoxs = modalContainer.querySelectorAll(".content-box");
   const modalClose = modalContainer.querySelector("button.close-btn");
 
@@ -244,8 +249,19 @@ if (modalContainer) {
   }
   eachItem.forEach((item) => {
     item.addEventListener("click", () => {
-      vidOpenFunc();
+      if (testiContent && item.classList.contains("testi-popup")) {
+        modalPlayer.classList.remove("xl:w-10/12");
+        modalPlayer.classList.add("lg:w-4/12");
+        embeded.classList.add("hidden");
+        testiContent.classList.remove("hidden");
+      } else if (testiContent && item.classList.contains("vid-play")) {
+        modalPlayer.classList.remove("lg:w-4/12");
+        modalPlayer.classList.add("xl:w-10/12");
+        embeded.classList.remove("hidden");
+        testiContent.classList.add("hidden");
+      }
       embededSrc && embededSrc.setAttribute("src", item.dataset.vid);
+      vidOpenFunc();
       if (contentBoxs) {
         const itemId = item.dataset.postid;
         contentBoxs.forEach((box) => {
