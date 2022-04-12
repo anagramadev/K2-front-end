@@ -23,7 +23,7 @@
     "webpack-cli": "^4.9.2"
   },
   "dependencies": {
-    "@47nordmedia/k2-systems-ui-library": "^0.5.0",
+    "@47nordmedia/k2-systems-ui-library": "^0.5.5",
     "@tailwindcss/forms": "^0.4.0",
     "postcss-cli": "^9.1.0",
     "smoothscroll-polyfill": "^0.4.4"
