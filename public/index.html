@@ -28,10 +28,10 @@
             >DocuApp</a
           >
           <div class="inline-flex items-center">
-            <a href="#" class="text-darkGrey hover:text-red"
+            <a href="#" class="text-darkGrey hover:text-red search-btn"
               ><span class="icon icon-search-slim-24 w-6 h-6"></span>
             </a>
-            <a href="#" class="text-darkGrey hover:text-red mx-2"
+            <a href="#" class="text-darkGrey hover:text-red mx-2 lang-btn"
               ><span class="icon icon-world-slim-24 w-6 h-6"></span>
             </a>
             <a href="#" class="text-darkGrey hover:text-red">
@@ -391,14 +391,14 @@
                   >Produktkatalog</a
                 >
               </li>
-              <li class="flex items-center mb-2">
+              <li class="flex items-center mb-2 search-btn">
                 <span
                   class="icon icon-search-slim-24 w-6 h-6 text-darkGrey"
                 ></span>
 
                 <a href="#" class="text-xs text-darkGrey ml-3">Search</a>
               </li>
-              <li class="flex items-center mb-2">
+              <li class="flex items-center mb-2 lang-btn">
                 <span
                   class="icon icon-world-slim-24 w-6 h-6 text-darkGrey"
                 ></span>
@@ -452,6 +452,150 @@
         </div>
       </div>
     </header>
+    <!-- Search and language selector modal -->
+    <div
+      class="fixed flex justify-end left-0 top-0 w-full h-full bg-black/20 z-10 overflow-hidden navmodal-container opacity-0 invisible transition-all duration-300"
+    >
+      <div
+        class="w-full xl:w-4/12 bg-white px-4 lg:px-8 relative transition-all duration-300 navmodal-wrapper overflow-y-scroll no-scrollbar left-full"
+      >
+        <div class="bg-white py-4 lg:py-8 mb-4 sticky z-10 top-0">
+          <button class="navclose-btn">Close</button>
+        </div>
+        <p class="text-lg font-medium">K2 systems</p>
+        <p class="text-lg font-medium">Language Select</p>
+        <ul class="mt-14 border-y border-silverGrey py-10">
+          <li class="flex items-center justify-between mb-7">
+            <div class="flex items-center">
+              <div class="w-16 h-7 bg-cream rounded-full text-center mr-4">
+                <span class="block text-xs leading-7">DE</span>
+              </div>
+              <p class="hover:text-red">German</p>
+            </div>
+            <span
+              class="w-7 h-7 rounded-full flex items-center justify-center bg-red invisible"
+            >
+              <img src="img/tick.svg" alt="tick" />
+            </span>
+          </li>
+          <li class="flex items-center justify-between cursor-pointer mb-7">
+            <div class="flex items-center">
+              <div class="w-16 h-7 bg-cream text-center rounded-full mr-4">
+                <span class="block text-xs leading-7">EN</span>
+              </div>
+              <p class="hover:text-red">English</p>
+            </div>
+            <span
+              class="w-7 h-7 rounded-full flex items-center justify-center bg-red"
+            >
+              <img src="img/tick.svg" alt="tick" />
+            </span>
+          </li>
+          <li class="flex items-center justify-between cursor-pointer mb-7">
+            <div class="flex items-center">
+              <div class="w-16 h-7 bg-cream rounded-full text-center mr-4">
+                <span class="block text-xs leading-7">ES</span>
+              </div>
+              <p class="hover:text-red">Spanish</p>
+            </div>
+            <span
+              class="w-7 h-7 rounded-full flex items-center justify-center bg-red invisible"
+            >
+              <img src="img/tick.svg" alt="tick" />
+            </span>
+          </li>
+          <li class="flex items-center justify-between cursor-pointer mb-7">
+            <div class="flex items-center">
+              <div class="w-16 h-7 bg-cream rounded-full text-center mr-4">
+                <span class="block text-xs leading-7">FR</span>
+              </div>
+              <p class="hover:text-red">French</p>
+            </div>
+            <span
+              class="w-7 h-7 rounded-full flex items-center justify-center bg-red invisible"
+            >
+              <img src="img/tick.svg" alt="tick" />
+            </span>
+          </li>
+          <li class="flex items-center justify-between cursor-pointer mb-7">
+            <div class="flex items-center">
+              <div class="w-16 h-7 bg-cream rounded-full text-center mr-4">
+                <span class="block text-xs leading-7">HR</span>
+              </div>
+              <p class="hover:text-red">Hungarian</p>
+            </div>
+            <span
+              class="w-7 h-7 rounded-full flex items-center justify-center bg-red invisible"
+            >
+              <img src="img/tick.svg" alt="tick" />
+            </span>
+          </li>
+          <li class="flex items-center justify-between cursor-pointer mb-7">
+            <div class="flex items-center">
+              <div class="w-16 h-7 bg-cream rounded-full text-center mr-4">
+                <span class="block text-xs leading-7">IT</span>
+              </div>
+              <p class="hover:text-red">Italian</p>
+            </div>
+            <span
+              class="w-7 h-7 rounded-full flex items-center justify-center bg-red invisible"
+            >
+              <img src="img/tick.svg" alt="tick" />
+            </span>
+          </li>
+          <li class="flex items-center justify-between cursor-pointer mb-7">
+            <div class="flex items-center">
+              <div class="w-16 h-7 bg-cream rounded-full text-center mr-4">
+                <span class="block text-xs leading-7">PT</span>
+              </div>
+              <p class="hover:text-red">Polish</p>
+            </div>
+            <span
+              class="w-7 h-7 rounded-full flex items-center justify-center bg-red invisible"
+            >
+              <img src="img/tick.svg" alt="tick" />
+            </span>
+          </li>
+          <li class="flex items-center justify-between cursor-pointer">
+            <div class="flex items-center">
+              <div class="w-16 h-7 bg-cream rounded-full text-center mr-4">
+                <span class="block text-xs leading-7">PT</span>
+              </div>
+              <p class="hover:text-red">Portuguese</p>
+            </div>
+            <span
+              class="w-7 h-7 rounded-full flex items-center justify-center bg-red invisible"
+            >
+              <img src="img/tick.svg" alt="tick" />
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="flex items-center justify-center bg-white w-full lg:w-8/12 p-4 lg:p-8 absolute -top-full transition-all duration-300 lg:static navsearch-wrapper hidden"
+      >
+        <form action="" class="relative w-full">
+          <input
+            type="email"
+            placeholder="Search"
+            class="input input-sm lg:input-lg flex"
+            autocomplete="off"
+            autofocus
+          />
+          <button
+            class="absolute top-1.5 lg:top-5 right-0 lg:right-5 roundcon lg:roundcon-red lg:text-white"
+          >
+            <span class="icon icon-search-slim-24 w-6 h-6"></span>
+          </button>
+        </form>
+        <button
+          class="border-l border-silverGrey pl-4 lg:pl-8 ml-4 lg:ml-8 searchclose-btn"
+        >
+          <span class="text-0xs lg:text-base">Close</span>
+          <img src="img/cross.svg" alt="close" class="align-middle lg:hidden" />
+        </button>
+      </div>
+    </div>
     <main class="mt-20 lg:mt-40">
       <section>
         <div
