@@ -46,6 +46,10 @@ if (navModalContainer) {
         navSearchWrapper.classList.remove("hidden");
         window.innerWidth < 1024 && navSearchWrapper.classList.add("!top-0");
         modalOpenFunc();
+        console.log(navSearchWrapper.querySelector("input"));
+        setTimeout(() => {
+          navSearchWrapper.querySelector("input").focus();
+        }, 500);
       } else if (item.classList.contains("lang-btn")) {
         navModalContainer.classList.remove("justify-center");
         navModalContainer.classList.remove("items-center");
@@ -60,7 +64,6 @@ if (navModalContainer) {
     });
   });
   navModalContainer.addEventListener("click", (e) => {
-    console.log(e.target);
     if (
       e.target === navModalContainer ||
       e.target === navmodalClose ||
@@ -75,6 +78,23 @@ if (navModalContainer) {
         window.innerWidth < 1024 && navSearchWrapper.classList.remove("!top-0");
       }
     }
+  });
+
+  // Lang select ------
+  const langList = navModalWrapper.querySelectorAll("ul.lang-list > li");
+  console.log(langList);
+  langList.forEach((li) => {
+    li.addEventListener("click", () => {
+      langList.forEach((li) => {
+        li.classList.remove("lang-selected");
+        li.querySelector(".lang-tick").classList.add("invisible");
+      });
+      const langTick = li.querySelector(".lang-tick");
+      li.classList.add("lang-selected");
+      if (langTick.closest(".lang-selected")) {
+        langTick.classList.remove("invisible");
+      }
+    });
   });
 }
 // Horizontal slider -----------
