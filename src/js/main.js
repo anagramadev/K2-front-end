@@ -46,14 +46,12 @@ if (navModalContainer) {
         navSearchWrapper.classList.remove("hidden");
         window.innerWidth < 1024 && navSearchWrapper.classList.add("!top-0");
         modalOpenFunc();
-        console.log(navSearchWrapper.querySelector("input"));
         setTimeout(() => {
           navSearchWrapper.querySelector("input").focus();
         }, 500);
       } else if (item.classList.contains("lang-btn")) {
         navModalContainer.classList.remove("justify-center");
         navModalContainer.classList.remove("items-center");
-        navModalWrapper.classList.remove("hidden");
         navSearchWrapper.classList.add("hidden");
         window.innerWidth < 1024 && navSearchWrapper.classList.remove("!top-0");
         modalOpenFunc();
@@ -70,6 +68,9 @@ if (navModalContainer) {
       e.target.closest("button.searchclose-btn") === navSearchClose
     ) {
       modalOpenFunc();
+      setTimeout(() => {
+        navModalWrapper.classList.remove("hidden");
+      }, 500);
       if (searchClicked === 1) {
         navModalWrapper.classList.toggle("left-full");
         navModalWrapper.classList.toggle("left-0");
@@ -82,7 +83,6 @@ if (navModalContainer) {
 
   // Lang select ------
   const langList = navModalWrapper.querySelectorAll("ul.lang-list > li");
-  console.log(langList);
   langList.forEach((li) => {
     li.addEventListener("click", () => {
       langList.forEach((li) => {
