@@ -472,6 +472,38 @@ if (carousel) {
     yDown = null;
   }
 }
+// Scroll to top ------------
+const scrollTop = document.querySelector(".scroll-to-top");
+
+scrollTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+let scrollPos = 0;
+
+function checkPosition() {
+  let windowY = window.scrollY;
+  if (windowY < scrollPos) {
+    scrollTop.classList.add("visible");
+    scrollTop.classList.add("opacity-100");
+    scrollTop.classList.remove("invisible");
+    scrollTop.classList.remove("opacity-0");
+    setTimeout(() => {
+      scrollTop.classList.add("invisible");
+      scrollTop.classList.add("opacity-0");
+      scrollTop.classList.remove("visible");
+      scrollTop.classList.remove("opacity-100");
+    }, 5000);
+  } else {
+    scrollTop.classList.add("invisible");
+    scrollTop.classList.add("opacity-0");
+    scrollTop.classList.remove("visible");
+    scrollTop.classList.remove("opacity-100");
+  }
+  scrollPos = windowY;
+}
+
+window.addEventListener("scroll", checkPosition);
 
 // Icons func -----------
 initIcons();
