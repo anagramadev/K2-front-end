@@ -21,82 +21,82 @@ if (menuButton) {
 }
 
 // Search & language selection modal ----------
-const eachBtn = document.querySelectorAll(".search-btn, .lang-btn");
-const navModalContainer = document.querySelector(".navmodal-container");
-const navModalWrapper = document.querySelector(".navmodal-wrapper");
-const navSearchWrapper = document.querySelector(".navsearch-wrapper");
-const navmodalClose = navModalContainer.querySelector("button.navclose-btn");
-const navSearchClose = navModalContainer.querySelector(
-  "button.searchclose-btn"
-);
-if (navModalContainer) {
-  function modalOpenFunc() {
-    navModalContainer.classList.toggle("opacity-0");
-    navModalContainer.classList.toggle("invisible");
-    body.classList.toggle("overflow-hidden");
-  }
-  let searchClicked = 0;
-  eachBtn.forEach((item) => {
-    item.addEventListener("click", (e) => {
-      e.preventDefault();
-      if (item.classList.contains("search-btn")) {
-        navModalContainer.classList.add("justify-center");
-        navModalContainer.classList.add("items-center");
-        navModalWrapper.classList.add("hidden");
-        navSearchWrapper.classList.remove("hidden");
-        window.innerWidth < 1024 && navSearchWrapper.classList.add("!top-0");
-        modalOpenFunc();
-        setTimeout(() => {
-          navSearchWrapper.querySelector("input").focus();
-        }, 500);
-      } else if (item.classList.contains("lang-btn")) {
-        navModalContainer.classList.remove("justify-center");
-        navModalContainer.classList.remove("items-center");
-        navSearchWrapper.classList.add("hidden");
-        window.innerWidth < 1024 && navSearchWrapper.classList.remove("!top-0");
-        modalOpenFunc();
-        navModalWrapper.classList.toggle("left-full");
-        navModalWrapper.classList.toggle("left-0");
-        searchClicked = 1;
-      }
-    });
-  });
-  navModalContainer.addEventListener("click", (e) => {
-    if (
-      e.target === navModalContainer ||
-      e.target === navmodalClose ||
-      e.target.closest("button.searchclose-btn") === navSearchClose
-    ) {
-      modalOpenFunc();
-      setTimeout(() => {
-        navModalWrapper.classList.remove("hidden");
-      }, 500);
-      if (searchClicked === 1) {
-        navModalWrapper.classList.toggle("left-full");
-        navModalWrapper.classList.toggle("left-0");
-        searchClicked = 0;
-      } else if (searchClicked === 0 && window.innerWidth < 1024) {
-        window.innerWidth < 1024 && navSearchWrapper.classList.remove("!top-0");
-      }
-    }
-  });
+// const eachBtn = document.querySelectorAll(".search-btn, .lang-btn");
+// const navModalContainer = document.querySelector(".navmodal-container");
+// const navModalWrapper = document.querySelector(".navmodal-wrapper");
+// const navSearchWrapper = document.querySelector(".navsearch-wrapper");
+// const navmodalClose = navModalContainer.querySelector("button.navclose-btn");
+// const navSearchClose = navModalContainer.querySelector(
+//   "button.searchclose-btn"
+// );
+// if (navModalContainer) {
+//   function modalOpenFunc() {
+//     navModalContainer.classList.toggle("opacity-0");
+//     navModalContainer.classList.toggle("invisible");
+//     body.classList.toggle("overflow-hidden");
+//   }
+//   let searchClicked = 0;
+//   eachBtn.forEach((item) => {
+//     item.addEventListener("click", (e) => {
+//       e.preventDefault();
+//       if (item.classList.contains("search-btn")) {
+//         navModalContainer.classList.add("justify-center");
+//         navModalContainer.classList.add("items-center");
+//         navModalWrapper.classList.add("hidden");
+//         navSearchWrapper.classList.remove("hidden");
+//         window.innerWidth < 1024 && navSearchWrapper.classList.add("!top-0");
+//         modalOpenFunc();
+//         setTimeout(() => {
+//           navSearchWrapper.querySelector("input").focus();
+//         }, 500);
+//       } else if (item.classList.contains("lang-btn")) {
+//         navModalContainer.classList.remove("justify-center");
+//         navModalContainer.classList.remove("items-center");
+//         navSearchWrapper.classList.add("hidden");
+//         window.innerWidth < 1024 && navSearchWrapper.classList.remove("!top-0");
+//         modalOpenFunc();
+//         navModalWrapper.classList.toggle("left-full");
+//         navModalWrapper.classList.toggle("left-0");
+//         searchClicked = 1;
+//       }
+//     });
+//   });
+//   navModalContainer.addEventListener("click", (e) => {
+//     if (
+//       e.target === navModalContainer ||
+//       e.target === navmodalClose ||
+//       e.target.closest("button.searchclose-btn") === navSearchClose
+//     ) {
+//       modalOpenFunc();
+//       setTimeout(() => {
+//         navModalWrapper.classList.remove("hidden");
+//       }, 500);
+//       if (searchClicked === 1) {
+//         navModalWrapper.classList.toggle("left-full");
+//         navModalWrapper.classList.toggle("left-0");
+//         searchClicked = 0;
+//       } else if (searchClicked === 0 && window.innerWidth < 1024) {
+//         window.innerWidth < 1024 && navSearchWrapper.classList.remove("!top-0");
+//       }
+//     }
+//   });
 
-  // Lang select ------
-  const langList = navModalWrapper.querySelectorAll("ul.lang-list > li");
-  langList.forEach((li) => {
-    li.addEventListener("click", () => {
-      langList.forEach((li) => {
-        li.classList.remove("lang-selected");
-        li.querySelector(".lang-tick").classList.add("invisible");
-      });
-      const langTick = li.querySelector(".lang-tick");
-      li.classList.add("lang-selected");
-      if (langTick.closest(".lang-selected")) {
-        langTick.classList.remove("invisible");
-      }
-    });
-  });
-}
+//   // Lang select ------
+//   const langList = navModalWrapper.querySelectorAll("ul.lang-list > li");
+//   langList.forEach((li) => {
+//     li.addEventListener("click", () => {
+//       langList.forEach((li) => {
+//         li.classList.remove("lang-selected");
+//         li.querySelector(".lang-tick").classList.add("invisible");
+//       });
+//       const langTick = li.querySelector(".lang-tick");
+//       li.classList.add("lang-selected");
+//       if (langTick.closest(".lang-selected")) {
+//         langTick.classList.remove("invisible");
+//       }
+//     });
+//   });
+// }
 // Horizontal slider -----------
 const sliders = document.querySelectorAll(".drag-scroll");
 
@@ -473,37 +473,37 @@ if (carousel) {
   }
 }
 // Scroll to top ------------
-const scrollTop = document.querySelector(".scroll-to-top");
+// const scrollTop = document.querySelector(".scroll-to-top");
 
-scrollTop.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
+// scrollTop.addEventListener("click", () => {
+//   window.scrollTo({ top: 0, behavior: "smooth" });
+// });
 
-let scrollPos = 0;
+// let scrollPos = 0;
 
-function checkPosition() {
-  let windowY = window.scrollY;
-  if (windowY < scrollPos) {
-    scrollTop.classList.add("visible");
-    scrollTop.classList.add("opacity-100");
-    scrollTop.classList.remove("invisible");
-    scrollTop.classList.remove("opacity-0");
-    setTimeout(() => {
-      scrollTop.classList.add("invisible");
-      scrollTop.classList.add("opacity-0");
-      scrollTop.classList.remove("visible");
-      scrollTop.classList.remove("opacity-100");
-    }, 5000);
-  } else {
-    scrollTop.classList.add("invisible");
-    scrollTop.classList.add("opacity-0");
-    scrollTop.classList.remove("visible");
-    scrollTop.classList.remove("opacity-100");
-  }
-  scrollPos = windowY;
-}
+// function checkPosition() {
+//   let windowY = window.scrollY;
+//   if (windowY < scrollPos) {
+//     scrollTop.classList.add("visible");
+//     scrollTop.classList.add("opacity-100");
+//     scrollTop.classList.remove("invisible");
+//     scrollTop.classList.remove("opacity-0");
+//     setTimeout(() => {
+//       scrollTop.classList.add("invisible");
+//       scrollTop.classList.add("opacity-0");
+//       scrollTop.classList.remove("visible");
+//       scrollTop.classList.remove("opacity-100");
+//     }, 5000);
+//   } else {
+//     scrollTop.classList.add("invisible");
+//     scrollTop.classList.add("opacity-0");
+//     scrollTop.classList.remove("visible");
+//     scrollTop.classList.remove("opacity-100");
+//   }
+//   scrollPos = windowY;
+// }
 
-window.addEventListener("scroll", checkPosition);
+// window.addEventListener("scroll", checkPosition);
 
 // Icons func -----------
 initIcons();
