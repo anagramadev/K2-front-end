@@ -2135,6 +2135,11 @@ footer.bg-forestGreen ul li a.text-label {
   background-color: rgb(194 201 210 / var(--tw-bg-opacity));
 }
 
+.bg-paper {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 239 242 / var(--tw-bg-opacity));
+}
+
 .bg-medGrey {
   --tw-bg-opacity: 1;
   background-color: rgb(133 139 149 / var(--tw-bg-opacity));
@@ -2200,11 +2205,6 @@ footer.bg-forestGreen ul li a.text-label {
   background-color: rgb(191 34 176 / var(--tw-bg-opacity));
 }
 
-.bg-paper {
-  --tw-bg-opacity: 1;
-  background-color: rgb(237 239 242 / var(--tw-bg-opacity));
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -2263,26 +2263,6 @@ footer.bg-forestGreen ul li a.text-label {
   padding-bottom: 0.75rem;
 }
 
-.py-1\.5 {
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.px-\[0\.25rem\] {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
 .py-0\.5 {
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
@@ -2291,6 +2271,16 @@ footer.bg-forestGreen ul li a.text-label {
 .py-0 {
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-\[0\.25rem\] {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .pt-5 {
@@ -2932,6 +2922,10 @@ footer.bg-forestGreen ul li a.text-darkGrey {
 .hover\:text-orangeAccent:hover {
   --tw-text-opacity: 1;
   color: rgb(255 151 0 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
 }
 
 .focus\:border-red:focus {
@@ -3723,12 +3717,12 @@ footer.bg-forestGreen ul li a.text-darkGrey {
     padding-bottom: 0.25rem;
   }
 
-  .lg\:px-\[1rem\] {
+  .lg\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
-  .lg\:px-4 {
+  .lg\:px-\[1rem\] {
     padding-left: 1rem;
     padding-right: 1rem;
   }
