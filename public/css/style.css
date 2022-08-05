@@ -1671,12 +1671,12 @@ footer.bg-forestGreen ul li a.text-label {
   width: 1.75rem;
 }
 
-.w-3\.5 {
-  width: 0.875rem;
-}
-
 .w-auto {
   width: auto;
+}
+
+.w-3\.5 {
+  width: 0.875rem;
 }
 
 .w-5 {

@@ -10,7 +10,40 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
+
+
 <body class="p-4 lg:p-8 relative">
+  <!-- Lang -->
+  <div
+    class="flex flex-col lg:flex-row justify-between items-center bg-black py-4 lg:py-2.5 px-4 lg:px-8 absolute left-0 top-0 z-20 w-full lang-bar">
+    <div class="flex justify-between mb-12 lg:mb-0">
+      <p class="text-white text-2xs leading-5 lg:text-sm lg:leading-6">Choose a different country or region to see
+        content specific
+        to your
+        location.</p>
+      <button class="text-white border-l border-darkGrey pl-8 ml-8 inline-block lg:hidden lang-bar-close">Close</button>
+    </div>
+    <div class="flex justify-between items-center">
+      <div class="flex items-center border border-darkGrey px-4 py-2 lg:py-3 rounded-lg w-auto lg:w-96 ">
+        <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-4">
+          <path d="M0 5.7L0.899994 4.7L5.39999 8.7L13.2 0L14 0.800003L5.8 12L0 5.7Z" fill="#FD0000" />
+        </svg>
+        <select name="languages" class="bg-transparent text-white w-full focus:outline-none">
+          <option value="English, United States" class="text-black">English, United States</option>
+          <option value="English, United States" class="text-black">English, United States</option>
+          <option value="English, United States" class="text-black">English, United States</option>
+          <option value="English, United States" class="text-black">English, United States</option>
+          <option value="English, United States" class="text-black">English, United States</option>
+          <option value="English, United States" class="text-black">English, United States</option>
+        </select>
+      </div>
+      <button class="bttn bttn-red hover:bg-red ml-2 lg:ml-8">Continue<svg width="14" height="14" viewBox="0 0 14 14"
+          fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="ml-2 hidden lg:block">
+          <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="currentColor" stroke-width="1.5"></path>
+        </svg></button>
+      <button class="text-white border-l border-darkGrey pl-8 ml-8 hidden lg:inline-block lang-bar-close">Close</button>
+    </div>
+  </div>
   <header class="w-full flex-col lg:flex-row flex items-start justify-between relative z-20">
     <a href="index.html"><img src="./img/logo.svg" alt="logo" class="w-[48px] h-[48px] lg:w-auto lg:h-auto" /></a>
     <div class="w-full lg:w-auto">
@@ -373,37 +406,7 @@
       </div>
     </div>
   </header>
-  <!-- Lang -->
-  <div
-    class="flex flex-col lg:flex-row justify-between items-center bg-black py-4 lg:py-2.5 px-4 lg:px-8 absolute left-0 top-0 z-20 w-full lang-bar">
-    <div class="flex justify-between mb-12 lg:mb-0">
-      <p class="text-white text-2xs leading-5 lg:text-sm lg:leading-6">Choose a different country or region to see
-        content specific
-        to your
-        location.</p>
-      <button class="text-white border-l border-darkGrey pl-8 ml-8 inline-block lg:hidden lang-bar-close">Close</button>
-    </div>
-    <div class="flex justify-between items-center">
-      <div class="flex items-center border border-darkGrey px-4 py-2 lg:py-3 rounded-lg w-auto lg:w-96 ">
-        <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-4">
-          <path d="M0 5.7L0.899994 4.7L5.39999 8.7L13.2 0L14 0.800003L5.8 12L0 5.7Z" fill="#FD0000" />
-        </svg>
-        <select name="languages" class="bg-transparent text-white w-full focus:outline-none">
-          <option value="English, United States" class="text-black">English, United States</option>
-          <option value="English, United States" class="text-black">English, United States</option>
-          <option value="English, United States" class="text-black">English, United States</option>
-          <option value="English, United States" class="text-black">English, United States</option>
-          <option value="English, United States" class="text-black">English, United States</option>
-          <option value="English, United States" class="text-black">English, United States</option>
-        </select>
-      </div>
-      <button class="bttn bttn-red hover:bg-red ml-2 lg:ml-8">Continue<svg width="14" height="14" viewBox="0 0 14 14"
-          fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="ml-2 hidden lg:block">
-          <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="currentColor" stroke-width="1.5"></path>
-        </svg></button>
-      <button class="text-white border-l border-darkGrey pl-8 ml-8 hidden lg:inline-block lang-bar-close">Close</button>
-    </div>
-  </div>
+
   <!-- Search and language selector modal -->
   <div
     class="fixed flex justify-end left-0 top-0 w-full h-full bg-black/20 z-10 overflow-hidden navmodal-container opacity-0 invisible transition-all duration-300">

@@ -1,12 +1,17 @@
 import { initIcons } from "@47nordmedia/k2-systems-ui-library/dist/icons";
 // lang bar
+const langBar = document.querySelector(".lang-bar");
 const langBarClose = document.querySelectorAll(".lang-bar-close");
-
-langBarClose.forEach((btn) => {
-  btn.addEventListener("click", () =>
-    btn.closest(".lang-bar").classList.add("hidden")
-  );
-});
+if (langBar) {
+  const header = document.querySelector("header");
+  header.style.marginTop = `${langBar.offsetHeight}px`;
+  langBarClose.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      langBar.classList.add("hidden");
+      header.style.marginTop = "0px";
+    });
+  });
+}
 
 // Mobile menu button
 const menuButton = document.querySelector(".menu-toggle");
