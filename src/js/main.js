@@ -1,4 +1,12 @@
 import { initIcons } from "@47nordmedia/k2-systems-ui-library/dist/icons";
+// lang bar
+const langBarClose = document.querySelectorAll(".lang-bar-close");
+
+langBarClose.forEach((btn) => {
+  btn.addEventListener("click", () =>
+    btn.closest(".lang-bar").classList.add("hidden")
+  );
+});
 
 // Mobile menu button
 const menuButton = document.querySelector(".menu-toggle");
