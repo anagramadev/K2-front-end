@@ -1134,14 +1134,6 @@ footer.bg-forestGreen ul li a.text-label {
   top: 2.25rem;
 }
 
-.\!top-0 {
-  top: 0px !important;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
 .bottom-12 {
   bottom: 3rem;
 }
@@ -1154,32 +1146,16 @@ footer.bg-forestGreen ul li a.text-label {
   left: 0.5rem;
 }
 
-.right-2 {
-  right: 0.5rem;
-}
-
-.left-6 {
-  left: 1.5rem;
-}
-
-.-top-2 {
-  top: -0.5rem;
-}
-
 .left-10 {
   left: 2.5rem;
-}
-
-.-top-4 {
-  top: -1rem;
 }
 
 .-top-6 {
   top: -1.5rem;
 }
 
-.-bottom-\[1px\] {
-  bottom: -1px;
+.\!top-0 {
+  top: 0px !important;
 }
 
 .z-10 {
@@ -1629,10 +1605,6 @@ footer.bg-forestGreen ul li a.text-label {
   height: 40px;
 }
 
-.h-2\.5 {
-  height: 0.625rem;
-}
-
 .max-h-0 {
   max-height: 0px;
 }
@@ -1773,10 +1745,6 @@ footer.bg-forestGreen ul li a.text-label {
 
 .w-\[6rem\] {
   width: 6rem;
-}
-
-.w-2\.5 {
-  width: 0.625rem;
 }
 
 .w-96 {
@@ -2199,11 +2167,6 @@ footer.bg-forestGreen ul li a.text-label {
   background-color: rgb(25 25 25 / 0.3);
 }
 
-.bg-lightGrey {
-  --tw-bg-opacity: 1;
-  background-color: rgb(194 201 210 / var(--tw-bg-opacity));
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(25 25 25 / var(--tw-bg-opacity));
@@ -2221,6 +2184,11 @@ footer.bg-forestGreen ul li a.text-label {
 .bg-orangeAccent {
   --tw-bg-opacity: 1;
   background-color: rgb(255 151 0 / var(--tw-bg-opacity));
+}
+
+.bg-lightGrey {
+  --tw-bg-opacity: 1;
+  background-color: rgb(194 201 210 / var(--tw-bg-opacity));
 }
 
 .bg-paper {
@@ -2691,12 +2659,6 @@ footer.bg-forestGreen ul li a.text-label {
 .shadow-\[0_32px_32px_rgba\(0\2c 0\2c 0\2c 0\.1\)\] {
   --tw-shadow: 0 32px 32px rgba(0,0,0,0.1);
   --tw-shadow-colored: 0 32px 32px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-2xl {
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
