@@ -1150,6 +1150,10 @@ footer.bg-forestGreen ul li a.text-label {
   z-index: 20;
 }
 
+.z-30 {
+  z-index: 30;
+}
+
 .order-1 {
   order: 1;
 }
@@ -4199,6 +4203,10 @@ footer.bg-forestGreen ul li a.text-darkGrey {
 
   .\32xl\:w-2\/6 {
     width: 33.333333%;
+  }
+
+  .\32xl\:max-w-\[1600px\] {
+    max-width: 1600px;
   }
 
   .\32xl\:flex-row {
