@@ -487,6 +487,32 @@ if (carousel) {
     yDown = null;
   }
 }
+// webniar Tab -------------
+const wbTabBtns = document.querySelectorAll(".wb-tab-btn");
+const wbTabBlocks = document.querySelectorAll(".wb-tab-block");
+
+if (wbTabBtns) {
+  wbTabBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      wbTabBtns.forEach((btn) => {
+        btn.classList.remove("text-red");
+        btn.classList.remove("border-red");
+      });
+      btn.classList.add("text-red");
+      btn.classList.add("border-red");
+      if (btn.dataset.tabname === "all") {
+        wbTabBlocks.forEach((block) => block.classList.remove("hidden"));
+      } else {
+        wbTabBlocks.forEach((block) => {
+          block.classList.add("hidden");
+          if (block.dataset.tabfor === btn.dataset.tabname) {
+            block.classList.remove("hidden");
+          }
+        });
+      }
+    });
+  });
+}
 // Scroll to top ------------
 // const scrollTop = document.querySelector(".scroll-to-top");
 
