@@ -38,11 +38,11 @@ const eachBtn = document.querySelectorAll(".search-btn, .lang-btn");
 const navModalContainer = document.querySelector(".navmodal-container");
 const navModalWrapper = document.querySelector(".navmodal-wrapper");
 const navSearchWrapper = document.querySelector(".navsearch-wrapper");
-const navmodalClose = navModalContainer.querySelector("button.navclose-btn");
-const navSearchClose = navModalContainer.querySelector(
-  "button.searchclose-btn"
-);
 if (navModalContainer) {
+  const navmodalClose = navModalContainer.querySelector("button.navclose-btn");
+  const navSearchClose = navModalContainer.querySelector(
+    "button.searchclose-btn"
+  );
   function modalOpenFunc() {
     navModalContainer.classList.toggle("opacity-0");
     navModalContainer.classList.toggle("invisible");
@@ -261,9 +261,11 @@ if (expandBtn || accordionBtn) {
       if (accordionBlock.classList.contains("active")) {
         accordionBlock.style.maxHeight = `${blkHeight}px`;
         accordionSVG.style.transform = "rotate(135deg)";
+        accordionSVG.classList.remove("text-red");
       } else {
         accordionBlock.style.maxHeight = "0px";
         accordionSVG.style.transform = "rotate(0deg)";
+        accordionSVG.classList.add("text-red");
       }
     });
   });
