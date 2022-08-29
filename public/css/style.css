@@ -2261,6 +2261,11 @@ footer.bg-forestGreen ul li a.text-label {
   background-color: rgb(191 34 176 / var(--tw-bg-opacity));
 }
 
+.bg-brightGrey {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 236 236 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
