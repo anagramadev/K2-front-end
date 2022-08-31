@@ -2167,6 +2167,11 @@ footer.bg-forestGreen ul li a.text-label {
   background-color: rgb(25 25 25 / 0.3);
 }
 
+.bg-brightGrey {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 236 236 / var(--tw-bg-opacity));
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(25 25 25 / var(--tw-bg-opacity));
@@ -2259,11 +2264,6 @@ footer.bg-forestGreen ul li a.text-label {
 .bg-purpleAccent {
   --tw-bg-opacity: 1;
   background-color: rgb(191 34 176 / var(--tw-bg-opacity));
-}
-
-.bg-brightGrey {
-  --tw-bg-opacity: 1;
-  background-color: rgb(236 236 236 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -4021,6 +4021,10 @@ footer.bg-forestGreen ul li a.text-darkGrey {
     letter-spacing: 0;
   }
 
+  .lg\:text-\[6vw\] {
+    font-size: 6vw;
+  }
+
   .lg\:font-medium {
     font-weight: 500;
   }
@@ -4344,10 +4348,6 @@ footer.bg-forestGreen ul li a.text-darkGrey {
     font-size: 1.875rem;
     line-height: 2.25rem;
     letter-spacing: 0;
-  }
-
-  .\32xl\:text-\[7\.5vw\] {
-    font-size: 7.5vw;
   }
 
   .\32xl\:text-6xl {
