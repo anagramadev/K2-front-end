@@ -1485,6 +1485,14 @@ footer.bg-forestGreen ul li a.text-label {
   margin-right: 0.375rem;
 }
 
+.mr-2\.5 {
+  margin-right: 0.625rem;
+}
+
+.mt-40 {
+  margin-top: 10rem;
+}
+
 .block {
   display: block;
 }
@@ -1751,6 +1759,10 @@ footer.bg-forestGreen ul li a.text-label {
   width: 24rem;
 }
 
+.w-\[4rem\] {
+  width: 4rem;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -1959,6 +1971,10 @@ footer.bg-forestGreen ul li a.text-label {
 
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .gap-x-0 {
@@ -2469,6 +2485,14 @@ footer.bg-forestGreen ul li a.text-label {
 
 .pb-7 {
   padding-bottom: 1.75rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 
 .text-center {
@@ -3999,8 +4023,8 @@ footer.bg-forestGreen ul li a.text-darkGrey {
     letter-spacing: 0;
   }
 
-  .lg\:text-\[6\.5vw\] {
-    font-size: 6.5vw;
+  .lg\:text-\[6vw\] {
+    font-size: 6vw;
   }
 
   .lg\:text-xs {
@@ -4019,10 +4043,6 @@ footer.bg-forestGreen ul li a.text-darkGrey {
     font-size: 3.5rem;
     line-height: 4.25rem;
     letter-spacing: 0;
-  }
-
-  .lg\:text-\[6vw\] {
-    font-size: 6vw;
   }
 
   .lg\:font-medium {
