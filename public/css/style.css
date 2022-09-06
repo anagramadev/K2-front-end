@@ -426,9 +426,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 @font-face {
   font-family: Halvar;
 
-  src:
-      url("https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Lt.woff2") format("woff2"),
-      url("https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Lt.woff") format("woff");
+  src: url('https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Lt.woff2')
+        format('woff2'),
+      url('https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Lt.woff')
+        format('woff');
 
   font-weight: 300;
 
@@ -440,9 +441,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 @font-face {
   font-family: Halvar;
 
-  src:
-      url("https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Rg.woff2") format("woff2"),
-      url("https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Rg.woff") format("woff");
+  src: url('https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Rg.woff2')
+        format('woff2'),
+      url('https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Rg.woff')
+        format('woff');
 
   font-weight: normal;
 
@@ -454,9 +456,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 @font-face {
   font-family: Halvar;
 
-  src:
-      url("https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Md.woff2") format("woff2"),
-      url("https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Md.woff") format("woff");
+  src: url('https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Md.woff2')
+        format('woff2'),
+      url('https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Md.woff')
+        format('woff');
 
   font-weight: 500;
 
@@ -468,9 +471,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 @font-face {
   font-family: Halvar;
 
-  src:
-      url("https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Bd.woff2") format("woff2"),
-      url("https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Bd.woff") format("woff");
+  src: url('https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Bd.woff2')
+        format('woff2'),
+      url('https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Bd.woff')
+        format('woff');
 
   font-weight: bold;
 
@@ -495,14 +499,6 @@ h1 {
   }
 }
 
-@media (min-width: 1536px) {
-  h1 {
-    font-size: 9rem;
-    line-height: 8.5rem;
-    letter-spacing: 0;
-  }
-}
-
 h2 {
   font-family: Halvar;
   font-size: 3rem;
@@ -515,14 +511,6 @@ h2 {
   h2 {
     font-size: 5.5rem;
     line-height: 5.5rem;
-    letter-spacing: 0;
-  }
-}
-
-@media (min-width: 1536px) {
-  h2 {
-    font-size: 7rem;
-    line-height: 7rem;
     letter-spacing: 0;
   }
 }
@@ -543,14 +531,6 @@ h3 {
   }
 }
 
-@media (min-width: 1536px) {
-  h3 {
-    font-size: 4.5rem;
-    line-height: 5.5rem;
-    letter-spacing: 0;
-  }
-}
-
 h4 {
   font-family: Halvar;
   font-size: 1.5rem;
@@ -563,14 +543,6 @@ h4 {
   h4 {
     font-size: 2.5rem;
     line-height: 3rem;
-    letter-spacing: 0;
-  }
-}
-
-@media (min-width: 1536px) {
-  h4 {
-    font-size: 3rem;
-    line-height: 3.5rem;
     letter-spacing: 0;
   }
 }
@@ -1134,14 +1106,6 @@ footer.bg-forestGreen ul li a.text-label {
   top: 2.25rem;
 }
 
-.bottom-12 {
-  bottom: 3rem;
-}
-
-.-left-4 {
-  left: -1rem;
-}
-
 .left-2 {
   left: 0.5rem;
 }
@@ -1152,6 +1116,14 @@ footer.bg-forestGreen ul li a.text-label {
 
 .-top-6 {
   top: -1.5rem;
+}
+
+.bottom-12 {
+  bottom: 3rem;
+}
+
+.-left-4 {
+  left: -1rem;
 }
 
 .\!top-0 {
@@ -1489,10 +1461,6 @@ footer.bg-forestGreen ul li a.text-label {
   margin-right: 0.625rem;
 }
 
-.mt-40 {
-  margin-top: 10rem;
-}
-
 .block {
   display: block;
 }
@@ -1755,12 +1723,12 @@ footer.bg-forestGreen ul li a.text-label {
   width: 6rem;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
 .w-\[4rem\] {
   width: 4rem;
+}
+
+.w-96 {
+  width: 24rem;
 }
 
 .min-w-0 {
@@ -2485,14 +2453,6 @@ footer.bg-forestGreen ul li a.text-label {
 
 .pb-7 {
   padding-bottom: 1.75rem;
-}
-
-.pl-10 {
-  padding-left: 2.5rem;
-}
-
-.pb-5 {
-  padding-bottom: 1.25rem;
 }
 
 .text-center {
