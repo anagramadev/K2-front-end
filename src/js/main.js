@@ -20,9 +20,11 @@ window.addEventListener("load", () => {
     });
     langBtnStay.addEventListener("click", (e) => {
       console.log("user choosed to stay at the default");
+      langSwitcher.classList.add("hidden");
     });
     langBtnContinue.addEventListener("click", (e) => {
       console.log("user clicked the continue button");
+      langSwitcher.classList.add("hidden");
     });
     window.addEventListener("click", (e) => {
       if (e.target === langSwitcher) {
