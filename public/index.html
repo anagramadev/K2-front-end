@@ -23,99 +23,132 @@
         <div class="sticky top-0 z-10 bg-white">
           <p class="px-4 pt-4 pb-2 text-label text-darkGrey border-b border-black/20">Your current selected location is
           </p>
-          <div class="flex items-center px-4 py-2.5">
+          <div class="flex items-center px-4 pt-2.5">
             <span class="icon icon-flag-us w-7 h-7 mr-4"></span>
             <p>United States</p>
           </div>
-          <p class="px-4 pb-2 text-label text-darkGrey border-b border-black/20">Choose Your Local sales region
-          </p>
         </div>
-        <ul class="bg-paper lang-select-list">
-          <li class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
-            <div class="flex items-center">
-              <span class="icon icon-flag-us w-7 h-7 mr-4"></span>
-              <p>United States</p>
-            </div>
-            <img src="img/tick-black.svg" alt="select">
-          </li>
-          <li class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
-            <div class="flex items-center">
-              <span class="icon icon-flag-mx w-7 h-7 mr-4"></span>
-              <p>Mexico</p>
-            </div>
-            <img src="img/tick-black.svg" alt="select" class="invisible">
-          </li>
-          <li class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
-            <div class="flex items-center">
-              <span class="icon icon-flag-au w-7 h-7 mr-4"></span>
-              <p>Australia</p>
-            </div>
-            <img src="img/tick-black.svg" alt="select" class="invisible">
-          </li>
-          <li class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
-            <div class="flex items-center">
-              <span class="icon icon-flag-za w-7 h-7 mr-4"></span>
-              <p>South Africa</p>
-            </div>
-            <img src="img/tick-black.svg" alt="select" class="invisible">
-          </li>
-          <li class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
-            <div class="flex items-center">
-              <span class="icon icon-flag-us w-7 h-7 mr-4"></span>
-              <p>Brazil</p>
-            </div>
-            <img src="img/tick-black.svg" alt="select" class="invisible">
-          </li>
-          <li class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
-            <div class="flex items-center">
-              <span class="icon icon-flag-de w-7 h-7 mr-4"></span>
-              <p>Germany</p>
-            </div>
-            <img src="img/tick-black.svg" alt="select" class="invisible">
-          </li>
-          <li class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
-            <div class="flex items-center">
-              <span class="icon icon-flag-it w-7 h-7 mr-4"></span>
-              <p>Italy</p>
-            </div>
-            <img src="img/tick-black.svg" alt="select" class="invisible">
-          </li>
-          <li class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
-            <div class="flex items-center">
-              <span class="icon icon-flag-fr w-7 h-7 mr-4"></span>
-              <p>France</p>
-            </div>
-            <img src="img/tick-black.svg" alt="select" class="invisible">
-          </li>
-        </ul>
-        <p class="px-4 py-2 text-label text-darkGrey border-b border-black/20">International
-        </p>
-        <ul class="bg-paper lang-select-list pb-10">
-          <li class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
-            <p>English</p>
-            <img src="img/tick-black.svg" alt="select" class="invisible">
-          </li>
-          <li class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
-            <p>French</p>
-            <img src="img/tick-black.svg" alt="select" class="invisible">
-          </li>
-          <li class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
-            <p>German</p>
-            <img src="img/tick-black.svg" alt="select" class="invisible">
-          </li>
-          <li class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
-            <p>Italian</p>
-            <img src="img/tick-black.svg" alt="select" class="invisible">
-          </li>
-          <li class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
-            <p>Portuguese</p>
-            <img src="img/tick-black.svg" alt="select" class="invisible">
-          </li>
-          <li class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
-            <p>Spanish</p>
-            <img src="img/tick-black.svg" alt="select" class="invisible">
-          </li>
-        </ul>
+        <!-- Local -->
+        <div>
+          <p class="px-4 py-2 text-label text-darkGrey border-b border-black/20 sticky top-[99px] bg-white">Choose
+            Your
+            Local sales region
+          </p>
+          <ul class="bg-paper lang-select-list">
+            <li data-lang="us" class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
+              <div class="flex items-center">
+                <span class="icon icon-flag-us w-7 h-7 mr-4"></span>
+                <p>United States</p>
+              </div>
+              <img src="img/tick-black.svg" alt="select">
+            </li>
+            <li data-lang="mx" class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
+              <div class="flex items-center">
+                <span class="icon icon-flag-mx w-7 h-7 mr-4"></span>
+                <p>Mexico</p>
+              </div>
+              <img src="img/tick-black.svg" alt="select" class="invisible">
+            </li>
+            <li data-lang="au" class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
+              <div class="flex items-center">
+                <span class="icon icon-flag-au w-7 h-7 mr-4"></span>
+                <p>Australia</p>
+              </div>
+              <img src="img/tick-black.svg" alt="select" class="invisible">
+            </li>
+            <li data-lang="za" class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
+              <div class="flex items-center">
+                <span class="icon icon-flag-za w-7 h-7 mr-4"></span>
+                <p>South Africa</p>
+              </div>
+              <img src="img/tick-black.svg" alt="select" class="invisible">
+            </li>
+            <li data-lang="br" class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
+              <div class="flex items-center">
+                <span class="icon icon-flag-br w-7 h-7 mr-4"></span>
+                <p>Brazil</p>
+              </div>
+              <img src="img/tick-black.svg" alt="select" class="invisible">
+            </li>
+            <li data-lang="de" class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
+              <div class="flex items-center">
+                <span class="icon icon-flag-de w-7 h-7 mr-4"></span>
+                <p>Germany</p>
+              </div>
+              <img src="img/tick-black.svg" alt="select" class="invisible">
+            </li>
+            <li data-lang="it" class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
+              <div class="flex items-center">
+                <span class="icon icon-flag-it w-7 h-7 mr-4"></span>
+                <p>Italy</p>
+              </div>
+              <img src="img/tick-black.svg" alt="select" class="invisible">
+            </li>
+            <li data-lang="fr" class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
+              <div class="flex items-center">
+                <span class="icon icon-flag-fr w-7 h-7 mr-4"></span>
+                <p>France</p>
+              </div>
+              <img src="img/tick-black.svg" alt="select" class="invisible">
+            </li>
+          </ul>
+        </div>
+        <!-- international -->
+        <div>
+          <p class="px-4 py-2 text-label text-darkGrey border-b border-black/20 sticky top-[99px] bg-white">
+            International
+          </p>
+          <ul class="bg-paper lang-select-list pb-10">
+            <li data-lang="en" class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
+              <p>English</p>
+              <img src="img/tick-black.svg" alt="select" class="invisible">
+            </li>
+            <li data-lang="fr" class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
+              <p>French</p>
+              <img src="img/tick-black.svg" alt="select" class="invisible">
+            </li>
+            <li data-lang="de" class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
+              <p>German</p>
+              <img src="img/tick-black.svg" alt="select" class="invisible">
+            </li>
+            <li data-lang="it" class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
+              <p>Italian</p>
+              <img src="img/tick-black.svg" alt="select" class="invisible">
+            </li>
+            <li data-lang="pt" class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
+              <p>Portuguese</p>
+              <img src="img/tick-black.svg" alt="select" class="invisible">
+            </li>
+            <li data-lang="es" class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
+              <p>Spanish</p>
+              <img src="img/tick-black.svg" alt="select" class="invisible">
+            </li>
+            <li data-lang="en" class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
+              <p>English</p>
+              <img src="img/tick-black.svg" alt="select" class="invisible">
+            </li>
+            <li data-lang="fr" class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
+              <p>French</p>
+              <img src="img/tick-black.svg" alt="select" class="invisible">
+            </li>
+            <li data-lang="de" class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
+              <p>German</p>
+              <img src="img/tick-black.svg" alt="select" class="invisible">
+            </li>
+            <li data-lang="it" class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
+              <p>Italian</p>
+              <img src="img/tick-black.svg" alt="select" class="invisible">
+            </li>
+            <li data-lang="pt" class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
+              <p>Portuguese</p>
+              <img src="img/tick-black.svg" alt="select" class="invisible">
+            </li>
+            <li data-lang="es" class="flex items-center justify-between px-4 py-2.5 cursor-pointer">
+              <p>Spanish</p>
+              <img src="img/tick-black.svg" alt="select" class="invisible">
+            </li>
+          </ul>
+        </div>
         <div class="bg-white flex p-4 gap-2 sticky w-full left-0 bottom-0 z-10">
           <button
             class="flex-1 bttn border-2 border-red justify-center bg-transparent text-red text-center lang-btn-stay">Stay

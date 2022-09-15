@@ -16,6 +16,8 @@ window.addEventListener("load", () => {
           list.querySelector("img").classList.add("invisible")
         );
         tick.classList.remove("invisible");
+        // Selected lang ---------
+        console.log(list.dataset.lang);
       });
     });
     langBtnStay.addEventListener("click", (e) => {
@@ -70,10 +72,6 @@ if (navModalContainer) {
     navModalContainer.classList.toggle("opacity-0");
     navModalContainer.classList.toggle("invisible");
     body.classList.toggle("overflow-hidden");
-    if (window.innerWidth > 1024) {
-      if (langBar) langBar.style.paddingRight = "17px";
-      body.style.paddingRight = "17px";
-    }
   }
   let searchClicked = 0;
   eachBtn.forEach((item) => {
@@ -108,10 +106,7 @@ if (navModalContainer) {
       e.target.closest("button.searchclose-btn") === navSearchClose
     ) {
       modalOpenFunc();
-      if (window.innerWidth > 1024) {
-        if (langBar) langBar.style.paddingRight = "0px";
-        body.style.paddingRight = "0px";
-      }
+
       setTimeout(() => {
         navModalWrapper.classList.remove("hidden");
       }, 500);
@@ -386,10 +381,7 @@ if (modalContainer) {
       }
       embededSrc && embededSrc.setAttribute("src", item.dataset.vid);
       vidOpenFunc();
-      if (window.innerWidth > 1024) {
-        if (langBar) langBar.style.paddingRight = "17px";
-        body.style.paddingRight = "17px";
-      }
+
       if (contentBoxs) {
         const itemId = item.dataset.postid;
         contentBoxs.forEach((box) => {
@@ -405,10 +397,7 @@ if (modalContainer) {
   modalContainer.addEventListener("click", (e) => {
     if (e.target === modalContainer || e.target === modalClose) {
       vidOpenFunc();
-      if (window.innerWidth > 1024) {
-        if (langBar) langBar.style.paddingRight = "0px";
-        body.style.paddingRight = "0px";
-      }
+
       embededSrc && embededSrc.setAttribute("src", "");
     }
   });

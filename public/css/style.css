@@ -1134,6 +1134,38 @@ footer.bg-forestGreen ul li a.text-label {
   top: 0px !important;
 }
 
+.top-\[105px\] {
+  top: 105px;
+}
+
+.top-\[104px\] {
+  top: 104px;
+}
+
+.top-\[100px\] {
+  top: 100px;
+}
+
+.top-24 {
+  top: 6rem;
+}
+
+.top-\[94px\] {
+  top: 94px;
+}
+
+.top-\[95px\] {
+  top: 95px;
+}
+
+.top-\[96px\] {
+  top: 96px;
+}
+
+.top-\[99px\] {
+  top: 99px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -2469,6 +2501,14 @@ footer.bg-forestGreen ul li a.text-label {
 
 .pb-7 {
   padding-bottom: 1.75rem;
+}
+
+.pt-2\.5 {
+  padding-top: 0.625rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
 }
 
 .text-center {
