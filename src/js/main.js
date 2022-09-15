@@ -1,17 +1,38 @@
 import { initIcons } from "@47nordmedia/k2-systems-ui-library/dist/icons";
-// lang bar
-const langBar = document.querySelector(".lang-bar");
-const langBarClose = document.querySelectorAll(".lang-bar-close");
-if (langBar) {
-  const header = document.querySelector("header");
-  header.style.marginTop = `${langBar.offsetHeight}px`;
-  langBarClose.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      langBar.classList.add("hidden");
-      header.style.marginTop = "0px";
+// lang bar ---------
+window.addEventListener("load", () => {
+  console.log("loadeded");
+  document.body.classList.add("overflow-hidden");
+  const langSwitcher = document.querySelector(".lang-switcher");
+  const langSwitcherBox = document.querySelector(".lang-switcher-box");
+  const langSelectList = document.querySelectorAll(".lang-select-list > li");
+  const langBtnStay = document.querySelector(".lang-btn-stay");
+  const langBtnContinue = document.querySelector(".lang-btn-continue");
+  if (langSwitcher) {
+    langSelectList.forEach((list) => {
+      list.addEventListener("click", () => {
+        const tick = list.querySelector("img");
+        langSelectList.forEach((list) =>
+          list.querySelector("img").classList.add("invisible")
+        );
+        tick.classList.remove("invisible");
+      });
     });
-  });
-}
+    langBtnStay.addEventListener("click", (e) => {
+      console.log("user choosed to stay at the default");
+    });
+    langBtnContinue.addEventListener("click", (e) => {
+      console.log("user clicked the continue button");
+    });
+    window.addEventListener("click", (e) => {
+      if (e.target === langSwitcher) {
+        langSwitcher.classList.add("hidden");
+        document.body.classList.remove("overflow-hidden");
+        console.log("user clicked outside of the box");
+      }
+    });
+  }
+});
 
 // Mobile menu button
 const menuButton = document.querySelector(".menu-toggle");
