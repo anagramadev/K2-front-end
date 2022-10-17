@@ -2,13 +2,14 @@ import { initIcons } from "@47nordmedia/k2-systems-ui-library/dist/icons";
 // lang bar ---------
 window.addEventListener("load", () => {
   console.log("loadeded");
-  document.body.classList.add("overflow-hidden");
+  // Set overflow-hidden to body to prevent the scroll
   const langSwitcher = document.querySelector(".lang-switcher");
-  const langSwitcherBox = document.querySelector(".lang-switcher-box");
-  const langSelectList = document.querySelectorAll(".lang-select-list > li");
-  const langBtnStay = document.querySelector(".lang-btn-stay");
-  const langBtnContinue = document.querySelector(".lang-btn-continue");
   if (langSwitcher) {
+    document.body.classList.add("overflow-hidden");
+    const langSwitcherBox = document.querySelector(".lang-switcher-box");
+    const langSelectList = document.querySelectorAll(".lang-select-list > li");
+    const langBtnStay = document.querySelector(".lang-btn-stay");
+    const langBtnContinue = document.querySelector(".lang-btn-continue");
     langSelectList.forEach((list) => {
       list.addEventListener("click", () => {
         const tick = list.querySelector("img");
@@ -31,6 +32,7 @@ window.addEventListener("load", () => {
     window.addEventListener("click", (e) => {
       if (e.target === langSwitcher) {
         langSwitcher.classList.add("hidden");
+        // Remove overflow-hidden to body to enable the scroll
         document.body.classList.remove("overflow-hidden");
         console.log("user clicked outside of the box");
       }
