@@ -23,10 +23,12 @@ window.addEventListener("load", () => {
     });
     langBtnStay.addEventListener("click", (e) => {
       console.log("user choosed to stay at the default");
+      document.body.classList.remove("overflow-hidden");
       langSwitcher.classList.add("hidden");
     });
     langBtnContinue.addEventListener("click", (e) => {
       console.log("user clicked the continue button");
+      document.body.classList.remove("overflow-hidden");
       langSwitcher.classList.add("hidden");
     });
     window.addEventListener("click", (e) => {
@@ -543,39 +545,45 @@ if (wbTabBtns) {
     });
   });
 }
-// Scroll to top ------------
-// const scrollTop = document.querySelector(".scroll-to-top");
+// Topic button ------------
+const Topicard = document.querySelectorAll(".topic-card");
 
-// scrollTop.addEventListener("click", () => {
-//   window.scrollTo({ top: 0, behavior: "smooth" });
-// });
+Topicard.forEach((card) => {
+  const topicListCard = card.querySelector(".topic-list-card");
+  const topicList = card.querySelector(".topic-list");
+  const topicSeeMore = card.querySelector(".topic-link");
+  const topicClose = card.querySelector(".topic-btn-close");
 
-// let scrollPos = 0;
-
-// function checkPosition() {
-//   let windowY = window.scrollY;
-//   if (windowY < scrollPos) {
-//     scrollTop.classList.add("visible");
-//     scrollTop.classList.add("opacity-100");
-//     scrollTop.classList.remove("invisible");
-//     scrollTop.classList.remove("opacity-0");
-//     setTimeout(() => {
-//       scrollTop.classList.add("invisible");
-//       scrollTop.classList.add("opacity-0");
-//       scrollTop.classList.remove("visible");
-//       scrollTop.classList.remove("opacity-100");
-//     }, 5000);
-//   } else {
-//     scrollTop.classList.add("invisible");
-//     scrollTop.classList.add("opacity-0");
-//     scrollTop.classList.remove("visible");
-//     scrollTop.classList.remove("opacity-100");
-//   }
-//   scrollPos = windowY;
-// }
-
-// window.addEventListener("scroll", checkPosition);
-
+  topicSeeMore.addEventListener("click", (e) => {
+    if (!topicListCard.classList.contains("show")) {
+      e.preventDefault();
+      const btnBgColor = topicSeeMore.dataset.bgcolor;
+      topicList.classList.toggle("top-0");
+      topicList.classList.toggle("top-40");
+      topicListCard.classList.toggle("opacity-0");
+      topicListCard.classList.toggle("opacity-100");
+      topicSeeMore.classList.toggle(`bg-${btnBgColor}`);
+      topicSeeMore.classList.toggle("bg-red");
+      topicSeeMore.innerHTML = `<span class="text-white">See more</span><img src="./img/arrow__rightWhite.svg" alt="see more" class="ml-2">`;
+      topicClose.classList.toggle("opacity-0");
+      topicClose.classList.toggle("invisible");
+      topicListCard.classList.add("show");
+    }
+  });
+  topicClose.addEventListener("click", () => {
+    const btnBgColor = topicSeeMore.dataset.bgcolor;
+    topicList.classList.toggle("top-0");
+    topicList.classList.toggle("top-40");
+    topicListCard.classList.toggle("opacity-0");
+    topicListCard.classList.toggle("opacity-100");
+    topicSeeMore.classList.toggle(`bg-${btnBgColor}`);
+    topicSeeMore.classList.toggle("bg-red");
+    topicSeeMore.innerHTML = `<span>Topic</span><span class="font-medium -mt-2">...</span>`;
+    topicClose.classList.toggle("opacity-0");
+    topicClose.classList.toggle("invisible");
+    topicListCard.classList.remove("show");
+  });
+});
 // Icons func -----------
 initIcons();
 
