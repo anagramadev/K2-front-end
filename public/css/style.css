@@ -1633,6 +1633,10 @@ footer.bg-forestGreen ul li a.text-label {
   min-height: 180px;
 }
 
+.min-h-\[190px\] {
+  min-height: 190px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -2177,12 +2181,12 @@ footer.bg-forestGreen ul li a.text-label {
   border-color: rgb(194 201 210 / var(--tw-border-opacity));
 }
 
-.border-black\/10 {
-  border-color: rgb(25 25 25 / 0.1);
-}
-
 .border-cream\/50 {
   border-color: rgb(242 235 227 / 0.5);
+}
+
+.border-black\/10 {
+  border-color: rgb(25 25 25 / 0.1);
 }
 
 .border-t-silverGrey {
@@ -2438,6 +2442,11 @@ footer.bg-forestGreen ul li a.text-label {
   padding-bottom: 0px;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .px-\[0\.25rem\] {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2451,11 +2460,6 @@ footer.bg-forestGreen ul li a.text-label {
 .py-1\.5 {
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
 .pt-5 {
@@ -2663,6 +2667,18 @@ footer.bg-forestGreen ul li a.text-label {
 
 .text-\[14px\] {
   font-size: 14px;
+}
+
+.\!text-2xs {
+  font-size: 0.813rem !important;
+  line-height: 1.5rem !important;
+  letter-spacing: 0.005em !important;
+}
+
+.text-xl {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: 0;
 }
 
 .font-medium {
@@ -3035,6 +3051,51 @@ footer.bg-forestGreen ul li a.text-darkGrey {
 .placeholder\:text-white::placeholder {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-darkGrey::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(88 95 105 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-darkGrey:-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(88 95 105 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-darkGrey::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(88 95 105 / var(--tw-text-opacity));
+}
+
+footer.bg-orange ul li a.placeholder\:text-darkGrey::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 151 0 / var(--tw-text-opacity));
+}
+
+footer.bg-orange ul li a.placeholder\:text-darkGrey:-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 151 0 / var(--tw-text-opacity));
+}
+
+footer.bg-orange ul li a.placeholder\:text-darkGrey::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 151 0 / var(--tw-text-opacity));
+}
+
+footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(217 230 112 / var(--tw-text-opacity));
+}
+
+footer.bg-forestGreen ul li a.placeholder\:text-darkGrey:-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(217 230 112 / var(--tw-text-opacity));
+}
+
+footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(217 230 112 / var(--tw-text-opacity));
 }
 
 .before\:absolute::before {
@@ -3839,6 +3900,14 @@ footer.bg-forestGreen ul li a.text-darkGrey {
     width: 20rem;
   }
 
+  .lg\:w-\[97\%\] {
+    width: 97%;
+  }
+
+  .lg\:w-\[96\%\] {
+    width: 96%;
+  }
+
   .lg\:flex-1 {
     flex: 1 1 0%;
   }
@@ -4149,18 +4218,6 @@ footer.bg-forestGreen ul li a.text-darkGrey {
 
   .lg\:pr-32 {
     padding-right: 8rem;
-  }
-
-  .lg\:pl-6 {
-    padding-left: 1.5rem;
-  }
-
-  .lg\:pr-4 {
-    padding-right: 1rem;
-  }
-
-  .lg\:pr-3 {
-    padding-right: 0.75rem;
   }
 
   .lg\:pr-2 {
