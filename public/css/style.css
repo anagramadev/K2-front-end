@@ -426,10 +426,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 @font-face {
   font-family: Halvar;
 
-  src: url('https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Lt.woff2')
-        format('woff2'),
-      url('https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Lt.woff')
-        format('woff');
+  src:
+      url("https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Lt.woff2")
+      format("woff2"),
+      url("https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Lt.woff")
+      format("woff");
 
   font-weight: 300;
 
@@ -441,10 +442,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 @font-face {
   font-family: Halvar;
 
-  src: url('https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Rg.woff2')
-        format('woff2'),
-      url('https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Rg.woff')
-        format('woff');
+  src:
+      url("https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Rg.woff2")
+      format("woff2"),
+      url("https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Rg.woff")
+      format("woff");
 
   font-weight: normal;
 
@@ -456,10 +458,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 @font-face {
   font-family: Halvar;
 
-  src: url('https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Md.woff2')
-        format('woff2'),
-      url('https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Md.woff')
-        format('woff');
+  src:
+      url("https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Md.woff2")
+      format("woff2"),
+      url("https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Md.woff")
+      format("woff");
 
   font-weight: 500;
 
@@ -471,10 +474,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 @font-face {
   font-family: Halvar;
 
-  src: url('https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Bd.woff2')
-        format('woff2'),
-      url('https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Bd.woff')
-        format('woff');
+  src:
+      url("https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Bd.woff2")
+      format("woff2"),
+      url("https://cdn.jsdelivr.net/npm/@47nordmedia/k2-systems-ui-library@latest/dist/assets/font/HalvarMittel-Bd.woff")
+      format("woff");
 
   font-weight: bold;
 
@@ -701,21 +705,6 @@ footer.bg-forestGreen ul li a.text-label {
   }
 }
 
-.bttn {
-  display: inline-flex;
-  align-items: center;
-  border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(227 5 19 / var(--tw-bg-opacity));
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  line-height: 24px;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .linkon {
   display: flex;
   align-items: center;
@@ -731,49 +720,9 @@ footer.bg-forestGreen ul li a.text-label {
   border-radius: 9999px;
 }
 
-.input {
-  width: 100%;
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(164 171 181 / var(--tw-border-opacity));
-  background-color: transparent;
-  font-family: Halvar;
-  font-weight: 400;
-}
-
-.input::-moz-placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(25 25 25 / var(--tw-text-opacity));
-}
-
-.input:-ms-input-placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(25 25 25 / var(--tw-text-opacity));
-}
-
-.input::placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(25 25 25 / var(--tw-text-opacity));
-}
-
-.input:focus {
-  --tw-border-opacity: 1;
-  border-color: rgb(88 95 105 / var(--tw-border-opacity));
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.input:focus::-moz-placeholder {
-  --tw-text-opacity: 0.2;
-}
-
-.input:focus:-ms-input-placeholder {
-  --tw-text-opacity: 0.2;
-}
-
-.input:focus::placeholder {
-  --tw-text-opacity: 0.2;
-}
+/* .input {
+    @apply w-full border border-silverGrey bg-transparent focus:outline-none focus:border-darkGrey placeholder:text-black focus:placeholder:text-opacity-20 font-halvar font-normal;
+  } */
 
 .input-checkbox {
   margin-right: 0.5rem;
@@ -787,7 +736,7 @@ footer.bg-forestGreen ul li a.text-label {
 }
 
 .peer:checked ~ .input-checkbox {
-  background-image: url('../img/tick.svg');
+  /* background-image: url("../img/tick.svg"); */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 14px;
@@ -810,7 +759,7 @@ footer.bg-forestGreen ul li a.text-label {
 }
 
 .peer:checked ~ .input-checkbox-sm {
-  background-image: url('../img/tick.svg');
+  /* background-image: url("../img/tick.svg"); */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 14px;
@@ -839,7 +788,7 @@ footer.bg-forestGreen ul li a.text-label {
 }
 
 .peer:checked ~ .input-radiobox {
-  background-image: url('../img/tick.svg');
+  /* background-image: url("../img/tick.svg"); */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 14px;
@@ -855,7 +804,7 @@ footer.bg-forestGreen ul li a.text-label {
 }
 
 .peer:checked ~ .input-radiobox {
-  background-image: url('../img/radio.svg');
+  /* background-image: url("../img/radio.svg"); */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 65%;
@@ -873,7 +822,7 @@ footer.bg-forestGreen ul li a.text-label {
 }
 
 .peer:checked ~ .input-radiobox-sm {
-  background-image: url('../img/tick.svg');
+  /* background-image: url("../img/tick.svg"); */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 14px;
@@ -896,7 +845,7 @@ footer.bg-forestGreen ul li a.text-label {
 }
 
 .peer:checked ~ .input-radiobox-sm {
-  background-image: url('../img/tick.svg');
+  /* background-image: url("../img/tick.svg"); */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 14px;
@@ -912,7 +861,7 @@ footer.bg-forestGreen ul li a.text-label {
 }
 
 .peer:checked ~ .input-radiobox-sm {
-  background-image: url('../img/radio.svg');
+  /* background-image: url("../img/radio.svg"); */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 65%;
@@ -922,8 +871,6 @@ footer.bg-forestGreen ul li a.text-label {
   height: 1.5rem;
   width: 1.5rem;
 }
-
-/* stylelint-disable max-line-length */
 
 .button {
   border-radius: 0.75rem;
@@ -1503,10 +1450,6 @@ footer.bg-forestGreen ul li a.text-label {
 
 .mr-2\.5 {
   margin-right: 0.625rem;
-}
-
-.-mt-1 {
-  margin-top: -0.25rem;
 }
 
 .block {
@@ -2514,11 +2457,6 @@ footer.bg-forestGreen ul li a.text-label {
   padding-right: 1.25rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .pt-5 {
   padding-top: 1.25rem;
 }
@@ -2784,10 +2722,6 @@ footer.bg-forestGreen ul li a.text-label {
   line-height: 1.5rem;
 }
 
-.leading-3 {
-  line-height: .75rem;
-}
-
 .tracking-wide {
   letter-spacing: 0.025em;
 }
@@ -2867,6 +2801,11 @@ footer.bg-forestGreen ul li a.text-label {
 .text-purpleAccent {
   --tw-text-opacity: 1;
   color: rgb(191 34 176 / var(--tw-text-opacity));
+}
+
+.text-light {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-silverGrey {
@@ -3012,65 +2951,29 @@ footer.bg-forestGreen ul li a.text-label {
   color: rgb(227 5 19 / var(--tw-text-opacity));
 }
 
-.input-lg {
-  height: 5rem;
-  border-radius: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  font-size: 1.5rem;
-}
+/* .input-lg {
+    @apply h-20 px-8 py-8 rounded-2xl text-[1.5rem];
+  }
 
-.input-md {
-  height: 4rem;
-  border-radius: 0.75rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  font-size: 1.313rem;
-}
+  .input-md {
+    @apply h-16 px-6 py-5 rounded-xl text-[1.313rem];
+  }
 
-.input-sm {
-  height: 3rem;
-  border-radius: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  font-size: 1.125rem;
-}
+  .input-sm {
+    @apply h-12 px-4 py-3 rounded-lg text-[1.125rem];
+  }
 
-.input-select-lg {
-  height: 5rem;
-  border-radius: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-size: 1.5rem;
-}
+  .input-select-lg {
+    @apply h-20 px-4 py-4 rounded-2xl text-[1.5rem];
+  }
 
-.input-select-md {
-  height: 4rem;
-  border-radius: 0.75rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-size: 1.313rem;
-}
+  .input-select-md {
+    @apply h-16 px-4 py-4 rounded-xl text-[1.313rem];
+  }
 
-.input-select-sm {
-  height: 3rem;
-  border-radius: 0.5rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  font-size: 1.125rem;
-}
+  .input-select-sm {
+    @apply h-12 px-3 py-2 rounded-lg text-[1.125rem];
+  } */
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;
@@ -3081,6 +2984,18 @@ footer.bg-forestGreen ul li a.text-label {
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
+}
+
+.shadow-64 {
+  box-shadow: 0px 64px 64px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-32 {
+  box-shadow: 0px 32px 32px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-16 {
+  box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 2100px) {
@@ -3518,42 +3433,6 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
 }
 
 @media (min-width: 1024px) {
-  .lg\:bttn {
-    display: inline-flex;
-  }
-
-  .lg\:bttn {
-    align-items: center;
-  }
-
-  .lg\:bttn {
-    border-radius: 9999px;
-  }
-
-  .lg\:bttn {
-    --tw-bg-opacity: 1;
-    background-color: rgb(227 5 19 / var(--tw-bg-opacity));
-  }
-
-  .lg\:bttn {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-
-  .lg\:bttn {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .lg\:bttn {
-    line-height: 24px;
-  }
-
-  .lg\:bttn {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-
   .lg\:invisible {
     visibility: hidden;
   }
@@ -3650,11 +3529,6 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
   .lg\:my-12 {
     margin-top: 3rem;
     margin-bottom: 3rem;
-  }
-
-  .lg\:my-10 {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
   }
 
   .lg\:mt-6 {
@@ -4337,12 +4211,20 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
     padding-right: 0.5rem;
   }
 
+  .lg\:pb-16 {
+    padding-bottom: 4rem;
+  }
+
   .lg\:pb-20 {
     padding-bottom: 5rem;
   }
 
-  .lg\:pb-16 {
-    padding-bottom: 4rem;
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .lg\:pt-12 {
+    padding-top: 3rem;
   }
 
   .lg\:text-base {
@@ -4434,10 +4316,6 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
     line-height: 1.5rem;
   }
 
-  .lg\:leading-3 {
-    line-height: .75rem;
-  }
-
   .lg\:tracking-widest {
     letter-spacing: 0.1em;
   }
@@ -4493,74 +4371,12 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
     background-color: rgb(25 25 25 / var(--tw-bg-opacity));
   }
 
-  .lg\:input-lg {
-    height: 5rem;
-  }
-
-  .lg\:input-lg {
-    border-radius: 1rem;
-  }
-
-  .lg\:input-lg {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .lg\:input-lg {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  .lg\:input-lg {
-    font-size: 1.5rem;
-  }
-
-  .lg\:input-md {
-    height: 4rem;
-  }
-
-  .lg\:input-md {
-    border-radius: 0.75rem;
-  }
-
-  .lg\:input-md {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .lg\:input-md {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-  }
-
-  .lg\:input-md {
-    font-size: 1.313rem;
-  }
-
-  .lg\:input-select-md {
-    height: 4rem;
-  }
-
-  .lg\:input-select-md {
-    border-radius: 0.75rem;
-  }
-
-  .lg\:input-select-md {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .lg\:input-select-md {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .lg\:input-select-md {
-    font-size: 1.313rem;
-  }
-
   .lg\:shadow-b {
-    box-shadow: 0px 128px 56px -64px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 128px 56px -64px rgb(0 0 0 / 15%);
+  }
+
+  .lg\:shadow-64 {
+    box-shadow: 0px 64px 64px rgba(0, 0, 0, 0.1);
   }
 
   .lg\:before\:w-\[16vw\]::before {
