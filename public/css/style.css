@@ -1580,6 +1580,10 @@ footer.bg-forestGreen ul li a.text-label {
   height: 5rem;
 }
 
+.h-9 {
+  height: 2.25rem;
+}
+
 .max-h-0 {
   max-height: 0px;
 }
@@ -1732,6 +1736,10 @@ footer.bg-forestGreen ul li a.text-label {
 
 .w-96 {
   width: 24rem;
+}
+
+.w-9 {
+  width: 2.25rem;
 }
 
 .min-w-0 {
@@ -3767,6 +3775,10 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
     height: 20rem;
   }
 
+  .lg\:h-10 {
+    height: 2.5rem;
+  }
+
   .lg\:min-h-\[320px\] {
     min-height: 320px;
   }
@@ -3877,6 +3889,10 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-10 {
+    width: 2.5rem;
   }
 
   .lg\:flex-1 {
@@ -4203,6 +4219,10 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
     padding-bottom: 0px;
   }
 
+  .lg\:pt-12 {
+    padding-top: 3rem;
+  }
+
   .lg\:pr-32 {
     padding-right: 8rem;
   }
@@ -4217,14 +4237,6 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
 
   .lg\:pb-20 {
     padding-bottom: 5rem;
-  }
-
-  .lg\:pt-10 {
-    padding-top: 2.5rem;
-  }
-
-  .lg\:pt-12 {
-    padding-top: 3rem;
   }
 
   .lg\:text-base {
