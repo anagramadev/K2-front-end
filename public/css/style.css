@@ -1089,14 +1089,6 @@ footer.bg-forestGreen ul li a.text-label {
   left: -46px;
 }
 
-.-left-4 {
-  left: -1rem;
-}
-
-.bottom-12 {
-  bottom: 3rem;
-}
-
 .left-2 {
   left: 0.5rem;
 }
@@ -1109,8 +1101,20 @@ footer.bg-forestGreen ul li a.text-label {
   top: -1.5rem;
 }
 
+.-left-4 {
+  left: -1rem;
+}
+
+.bottom-12 {
+  bottom: 3rem;
+}
+
 .\!top-0 {
   top: 0px !important;
+}
+
+.-left-\[56px\] {
+  left: -56px;
 }
 
 .z-10 {
@@ -1452,6 +1456,10 @@ footer.bg-forestGreen ul li a.text-label {
   margin-right: 0.625rem;
 }
 
+.mt-40 {
+  margin-top: 10rem;
+}
+
 .block {
   display: block;
 }
@@ -1734,12 +1742,12 @@ footer.bg-forestGreen ul li a.text-label {
   width: 4rem;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
 .w-9 {
   width: 2.25rem;
+}
+
+.w-96 {
+  width: 24rem;
 }
 
 .min-w-0 {
@@ -3771,12 +3779,12 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
     height: 72px;
   }
 
-  .lg\:h-80 {
-    height: 20rem;
-  }
-
   .lg\:h-10 {
     height: 2.5rem;
+  }
+
+  .lg\:h-80 {
+    height: 20rem;
   }
 
   .lg\:min-h-\[320px\] {
@@ -3887,12 +3895,12 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
     width: 96%;
   }
 
-  .lg\:w-full {
-    width: 100%;
-  }
-
   .lg\:w-10 {
     width: 2.5rem;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:flex-1 {
@@ -4237,6 +4245,10 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
 
   .lg\:pb-20 {
     padding-bottom: 5rem;
+  }
+
+  .lg\:pl-11 {
+    padding-left: 2.75rem;
   }
 
   .lg\:text-base {
