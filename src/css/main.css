@@ -3,7 +3,8 @@
 
 @import "tailwindcss/components";
 @import "@47nordmedia/k2-systems-ui-library/dist/customComponents.css";
-@import '@47nordmedia/k2-systems-ui-library/dist/main.css';
+@import "@47nordmedia/k2-systems-ui-library/dist/main.css";
 
 @import "tailwindcss/utilities";
 @import "@47nordmedia/k2-systems-ui-library/dist/customUtilities.css";
+@import "@47nordmedia/k2-systems-ui-library/dist/legacyStyles.css";

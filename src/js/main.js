@@ -584,6 +584,42 @@ Topicard.forEach((card) => {
     topicListCard.classList.remove("show");
   });
 });
+// Full screen banner issue ---------
+const mainNav = document.querySelector("nav");
+const siteNavs = document.querySelectorAll("nav > ul > li");
+const fullBanner = document.querySelector(".full-banner");
+siteNavs.forEach((link) => {
+  link.addEventListener("mouseover", (e) => {
+    setTimeout(() => {
+      fullBanner.classList.remove("-mx-4");
+      fullBanner.classList.remove("lg:-mx-8");
+    }, 200);
+    // if (!link.contains("e.target")) {
+    //   setTimeout(() => {
+    //     console.log("asd");
+    //     fullBanner.classList.add("-mx-4");
+    //     fullBanner.classList.add("lg:-mx-8");
+    //   }, 150);
+    // }
+    link.addEventListener("mouseout", () => {
+      console.log("d");
+      if (!link.contains(e.target)) {
+        setTimeout(() => {
+          console.log("asd");
+          fullBanner.classList.add("-mx-4");
+          fullBanner.classList.add("lg:-mx-8");
+        }, 150);
+      }
+    });
+  });
+  // link.addEventListener("mouseout", () => {
+  //   setTimeout(() => {
+  //     console.log("asd");
+  //     fullBanner.classList.add("-mx-4");
+  //     fullBanner.classList.add("lg:-mx-8");
+  //   }, 150);
+  // });
+});
 // Icons func -----------
 initIcons();
 
