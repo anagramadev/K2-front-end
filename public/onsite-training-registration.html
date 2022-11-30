@@ -508,8 +508,98 @@
         </div>
       </section>
       <section class="bg-white -mx-4 lg:-mx-8 mt-16">
-        <div class="px-8 py-12">
-          <p>Please fill out</p>
+        <div class="px-4 lg:px-8 pt-7 pb-16 lg:py-12">
+          <p class="text-md lg:text-2xl font-medium">Please fill out</p>
+          <form class="mt-12 lg:mt-20">
+            <div class="flex flex-col lg:flex-row justify-between">
+              <div class="basis-5/12">
+                <div>
+                  <p class="font-medium text-sm lg:text-base">How many emplyees do you expect participate in the
+                    training
+                  </p>
+                  <div class="w-[370px] overflow-scroll no-scrollbar -mx-4 lg:mx-0">
+                    <div class="flex gap-x-1 mt-6 px-4 lg:px-0 w-max">
+                      <div
+                        class="flex items-center gap-2.5 relative border border-medGrey p-1 rounded-full round-checkbox">
+                        <input type="checkbox"
+                          class="absolute w-full h-full left-0 top-0 opacity-0 cursor-pointer peer">
+                        <div
+                          class="w-6 h-6 rounded-full bg-paper flex items-center justify-center peer-checked:bg-forestGreenAccent">
+                          <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 5.7L0.899994 4.7L5.39999 8.7L13.2 0L14 0.800003L5.8 12L0 5.7Z"
+                              class="fill-lightGrey" />
+                          </svg>
+                        </div>
+                        <span class="text-label !leading-6 pr-3 peer-checked:text-black">10 – 20</span>
+                      </div>
+                      <div
+                        class="flex items-center gap-2.5 relative border border-medGrey p-1 rounded-full round-checkbox">
+                        <input type="checkbox"
+                          class="absolute w-full h-full left-0 top-0 opacity-0 cursor-pointer peer">
+                        <div
+                          class="w-6 h-6 rounded-full bg-paper flex items-center justify-center peer-checked:bg-forestGreenAccent">
+                          <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 5.7L0.899994 4.7L5.39999 8.7L13.2 0L14 0.800003L5.8 12L0 5.7Z"
+                              class="fill-lightGrey" />
+                          </svg>
+                        </div>
+                        <span class="text-label !leading-6 pr-3 peer-checked:text-black">More than 20</span>
+                      </div>
+                      <div
+                        class="flex items-center gap-2.5 relative border border-medGrey p-1 rounded-full round-checkbox">
+                        <input type="checkbox"
+                          class="absolute w-full h-full left-0 top-0 opacity-0 cursor-pointer peer">
+                        <div
+                          class="w-6 h-6 rounded-full bg-paper flex items-center justify-center peer-checked:bg-forestGreenAccent">
+                          <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 5.7L0.899994 4.7L5.39999 8.7L13.2 0L14 0.800003L5.8 12L0 5.7Z"
+                              class="fill-lightGrey" />
+                          </svg>
+                        </div>
+                        <span class="text-label !leading-6 pr-3 peer-checked:text-black">Less than 10</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="basis-6/12 mt-12 lg:mt-0">
+                <div class="mb-12 lg:mb-10">
+                  <label for="tarineeName" class="font-medium text-sm lg:text-base block mb-4">Your name</label>
+                  <input id="tarineeName" type="text" placeholder="Jonathan Doe"
+                    class="input input-sm lg:input-md border-silverGrey placeholder:text-black">
+                </div>
+
+                <div class="flex flex-col lg:flex-row gap-12 lg:gap-8 mb-12 lg:mb-10">
+                  <div class="flex-1">
+                    <label for="tarineeMail" class="font-medium text-sm lg:text-base block mb-4">Your email
+                      address</label>
+                    <input id="tarineeMail" type="text" placeholder="j.doe@gmail.com"
+                      class="input input-sm lg:input-md border-silverGrey placeholder:text-black">
+                  </div>
+                  <div class="flex-1">
+                    <label for="tarineePhn" class="font-medium text-sm lg:text-base block mb-4">Telephone number</label>
+                    <input id="tarineePhn" type="text" placeholder="Telephone number"
+                      class="input input-sm lg:input-md border-silverGrey placeholder:text-black">
+                  </div>
+                </div>
+                <div>
+                  <label for="tarineeInfo" class="font-medium text-sm lg:text-base block mb-4">Other information</label>
+                  <textarea id="tarineeInfo" placeholder="Other information"
+                    class="!h-80 input input-sm lg:input-md border-silverGrey placeholder:text-black"
+                    autocomplete="off"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="lg:text-center mt-6 lg:mt-20">
+              <button type="submit"
+                class="bg-red border-2 border-red text-sm lg:text-base text-white inline-flex gap-2 items-center rounded-full justify-center px-5 py-1.5">
+                Send form <span class="icon icon-arrow-right-14 w-4 h-4"></span>
+              </button>
+            </div>
+          </form>
         </div>
       </section>
       <section class="pt-28 lg:pt-40">
@@ -539,7 +629,7 @@
             <a href="#"
               class="basis-4/12 flex flex-col justify-between min-h-[190px] lg:min-h-[350px] px-4 py-5 lg:p-8 lg:border-t border-b border-r border-lightGrey">
               <div class="text-darkGrey">
-                <span class="icon icon-toolbox-64 w-12 h-12 lg:w-16 lg:h-16"></span>
+                <span class="icon icon-certificate-trio-64 w-12 h-12 lg:w-16 lg:h-16"></span>
               </div>
               <div class="flex items-center justify-between">
                 <p class="text-base lg:text-lg font-medium">K2 Training Program</p>
@@ -551,7 +641,7 @@
             <a href="#"
               class="basis-4/12 flex flex-col justify-between min-h-[190px] lg:min-h-[350px] px-4 py-5 lg:p-8 lg:border-t border-b border-r border-lightGrey">
               <div class="text-darkGrey">
-                <span class="icon icon-tutorial-64 w-12 h-12 lg:w-16 lg:h-16"></span>
+                <span class="icon icon-video-64 w-12 h-12 lg:w-16 lg:h-16"></span>
               </div>
               <div class="flex items-center justify-between">
                 <p class="text-base lg:text-lg font-medium">K2 Tutorials</p>

@@ -605,6 +605,21 @@ if (fullBanner && window.innerWidth > 1024) {
     });
   });
 }
+// Custom checkbox & radios ------
+const roundCheckboxs = document.querySelectorAll(".round-checkbox");
+
+roundCheckboxs.forEach((checkbox) => {
+  checkbox.addEventListener("click", () => {
+    console.log("clikck");
+    const svgTickPath = checkbox.querySelector("svg > path");
+    svgTickPath.classList.toggle("fill-lightGrey");
+    svgTickPath.classList.toggle("fill-black");
+    checkbox.classList.toggle("border");
+    checkbox.classList.toggle("border-2");
+    checkbox.classList.toggle("border-medGrey");
+    checkbox.classList.toggle("border-black");
+  });
+});
 // Icons func -----------
 initIcons();
 
