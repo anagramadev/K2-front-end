@@ -511,31 +511,31 @@
         <div class="px-4 lg:px-8 pt-7 pb-16 lg:py-12">
           <p class="text-md lg:text-2xl font-medium">Please fill out</p>
           <form class="mt-12 lg:mt-20">
-            <div class="flex flex-col lg:flex-row justify-between">
+            <div class="flex flex-col lg:flex-row gap-12 justify-between">
               <div class="basis-5/12">
                 <div>
                   <p class="font-medium text-sm lg:text-base">How many emplyees do you expect participate in the
                     training
                   </p>
-                  <div class="w-[370px] overflow-scroll no-scrollbar -mx-4 lg:mx-0">
+                  <div class="w-[370px] lg:w-auto overflow-scroll no-scrollbar -mx-4 lg:mx-0">
                     <div class="flex gap-x-1 mt-6 px-4 lg:px-0 w-max">
                       <div
-                        class="flex items-center gap-2.5 relative border border-medGrey p-1 rounded-full round-checkbox">
-                        <input type="checkbox"
+                        class="flex items-center gap-2.5 relative border-2 border-black p-1 rounded-full round-radiobox">
+                        <input type="radio" name="employees" value="10" checked
                           class="absolute w-full h-full left-0 top-0 opacity-0 cursor-pointer peer">
                         <div
                           class="w-6 h-6 rounded-full bg-paper flex items-center justify-center peer-checked:bg-forestGreenAccent">
                           <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 5.7L0.899994 4.7L5.39999 8.7L13.2 0L14 0.800003L5.8 12L0 5.7Z"
-                              class="fill-lightGrey" />
+                              class="fill-black" />
                           </svg>
                         </div>
                         <span class="text-label !leading-6 pr-3 peer-checked:text-black">10 – 20</span>
                       </div>
                       <div
-                        class="flex items-center gap-2.5 relative border border-medGrey p-1 rounded-full round-checkbox">
-                        <input type="checkbox"
+                        class="flex items-center gap-2.5 relative border border-medGrey p-1 rounded-full round-radiobox">
+                        <input type="radio" name="employees" value="20"
                           class="absolute w-full h-full left-0 top-0 opacity-0 cursor-pointer peer">
                         <div
                           class="w-6 h-6 rounded-full bg-paper flex items-center justify-center peer-checked:bg-forestGreenAccent">
@@ -548,8 +548,8 @@
                         <span class="text-label !leading-6 pr-3 peer-checked:text-black">More than 20</span>
                       </div>
                       <div
-                        class="flex items-center gap-2.5 relative border border-medGrey p-1 rounded-full round-checkbox">
-                        <input type="checkbox"
+                        class="flex items-center gap-2.5 relative border border-medGrey p-1 rounded-full round-radiobox">
+                        <input type="radio" name="employees" value="5"
                           class="absolute w-full h-full left-0 top-0 opacity-0 cursor-pointer peer">
                         <div
                           class="w-6 h-6 rounded-full bg-paper flex items-center justify-center peer-checked:bg-forestGreenAccent">
@@ -564,8 +564,122 @@
                     </div>
                   </div>
                 </div>
+                <div class="mt-12">
+                  <p class="font-medium text-sm lg:text-base">Primary interest area (check all that apply)
+                  </p>
+                  <div class="w-[370px] lg:w-auto overflow-scroll no-scrollbar -mx-4 lg:mx-0">
+                    <div class="flex gap-x-1 mt-6 px-4 lg:px-0 w-max">
+                      <div
+                        class="flex items-center gap-2.5 relative border border-medGrey p-1 rounded-full round-checkbox">
+                        <input type="checkbox"
+                          class="absolute w-full h-full left-0 top-0 opacity-0 cursor-pointer peer">
+                        <div
+                          class="w-6 h-6 rounded-full bg-paper flex items-center justify-center peer-checked:bg-forestGreenAccent">
+                          <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 5.7L0.899994 4.7L5.39999 8.7L13.2 0L14 0.800003L5.8 12L0 5.7Z"
+                              class="fill-lightGrey" />
+                          </svg>
+                        </div>
+                        <span class="text-label !leading-6 pr-3 peer-checked:text-black">Getting started</span>
+                      </div>
+                      <div
+                        class="flex items-center gap-2.5 relative border border-medGrey p-1 rounded-full round-checkbox">
+                        <input type="checkbox"
+                          class="absolute w-full h-full left-0 top-0 opacity-0 cursor-pointer peer">
+                        <div
+                          class="w-6 h-6 rounded-full bg-paper flex items-center justify-center peer-checked:bg-forestGreenAccent">
+                          <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 5.7L0.899994 4.7L5.39999 8.7L13.2 0L14 0.800003L5.8 12L0 5.7Z"
+                              class="fill-lightGrey" />
+                          </svg>
+                        </div>
+                        <span class="text-label !leading-6 pr-3 peer-checked:text-black">Planning</span>
+                      </div>
+                      <div
+                        class="flex items-center gap-2.5 relative border border-medGrey p-1 rounded-full round-checkbox">
+                        <input type="checkbox"
+                          class="absolute w-full h-full left-0 top-0 opacity-0 cursor-pointer peer">
+                        <div
+                          class="w-6 h-6 rounded-full bg-paper flex items-center justify-center peer-checked:bg-forestGreenAccent">
+                          <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 5.7L0.899994 4.7L5.39999 8.7L13.2 0L14 0.800003L5.8 12L0 5.7Z"
+                              class="fill-lightGrey" />
+                          </svg>
+                        </div>
+                        <span class="text-label !leading-6 pr-3 peer-checked:text-black">Installation</span>
+                      </div>
+                      <div
+                        class="flex items-center gap-2.5 relative border border-medGrey p-1 rounded-full round-checkbox">
+                        <input type="checkbox"
+                          class="absolute w-full h-full left-0 top-0 opacity-0 cursor-pointer peer">
+                        <div
+                          class="w-6 h-6 rounded-full bg-paper flex items-center justify-center peer-checked:bg-forestGreenAccent">
+                          <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 5.7L0.899994 4.7L5.39999 8.7L13.2 0L14 0.800003L5.8 12L0 5.7Z"
+                              class="fill-lightGrey" />
+                          </svg>
+                        </div>
+                        <span class="text-label !leading-6 pr-3 peer-checked:text-black">Maintenance</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-12">
+                  <p class="font-medium text-sm lg:text-base">Application Area of Interest (check all that apply)
+                  </p>
+                  <div class="w-[370px] lg:w-auto overflow-scroll no-scrollbar -mx-4 lg:mx-0">
+                    <div class="flex gap-x-1 mt-6 px-4 lg:px-0 w-max">
+                      <div
+                        class="flex items-center gap-2.5 relative border border-medGrey p-1 rounded-full round-checkbox">
+                        <input type="checkbox"
+                          class="absolute w-full h-full left-0 top-0 opacity-0 cursor-pointer peer">
+                        <div
+                          class="w-6 h-6 rounded-full bg-paper flex items-center justify-center peer-checked:bg-forestGreenAccent">
+                          <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 5.7L0.899994 4.7L5.39999 8.7L13.2 0L14 0.800003L5.8 12L0 5.7Z"
+                              class="fill-lightGrey" />
+                          </svg>
+                        </div>
+                        <span class="text-label !leading-6 pr-3 peer-checked:text-black">Primary roof types</span>
+                      </div>
+                      <div
+                        class="flex items-center gap-2.5 relative border border-medGrey p-1 rounded-full round-checkbox">
+                        <input type="checkbox"
+                          class="absolute w-full h-full left-0 top-0 opacity-0 cursor-pointer peer">
+                        <div
+                          class="w-6 h-6 rounded-full bg-paper flex items-center justify-center peer-checked:bg-forestGreenAccent">
+                          <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 5.7L0.899994 4.7L5.39999 8.7L13.2 0L14 0.800003L5.8 12L0 5.7Z"
+                              class="fill-lightGrey" />
+                          </svg>
+                        </div>
+                        <span class="text-label !leading-6 pr-3 peer-checked:text-black">Flat roofs</span>
+                      </div>
+                      <div
+                        class="flex items-center gap-2.5 relative border border-medGrey p-1 rounded-full round-checkbox">
+                        <input type="checkbox"
+                          class="absolute w-full h-full left-0 top-0 opacity-0 cursor-pointer peer">
+                        <div
+                          class="w-6 h-6 rounded-full bg-paper flex items-center justify-center peer-checked:bg-forestGreenAccent">
+                          <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 5.7L0.899994 4.7L5.39999 8.7L13.2 0L14 0.800003L5.8 12L0 5.7Z"
+                              class="fill-lightGrey" />
+                          </svg>
+                        </div>
+                        <span class="text-label !leading-6 pr-3 peer-checked:text-black">Pitched roofs</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="basis-6/12 mt-12 lg:mt-0">
+              <div class="basis-6/12">
                 <div class="mb-12 lg:mb-10">
                   <label for="tarineeName" class="font-medium text-sm lg:text-base block mb-4">Your name</label>
                   <input id="tarineeName" type="text" placeholder="Jonathan Doe"

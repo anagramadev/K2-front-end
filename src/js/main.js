@@ -607,10 +607,10 @@ if (fullBanner && window.innerWidth > 1024) {
 }
 // Custom checkbox & radios ------
 const roundCheckboxs = document.querySelectorAll(".round-checkbox");
+const roundRadioboxs = document.querySelectorAll(".round-radiobox");
 
 roundCheckboxs.forEach((checkbox) => {
   checkbox.addEventListener("click", () => {
-    console.log("clikck");
     const svgTickPath = checkbox.querySelector("svg > path");
     svgTickPath.classList.toggle("fill-lightGrey");
     svgTickPath.classList.toggle("fill-black");
@@ -618,6 +618,26 @@ roundCheckboxs.forEach((checkbox) => {
     checkbox.classList.toggle("border-2");
     checkbox.classList.toggle("border-medGrey");
     checkbox.classList.toggle("border-black");
+  });
+});
+roundRadioboxs.forEach((checkbox) => {
+  checkbox.addEventListener("click", () => {
+    roundRadioboxs.forEach((checkbox) => {
+      const svgTickPath = checkbox.querySelector("svg > path");
+      svgTickPath.classList.add("fill-lightGrey");
+      svgTickPath.classList.remove("fill-black");
+      checkbox.classList.add("border");
+      checkbox.classList.remove("border-2");
+      checkbox.classList.add("border-medGrey");
+      checkbox.classList.remove("border-black");
+    });
+    const svgTickPath = checkbox.querySelector("svg > path");
+    svgTickPath.classList.remove("fill-lightGrey");
+    svgTickPath.classList.add("fill-black");
+    checkbox.classList.remove("border");
+    checkbox.classList.add("border-2");
+    checkbox.classList.remove("border-medGrey");
+    checkbox.classList.add("border-black");
   });
 });
 // Icons func -----------
