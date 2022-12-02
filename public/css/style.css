@@ -1663,6 +1663,10 @@ footer.bg-forestGreen ul li a.text-label {
   min-height: 190px;
 }
 
+.min-h-\[80\%\] {
+  min-height: 80%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -2027,12 +2031,12 @@ footer.bg-forestGreen ul li a.text-label {
   gap: 2.5rem;
 }
 
-.gap-2\.5 {
-  gap: 0.625rem;
-}
-
 .gap-12 {
   gap: 3rem;
+}
+
+.gap-2\.5 {
+  gap: 0.625rem;
 }
 
 .gap-16 {
@@ -2226,6 +2230,11 @@ footer.bg-forestGreen ul li a.text-label {
   border-color: rgb(217 230 112 / var(--tw-border-opacity)) !important;
 }
 
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(25 25 25 / var(--tw-border-opacity));
+}
+
 .border-orangeAccent {
   --tw-border-opacity: 1;
   border-color: rgb(255 151 0 / var(--tw-border-opacity));
@@ -2242,11 +2251,6 @@ footer.bg-forestGreen ul li a.text-label {
 
 .border-black\/10 {
   border-color: rgb(25 25 25 / 0.1);
-}
-
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(25 25 25 / var(--tw-border-opacity));
 }
 
 .border-t-silverGrey {
@@ -2422,12 +2426,12 @@ footer.bg-forestGreen ul li a.text-label {
   --tw-gradient-to: rgb(25 25 25 / 0.4);
 }
 
-.fill-lightGrey {
-  fill: #C2C9D2;
-}
-
 .fill-black {
   fill: #191919;
+}
+
+.fill-lightGrey {
+  fill: #C2C9D2;
 }
 
 .object-cover {
@@ -3971,6 +3975,10 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
 
   .lg\:-mt-2 {
     margin-top: -0.5rem;
+  }
+
+  .lg\:ml-32 {
+    margin-left: 8rem;
   }
 
   .lg\:block {
