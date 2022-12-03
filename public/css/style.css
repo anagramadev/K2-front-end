@@ -1663,10 +1663,6 @@ footer.bg-forestGreen ul li a.text-label {
   min-height: 190px;
 }
 
-.min-h-\[80\%\] {
-  min-height: 80%;
-}
-
 .w-full {
   width: 100%;
 }
@@ -3957,6 +3953,10 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
     margin-left: 5rem;
   }
 
+  .lg\:ml-32 {
+    margin-left: 8rem;
+  }
+
   .lg\:mt-48 {
     margin-top: 12rem;
   }
@@ -3975,10 +3975,6 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
 
   .lg\:-mt-2 {
     margin-top: -0.5rem;
-  }
-
-  .lg\:ml-32 {
-    margin-left: 8rem;
   }
 
   .lg\:block {
@@ -4282,9 +4278,18 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
     border-width: 1px;
   }
 
+  .lg\:border-2 {
+    border-width: 2px;
+  }
+
   .lg\:border-x {
     border-left-width: 1px;
     border-right-width: 1px;
+  }
+
+  .lg\:border-y-0 {
+    border-top-width: 0px;
+    border-bottom-width: 0px;
   }
 
   .lg\:border-t {
@@ -4614,6 +4619,10 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
 
   .lg\:leading-8 {
     line-height: 2rem;
+  }
+
+  .lg\:leading-5 {
+    line-height: 1.25rem;
   }
 
   .lg\:tracking-widest {
