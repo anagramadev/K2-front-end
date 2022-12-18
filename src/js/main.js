@@ -640,6 +640,21 @@ roundRadioboxs.forEach((checkbox) => {
     checkbox.classList.add("border-black");
   });
 });
+
+// Roofchart ----------------
+const roofChartList = document.querySelector(".roofchart-list");
+const roofChartShadow = document.querySelector(".roofchart-shadow");
+if (roofChartList && window.innerWidth < 800) {
+  roofChartShadow.style.height = `${roofChartList.offsetHeight}px`;
+  roofChartShadow.style.background =
+    "linear-gradient(270deg, #B8BFC8 0%, rgba(194, 201, 210, 0) 100%)";
+  roofChartShadow.style.transform = "matrix(-1, 0, 0, 1, 0, 0)";
+  roofChartList.addEventListener("scroll", (e) => {
+    roofChartList.scrollLeft
+      ? (roofChartShadow.style.opacity = "1")
+      : (roofChartShadow.style.opacity = "0");
+  });
+}
 // Icons func -----------
 initIcons();
 

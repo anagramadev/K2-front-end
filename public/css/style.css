@@ -1172,6 +1172,14 @@ footer.bg-forestGreen ul li a.text-label {
   top: 0px !important;
 }
 
+.-right-2\.5 {
+  right: -0.625rem;
+}
+
+.-right-2 {
+  right: -0.5rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1655,6 +1663,10 @@ footer.bg-forestGreen ul li a.text-label {
   height: 40px;
 }
 
+.h-\[207px\] {
+  height: 207px;
+}
+
 .max-h-0 {
   max-height: 0px;
 }
@@ -2120,6 +2132,10 @@ footer.bg-forestGreen ul li a.text-label {
   overflow-x: hidden;
 }
 
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
 .overflow-x-scroll {
   overflow-x: scroll;
 }
@@ -2411,6 +2427,10 @@ footer.bg-forestGreen ul li a.text-label {
 .\!bg-white {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-lightGrey\/5 {
+  background-color: rgb(194 201 210 / 0.05);
 }
 
 .bg-gradient-to-b {
@@ -3792,6 +3812,11 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
     margin-bottom: 1.25rem;
   }
 
+  .lg\:my-2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
   .lg\:my-20 {
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -4329,6 +4354,10 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
     border-style: none;
   }
 
+  .lg\:bg-transparent {
+    background-color: transparent;
+  }
+
   .lg\:object-none {
     -o-object-fit: none;
        object-fit: none;
@@ -4784,6 +4813,10 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
     border-color: rgb(217 230 112 / var(--tw-border-opacity));
   }
 
+  .lg\:hover\:bg-black\/5:hover {
+    background-color: rgb(25 25 25 / 0.05);
+  }
+
   .group:hover .lg\:group-hover\:mr-0 {
     margin-right: 0px;
   }
@@ -4794,6 +4827,15 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
 
   .group:hover .lg\:group-hover\:hidden {
     display: none;
+  }
+
+  .group:hover .lg\:group-hover\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .group:hover .lg\:group-hover\:text-red {
+    --tw-text-opacity: 1;
+    color: rgb(227 5 19 / var(--tw-text-opacity));
   }
 
   .group:hover .lg\:group-hover\:opacity-100 {
