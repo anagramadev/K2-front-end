@@ -631,19 +631,86 @@
           </li>
         </ul>
       </div>
+      <!-- Search-form -->
       <div
-        class="flex items-center justify-center bg-white w-full lg:w-8/12 p-4 lg:p-8 absolute -top-full transition-all duration-300 lg:static shadow-[0_32px_32px_rgba(0,0,0,0.1)] navsearch-wrapper hidden">
-        <form action="" class="relative w-full">
-          <input type="text" placeholder="Search" class="input input-sm lg:input-lg flex" autocomplete="off" />
-          <button class="absolute top-1.5 lg:top-5 right-0 lg:right-5 roundcon lg:roundcon-red lg:text-white">
-            <span class="icon icon-search-slim-24 w-6 h-6"></span>
+        class="bg-white w-full lg:w-8/12 p-4 lg:p-8 absolute -top-full transition-all duration-300 lg:static shadow-[0_64px_64px_rgba(0,0,0,0.1)] navsearch-wrapper hidden rounded-bl-2xl rounded-br-2xl lg:rounded-2xl">
+        <div class="flex items-center justify-center">
+          <form action="" class="relative w-full">
+            <input type="text" placeholder="Search" class="input input-sm lg:input-lg flex" autocomplete="off" />
+            <button class="absolute top-1.5 lg:top-5 right-0 lg:right-5 roundcon lg:roundcon-red lg:text-white">
+              <span class="icon icon-search-slim-24 w-6 h-6"></span>
+            </button>
+          </form>
+          <button class="pl-4 lg:pl-8 flex items-center py-2 lg:py-4 searchclose-btn">
+            <img src="img/cross.svg" alt="close" class="align-middle" />
           </button>
-        </form>
-        <button
-          class="border-l border-silverGrey pl-4 lg:pl-8 ml-4 lg:ml-8 flex items-center py-2 lg:py-4 searchclose-btn">
-          <span class="text-0xs lg:text-base">Close</span>
-          <img src="img/cross.svg" alt="close" class="align-middle lg:hidden" />
-        </button>
+        </div>
+        <div>
+          <ul class="mt-6">
+            <li>
+              <a href="#" class="flex items-center justify-between py-2.5">
+                <p class="w-10/12 truncate">With K2 Systems, you can realise your commercial installations quickly
+                  and
+                  ...</p>
+                <div class="flex items-center gap-4">
+                  <span class="text-2xs uppercase tracking-wider px-3 py-0.5 rounded-full bg-cream">Webpage</span>
+                  <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L1 9" stroke="#E30513" stroke-width="1.5" />
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center justify-between py-2.5">
+                <p class="w-10/12 truncate">Choosing the right standing seam metal clamp or metal roof system</p>
+                <div class="flex items-center gap-4">
+                  <span class="text-2xs uppercase tracking-wider px-3 py-0.5 rounded-full bg-cream">Tutorial</span>
+                  <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L1 9" stroke="#E30513" stroke-width="1.5" />
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center justify-between py-2.5">
+                <p class="w-10/12 truncate">Metal roof systems and standing seam: Getting started and planning with K2
+                  DocuApp</p>
+                <div class="flex items-center gap-4">
+                  <span class="text-2xs uppercase tracking-wider px-3 py-0.5 rounded-full bg-cream">Webpage</span>
+                  <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L1 9" stroke="#E30513" stroke-width="1.5" />
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center justify-between py-2.5">
+                <p class="w-10/12 truncate">PV mounting and planning with SpeedRail system II</p>
+                <div class="flex items-center gap-4">
+                  <span class="text-2xs uppercase tracking-wider px-3 py-0.5 rounded-full bg-cream">Training</span>
+                  <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L1 9" stroke="#E30513" stroke-width="1.5" />
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center justify-between py-2.5">
+                <p class="w-10/12 truncate">K2 Systems and Axelent in Casablanca at Solaire Expo Maroc 2023</p>
+                <div class="flex items-center gap-4">
+                  <span class="text-2xs uppercase tracking-wider px-3 py-0.5 rounded-full bg-cream">Product</span>
+                  <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L1 9" stroke="#E30513" stroke-width="1.5" />
+                  </svg>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="py-2.5">
+            <a href="#" class="text-red">+ More results</a>
+          </div>
+          <p class="text-lightGrey mt-8 lg:mt-12">No results found.</p>
+        </div>
       </div>
     </div>
     <main class="mt-20 lg:mt-40">
@@ -1122,6 +1189,108 @@ richtigen Halt." />
             </svg>
           </button>
         </form>
+      </section>
+      <!-- Search module -->
+      <section class="mt-28 lg:mt-56 text-center">
+        <p class="text-label mb-5">Search Module</p>
+        <h4>Search for anything in the K2 ecosystem</h4>
+        <form action="" class="relative mt-10 search">
+          <input type="email" placeholder="Enter keyword" class="input input-md lg:input-lg flex" />
+          <button class="absolute roundcon roundcon-red lg:bttn lg:bttn-red lg:w-auto lg:h-auto top-3 lg:top-5 right-5">
+            <span class="text-0xs lg:text-base lg:leading-6">Search</span>
+            <span class="icon icon-search-slim-24 w-6 h-6 text-white lg:ml-1"></span>
+          </button>
+          <div
+            class="absolute top-16 lg:top-20 left-0 w-full bg-white rounded-2xl shadow-[0_64px_64px_rgba(0,0,0,0.1)] z-10">
+            <ul class="mt-6 text-left">
+              <li class="px-4 lg:px-8 hover:bg-paper group">
+                <a href="#" class="flex items-center justify-between py-2.5">
+                  <p class="w-10/12 truncate">With K2 Systems, you can realise your commercial installations quickly
+                    and
+                    ...</p>
+                  <div class="flex items-center gap-4">
+                    <span
+                      class="text-2xs uppercase tracking-wider px-3 py-0.5 rounded-full bg-cream group-hover:bg-white">Webpage</span>
+                    <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L5 5L1 9" stroke="#E30513" stroke-width="1.5" />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="px-4 lg:px-8 hover:bg-paper group">
+                <a href="#" class="flex items-center justify-between py-2.5">
+                  <p class="w-10/12 truncate">Choosing the right standing seam metal clamp or metal roof system</p>
+                  <div class="flex items-center gap-4">
+                    <span
+                      class="text-2xs uppercase tracking-wider px-3 py-0.5 rounded-full bg-cream group-hover:bg-white">Tutorial</span>
+                    <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L5 5L1 9" stroke="#E30513" stroke-width="1.5" />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="px-4 lg:px-8 hover:bg-paper group">
+                <a href="#" class="flex items-center justify-between py-2.5">
+                  <p class="w-10/12 truncate">Metal roof systems and standing seam: Getting started and planning with K2
+                    DocuApp</p>
+                  <div class="flex items-center gap-4">
+                    <span
+                      class="text-2xs uppercase tracking-wider px-3 py-0.5 rounded-full bg-cream group-hover:bg-white">Webpage</span>
+                    <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L5 5L1 9" stroke="#E30513" stroke-width="1.5" />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="px-4 lg:px-8 hover:bg-paper group">
+                <a href="#" class="flex items-center justify-between py-2.5">
+                  <p class="w-10/12 truncate">PV mounting and planning with SpeedRail system II</p>
+                  <div class="flex items-center gap-4">
+                    <span
+                      class="text-2xs uppercase tracking-wider px-3 py-0.5 rounded-full bg-cream group-hover:bg-white">Training</span>
+                    <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L5 5L1 9" stroke="#E30513" stroke-width="1.5" />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="px-4 lg:px-8 hover:bg-paper group">
+                <a href="#" class="flex items-center justify-between py-2.5">
+                  <p class="w-10/12 truncate">K2 Systems and Axelent in Casablanca at Solaire Expo Maroc 2023</p>
+                  <div class="flex items-center gap-4">
+                    <span
+                      class="text-2xs uppercase tracking-wider px-3 py-0.5 rounded-full bg-cream group-hover:bg-white">Product</span>
+                    <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L5 5L1 9" stroke="#E30513" stroke-width="1.5" />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="py-2.5 px-4 lg:px-8 text-left">
+              <a href="#" class="text-red">+ More results</a>
+            </div>
+            <p class="text-lightGrey px-4 lg:px-8 py-4 lg:py-8 text-left ">No results found.</p>
+          </div>
+        </form>
+        <div class="overflow-x-scroll no-scrollbar px-4 lg:px-8 py-4 -mx-4 lg:-mx-8 lg:mt-8">
+          <div class="flex justify-start lg:justify-center w-max lg:w-auto sticky-nav gap-1">
+            <p class="mr-2">Popular <span class="text-0xs lg:text-base"></span></p>
+            <span
+              class="text-2xs uppercase tracking-wider px-3 py-0.5 rounded-full font-medium border-2 border-red text-red">Dome
+              6</span>
+            <span
+              class="text-2xs uppercase tracking-wider px-3 py-0.5 rounded-full font-medium border-2 border-red text-red">Mounting
+              Systems</span>
+            <span
+              class="text-2xs uppercase tracking-wider px-3 py-0.5 rounded-full font-medium border-2 border-red text-red">Pitche
+              roof</span>
+            <span
+              class="text-2xs uppercase tracking-wider px-3 py-0.5 rounded-full font-medium border-2 border-red text-red">Base</span>
+            <span
+              class="text-2xs uppercase tracking-wider px-3 py-0.5 rounded-full font-medium border-2 border-red text-red">Tutorials</span>
+          </div>
+        </div>
       </section>
       <section class="relative mt-28 lg:mt-56">
         <div class="absolute w-full top-[18%] text-center">

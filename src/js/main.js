@@ -140,7 +140,8 @@ if (navModalContainer) {
     });
   });
 }
-// Horizontal slider -----------
+// Horizontal scroller -----------
+
 const sliders = document.querySelectorAll(".drag-scroll");
 
 if (sliders) {
@@ -655,6 +656,38 @@ if (roofChartList && window.innerWidth < 800) {
       : (roofChartShadow.style.opacity = "0");
   });
 }
+// Search result tab ---------
+// Search filter radio inputs ---------
+const searchRadios = document.querySelectorAll(".filter-radiobox");
+searchRadios.forEach((checkbox) => {
+  const radioInput = checkbox.querySelector("input[type=radio]");
+  const searchCount = checkbox.querySelector(".search-count");
+  checkbox.addEventListener("click", () => {
+    searchRadios.forEach((checkbox) => {
+      const searchCount = checkbox.querySelector(".search-count");
+      const svgTickPath = checkbox.querySelector("svg > path");
+      svgTickPath.classList.add("fill-lightGrey");
+      svgTickPath.classList.remove("fill-red");
+      checkbox.classList.add("border-medGrey");
+      checkbox.classList.remove("border-red");
+      searchCount.classList.remove("text-red");
+    });
+    const svgTickPath = checkbox.querySelector("svg > path");
+    svgTickPath.classList.remove("fill-lightGrey");
+    svgTickPath.classList.add("fill-red");
+    checkbox.classList.remove("border-medGrey");
+    checkbox.classList.add("border-red");
+    if (radioInput.checked) searchCount.classList.add("text-red");
+  });
+  if (radioInput.checked) searchCount.classList.add("text-red");
+  if (checkbox.classList.contains("disabled")) {
+    checkbox.classList.add("pointer-events-none");
+    checkbox.classList.add("!border-lightGrey");
+    checkbox.querySelector("span").classList.add("!text-lightGrey");
+    checkbox.querySelector(".search-count").classList.add("!text-lightGrey");
+    checkbox.querySelector("svg").classList.add("hidden");
+  }
+});
 // Icons func -----------
 initIcons();
 
