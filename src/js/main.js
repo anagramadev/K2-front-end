@@ -688,6 +688,28 @@ searchRadios.forEach((checkbox) => {
     checkbox.querySelector("svg").classList.add("hidden");
   }
 });
+// Calculate red line height ----------
+if (window.innerWidth > 1024) {
+  const redLineHeight = (element1, element2) => {
+    const rect1Bottom = element1.getBoundingClientRect().bottom;
+    const rect2Top = element2.getBoundingClientRect().top;
+    return (rect2Top - rect1Bottom).toFixed(0);
+  };
+  const drawRedLine = (elm1, elm2, line) => {
+    const pointA = document.getElementById(elm1);
+    const pointB = document.getElementById(elm2);
+    const lineY = +redLineHeight(pointA, pointB);
+    document.querySelector(line).style.height = `${lineY}px`;
+  };
+  // Example usage
+
+  window.addEventListener("DOMContentLoaded", () => {
+    drawRedLine("rec1", "rec2", ".long-red-line-one");
+    drawRedLine("rec3", "rec4", ".long-red-line-two");
+    drawRedLine("rec5", "rec6", ".long-red-line-three");
+  });
+}
+
 // Icons func -----------
 initIcons();
 

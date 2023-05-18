@@ -8,3 +8,8 @@
 @import "tailwindcss/utilities";
 @import "@47nordmedia/k2-systems-ui-library/dist/customUtilities.css";
 @import "@47nordmedia/k2-systems-ui-library/dist/legacyStyles.css";
+.card-perspective-1000 {
+  transform: perspective(1000px) rotateX(0deg) rotateY(-35deg) rotateZ(0deg);
+
+  box-shadow: 0 64px 64px rgba(0, 0, 0, 10%);
+}

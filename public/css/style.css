@@ -1056,6 +1056,26 @@ footer.bg-forestGreen ul li a.text-label {
   left: 100%;
 }
 
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.left-24 {
+  left: 6rem;
+}
+
+.top-\[23px\] {
+  top: 23px;
+}
+
+.left-1\/2 {
+  left: 50%;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
 .right-3 {
   right: 0.75rem;
 }
@@ -1098,10 +1118,6 @@ footer.bg-forestGreen ul li a.text-label {
 
 .top-16 {
   top: 4rem;
-}
-
-.bottom-4 {
-  bottom: 1rem;
 }
 
 .-right-2 {
@@ -1170,10 +1186,6 @@ footer.bg-forestGreen ul li a.text-label {
 
 .top-7 {
   top: 1.75rem;
-}
-
-.top-4 {
-  top: 1rem;
 }
 
 .top-9 {
@@ -1543,6 +1555,30 @@ footer.bg-forestGreen ul li a.text-label {
   margin-right: 0.625rem;
 }
 
+.-mt-10 {
+  margin-top: -2.5rem;
+}
+
+.-mt-4 {
+  margin-top: -1rem;
+}
+
+.-mt-6 {
+  margin-top: -1.5rem;
+}
+
+.-mt-5 {
+  margin-top: -1.25rem;
+}
+
+.mb-0\.5 {
+  margin-bottom: 0.125rem;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .block {
   display: block;
 }
@@ -1631,6 +1667,18 @@ footer.bg-forestGreen ul li a.text-label {
   height: auto;
 }
 
+.h-80 {
+  height: 20rem;
+}
+
+.h-56 {
+  height: 14rem;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
 .h-7 {
   height: 1.75rem;
 }
@@ -1655,10 +1703,6 @@ footer.bg-forestGreen ul li a.text-label {
   height: 2.5rem;
 }
 
-.h-80 {
-  height: 20rem;
-}
-
 .h-64 {
   height: 16rem;
 }
@@ -1669,14 +1713,6 @@ footer.bg-forestGreen ul li a.text-label {
 
 .h-0 {
   height: 0px;
-}
-
-.h-40 {
-  height: 10rem;
-}
-
-.h-56 {
-  height: 14rem;
 }
 
 .h-20 {
@@ -1789,6 +1825,18 @@ footer.bg-forestGreen ul li a.text-label {
   width: 3.5rem;
 }
 
+.w-4\/12 {
+  width: 33.333333%;
+}
+
+.w-0\.5 {
+  width: 0.125rem;
+}
+
+.w-0 {
+  width: 0px;
+}
+
 .w-7 {
   width: 1.75rem;
 }
@@ -1875,6 +1923,10 @@ footer.bg-forestGreen ul li a.text-label {
 
 .shrink-0 {
   flex-shrink: 0;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
 }
 
 .basis-1\/6 {
@@ -2111,6 +2163,10 @@ footer.bg-forestGreen ul li a.text-label {
   gap: 1.25rem;
 }
 
+.gap-14 {
+  gap: 3.5rem;
+}
+
 .gap-x-0 {
   -moz-column-gap: 0px;
        column-gap: 0px;
@@ -2198,12 +2254,26 @@ footer.bg-forestGreen ul li a.text-label {
   border-radius: 9999px;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
 
-.rounded-2xl {
-  border-radius: 1rem;
+.rounded-t-2xl {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.rounded-b-2xl {
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 
 .rounded-bl-2xl {
@@ -2252,6 +2322,10 @@ footer.bg-forestGreen ul li a.text-label {
   border-bottom-width: 1px;
 }
 
+.border-t-0 {
+  border-top-width: 0px;
+}
+
 .border-silverGrey {
   --tw-border-opacity: 1;
   border-color: rgb(164 171 181 / var(--tw-border-opacity));
@@ -2271,6 +2345,11 @@ footer.bg-forestGreen ul li a.text-label {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-red {
+  --tw-border-opacity: 1;
+  border-color: rgb(227 5 19 / var(--tw-border-opacity));
+}
+
 .border-lightGrey {
   --tw-border-opacity: 1;
   border-color: rgb(194 201 210 / var(--tw-border-opacity));
@@ -2284,11 +2363,6 @@ footer.bg-forestGreen ul li a.text-label {
 .border-medGrey {
   --tw-border-opacity: 1;
   border-color: rgb(133 139 149 / var(--tw-border-opacity));
-}
-
-.border-red {
-  --tw-border-opacity: 1;
-  border-color: rgb(227 5 19 / var(--tw-border-opacity));
 }
 
 .border-black\/20 {
@@ -2527,6 +2601,14 @@ footer.bg-forestGreen ul li a.text-label {
   padding: 1rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -2567,6 +2649,16 @@ footer.bg-forestGreen ul li a.text-label {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .py-6 {
@@ -2639,11 +2731,6 @@ footer.bg-forestGreen ul li a.text-label {
   padding-right: 0.625rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .px-\[0\.25rem\] {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2714,6 +2801,18 @@ footer.bg-forestGreen ul li a.text-label {
   padding-top: 5rem;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .pl-9 {
   padding-left: 2.25rem;
 }
@@ -2736,10 +2835,6 @@ footer.bg-forestGreen ul li a.text-label {
 
 .pt-24 {
   padding-top: 6rem;
-}
-
-.pb-12 {
-  padding-bottom: 3rem;
 }
 
 .pt-2\.5 {
@@ -2774,16 +2869,16 @@ footer.bg-forestGreen ul li a.text-label {
   padding-bottom: 0.75rem;
 }
 
-.pb-20 {
-  padding-bottom: 5rem;
-}
-
 .pb-6 {
   padding-bottom: 1.5rem;
 }
 
 .pb-7 {
   padding-bottom: 1.75rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-left {
@@ -2849,6 +2944,12 @@ footer.bg-forestGreen ul li a.text-label {
   letter-spacing: -0.025em;
 }
 
+.text-6xl {
+  font-size: 4.5rem;
+  line-height: 5.5rem;
+  letter-spacing: 0;
+}
+
 .text-base {
   font-size: 1.313rem;
   line-height: 2rem;
@@ -2858,12 +2959,6 @@ footer.bg-forestGreen ul li a.text-label {
 .text-xl {
   font-size: 2.5rem;
   line-height: 3rem;
-  letter-spacing: 0;
-}
-
-.text-6xl {
-  font-size: 4.5rem;
-  line-height: 5.5rem;
   letter-spacing: 0;
 }
 
@@ -3068,6 +3163,12 @@ footer.bg-forestGreen ul li a.text-label {
   mix-blend-mode: multiply;
 }
 
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-\[0_32px_32px_rgba\(0\2c 0\2c 0\2c 0\.1\)\] {
   --tw-shadow: 0 32px 32px rgba(0,0,0,0.1);
   --tw-shadow-colored: 0 32px 32px var(--tw-shadow-color);
@@ -3077,12 +3178,6 @@ footer.bg-forestGreen ul li a.text-label {
 .shadow-\[0_64px_64px_rgba\(0\2c 0\2c 0\2c 0\.1\)\] {
   --tw-shadow: 0 64px 64px rgba(0,0,0,0.1);
   --tw-shadow-colored: 0 64px 64px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-xl {
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -3096,6 +3191,14 @@ footer.bg-forestGreen ul li a.text-label {
   transition-duration: 150ms;
 }
 
+.transition {
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-transform {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -3104,14 +3207,6 @@ footer.bg-forestGreen ul li a.text-label {
 
 .transition-opacity {
   transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition {
-  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -3334,6 +3429,21 @@ footer.bg-forestGreen ul li a.text-darkGrey {
   font-size: 1.125rem;
 }
 
+.card-perspective-1000 {
+  transform: perspective(1000px) rotateX(0deg) rotateY(-35deg) rotateZ(0deg);
+  box-shadow: 0 64px 64px rgba(0, 0, 0, 10%);
+}
+
+.marker\:text-silverGrey *::marker {
+  --tw-text-opacity: 1;
+  color: rgb(164 171 181 / var(--tw-text-opacity));
+}
+
+.marker\:text-silverGrey::marker {
+  --tw-text-opacity: 1;
+  color: rgb(164 171 181 / var(--tw-text-opacity));
+}
+
 .placeholder\:text-darkGrey::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(88 95 105 / var(--tw-text-opacity));
@@ -3486,6 +3596,10 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
   border-color: rgb(227 5 19 / var(--tw-border-opacity));
 }
 
+.hover\:w-8\/12:hover {
+  width: 66.666667%;
+}
+
 .hover\:border-b-2:hover {
   border-bottom-width: 2px;
 }
@@ -3581,6 +3695,10 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
 
 .group:hover .group-hover\:visible {
   visibility: visible;
+}
+
+.group:hover .group-hover\:invisible {
+  visibility: hidden;
 }
 
 .group:hover .group-hover\:ml-2 {
@@ -4181,6 +4299,14 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
     height: 20rem;
   }
 
+  .lg\:h-56 {
+    height: 14rem;
+  }
+
+  .lg\:h-40 {
+    height: 10rem;
+  }
+
   .lg\:min-h-\[320px\] {
     min-height: 320px;
   }
@@ -4510,6 +4636,10 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
     padding: 0px;
   }
 
+  .lg\:p-6 {
+    padding: 1.5rem;
+  }
+
   .lg\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -4603,6 +4733,11 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
   .lg\:px-\[1rem\] {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .lg\:pt-0 {
@@ -4940,6 +5075,10 @@ footer.bg-forestGreen ul li a.placeholder\:text-darkGrey::placeholder {
   .lg\:after\:w-\[16vw\]::after {
     content: var(--tw-content);
     width: 16vw;
+  }
+
+  .lg\:hover\:w-8\/12:hover {
+    width: 66.666667%;
   }
 
   .lg\:hover\:border-red:hover {
