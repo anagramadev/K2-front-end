@@ -13,3 +13,13 @@
 
   box-shadow: 0 64px 64px rgba(0, 0, 0, 10%);
 }
+.skew-bg-1 {
+  background-image: url(../img/skew-card-1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.skew-bg-long-1 {
+  background-image: url(../img/skew-card-long-1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

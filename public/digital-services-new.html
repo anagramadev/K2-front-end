@@ -10,908 +10,1163 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="p-4 lg:p-8 relative">
-  <header class="w-full flex-col lg:flex-row flex items-start justify-between relative z-10">
-    <a href="index.html"><img src="./img/logo.svg" alt="logo" class="w-[48px] h-[48px] lg:w-auto lg:h-auto" /></a>
-    <div class="w-full lg:w-auto">
-      <div class="hidden lg:flex flex-wrap items-center justify-end">
-        <a href="#" class="text-xs text-darkGrey mr-6 hover:text-red">Produktkatalog</a>
-        <a href="#" class="text-xs text-darkGrey mr-6 hover:text-red">Base</a>
-        <a href="#" class="text-xs text-darkGrey mr-6 hover:text-red">DocuApp</a>
-        <div class="inline-flex items-center">
-          <a href="#" class="text-darkGrey hover:text-red"><span class="icon icon-search-slim-24 w-6 h-6"></span>
-          </a>
-          <a href="#" class="text-darkGrey hover:text-red mx-2"><span class="icon icon-world-slim-24 w-6 h-6"></span>
-          </a>
-          <a href="#" class="text-darkGrey hover:text-red">
-            <span class="icon icon-user-slim-24 w-6 h-6"></span>
-          </a>
+<body class="bg-brightGrey relative">
+  <div class="2xl:max-w-[1600px] mx-auto p-4 lg:p-8 bg-white">
+    <header class="w-full flex-col lg:flex-row flex items-start justify-between relative z-20">
+      <a href="index.html"><img src="./img/logo.svg" alt="logo" class="w-[48px] h-[48px] lg:w-auto lg:h-auto" /></a>
+      <div class="w-full lg:w-auto">
+        <div class="hidden lg:flex flex-wrap items-center justify-end">
+          <a href="#" class="text-xs text-darkGrey mr-6 hover:text-red">Produktkatalog</a>
+          <a href="#" class="text-xs text-darkGrey mr-6 hover:text-red">Base</a>
+          <a href="#" class="text-xs text-darkGrey mr-6 hover:text-red">DocuApp</a>
+          <div class="inline-flex items-center">
+            <a href="#" class="text-darkGrey hover:text-red search-btn"><span
+                class="icon icon-search-slim-24 w-6 h-6"></span>
+            </a>
+            <a href="#" class="text-darkGrey hover:text-red mx-2 lang-btn"><span
+                class="icon icon-world-slim-24 w-6 h-6"></span>
+            </a>
+            <a href="#" class="text-darkGrey hover:text-red">
+              <span class="icon icon-user-slim-24 w-6 h-6"></span>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="mt-0 lg:mt-6 flex flex-col lg:flex-row items-start lg:items-center justify-end">
-        <nav
-          class="hidden lg:inline-flex items-start flex-col lg:flex-row order-1 lg:order-0 lg:items-center w-full lg:w-auto pt-5 lg:pt-0 border-t border-silverGrey mt-4 lg:border-none lg:mt-0 h-[80vh] lg:h-auto overflow-y-scroll no-scrollbar">
-          <ul class="w-full inline-flex flex-col lg:flex-row items-start main-nav">
-            <li
-              class="py-2 ml-0 border-b-2 border-transparent lg:hover:border-red lg:pb-8 lg:ml-4 2xl:ml-8 w-full lg:w-auto group transition-all duration-300">
-              <p class="group-hover:text-red cursor-default menuLink">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="mr-2 inline-block lg:hidden">
-                  <circle cx="12" cy="12" r="11.5" stroke="#FD0000"></circle>
-                  <path d="M7 12H17" stroke="#FD0000"></path>
-                  <path d="M12 17L12 7" stroke="#FD0000"></path>
-                </svg>
-                Produktlösungen
-              </p>
-              <div
-                class="hidden lg:block w-full lg:border-t border-silverGrey static lg:absolute left-0 top-full lg:invisible lg:opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 delay-100">
-                <div class="w-full lg:pb-40 bg-white lg:border-b border-silverGrey flex items-start lg:pt-20">
-                  <div class="flex-1 hidden lg:block">
-                    <h4 class="w-7/12">Produktlösungen</h4>
-                    <p class="mt-8 w-7/12">
-                      Our mounting systems cover nearly the entire spectrum of
-                      possible roofing and soil classes.
-                    </p>
-                  </div>
-                  <div class="flex-1 flex flex-col lg:flex-row pt-4 lg:pt-0">
-                    <div class="flex-1">
-                      <ul class="border-l border-silverGrey ml-3 lg:ml-4 pl-6 lg:pl-8">
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">Alle Montagesysteme</a>
-                        </li>
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">Flachdächer</a>
-                        </li>
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">Schrägdächer</a>
-                        </li>
-                      </ul>
+        <div class="mt-0 lg:mt-6 flex flex-col lg:flex-row items-start lg:items-center justify-end">
+          <nav
+            class="hidden lg:inline-flex items-start flex-col lg:flex-row order-1 lg:order-0 lg:items-center w-full lg:w-auto pt-5 lg:pt-0 border-t border-silverGrey mt-4 lg:border-none lg:mt-0 h-[80vh] lg:h-auto overflow-y-scroll no-scrollbar">
+            <ul class="w-full inline-flex flex-col lg:flex-row items-start main-nav">
+              <li
+                class="py-2 ml-0 border-b-2 border-transparent lg:hover:border-red lg:pb-8 lg:ml-4 2xl:ml-8 w-full lg:w-auto group transition-all duration-300">
+                <p class="group-hover:text-red cursor-default menuLink">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="mr-2 inline-block lg:hidden">
+                    <circle cx="12" cy="12" r="11.5" stroke="#FD0000"></circle>
+                    <path d="M7 12H17" stroke="#FD0000"></path>
+                    <path d="M12 17L12 7" stroke="#FD0000"></path>
+                  </svg>
+                  Produktlösungen
+                </p>
+                <div
+                  class="hidden lg:block w-full lg:border-t border-silverGrey static lg:absolute left-0 top-full lg:invisible lg:opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 delay-100 lg:shadow-b">
+                  <div class="w-full lg:pb-32 bg-white flex lg:pt-8">
+                    <div class="basis-full lg:basis-8/12 flex flex-col justify-between">
+                      <div class="flex flex-col lg:flex-row pt-4 lg:pt-0">
+                        <div class="flex-1 border-l border-silverGrey ml-3 lg:ml-0 pl-6 lg:pl-8">
+                          <ul>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">Alle Montagesysteme</a>
+                            </li>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">Flachdächer</a>
+                            </li>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">Schrägdächer</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="flex-1 border-l border-silverGrey ml-3 lg:ml-0 pl-6 lg:pl-8">
+                          <ul>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">Alle Montagesysteme</a>
+                            </li>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">Flachdächer</a>
+                            </li>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">Schrägdächer</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h3 class="w-7/12 hidden lg:block">Produktlösungen</h3>
                     </div>
-                    <div class="flex-1">
-                      <ul class="border-l border-silverGrey ml-3 lg:ml-0 pl-6 lg:pl-8">
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">Alle Montagesysteme</a>
-                        </li>
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">Flachdächer</a>
-                        </li>
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">Schrägdächer</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li
-              class="py-2 ml-0 border-b-2 border-transparent lg:hover:border-red lg:pb-8 lg:ml-4 2xl:ml-8 w-full lg:w-auto group transition-all duration-300">
-              <p class="group-hover:text-red cursor-default menuLink">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="mr-2 inline-block lg:hidden">
-                  <circle cx="12" cy="12" r="11.5" stroke="#FD0000"></circle>
-                  <path d="M7 12H17" stroke="#FD0000"></path>
-                  <path d="M12 17L12 7" stroke="#FD0000"></path>
-                </svg>
-                Digitale Services
-              </p>
-              <div
-                class="hidden lg:block w-full lg:border-t border-t-silverGrey static lg:absolute left-0 top-full lg:invisible lg:opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 delay-100">
-                <div class="w-full lg:pb-40 bg-white lg:border-b border-silverGrey flex items-start lg:pt-20">
-                  <div class="flex-1 hidden lg:block">
-                    <h4 class="w-7/12">Digitale Services</h4>
-                    <p class="mt-8 w-7/12">
-                      Our mounting systems cover nearly the entire spectrum of
-                      possible roofing and soil classes.
-                    </p>
-                  </div>
-                  <div class="flex-1 flex flex-col lg:flex-row pt-4 lg:pt-0">
-                    <div class="flex-1">
-                      <ul class="border-l border-silverGrey ml-3 lg:ml-4 pl-6 lg:pl-8">
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">Übersicht</a>
-                        </li>
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">K2 Base</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="flex-1">
-                      <ul class="border-l border-silverGrey ml-3 lg:ml-0 pl-6 lg:pl-8">
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">K2 Docu App</a>
-                        </li>
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">K2 Guard</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li
-              class="py-2 ml-0 border-b-2 border-transparent lg:hover:border-red lg:pb-8 lg:ml-4 2xl:ml-8 w-full lg:w-auto group transition-all duration-300">
-              <p class="group-hover:text-red cursor-default menuLink">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="mr-2 inline-block lg:hidden">
-                  <circle cx="12" cy="12" r="11.5" stroke="#FD0000"></circle>
-                  <path d="M7 12H17" stroke="#FD0000"></path>
-                  <path d="M12 17L12 7" stroke="#FD0000"></path>
-                </svg>
-                Training & Community
-              </p>
-              <div
-                class="hidden lg:block w-full lg:border-t border-t-silverGrey static lg:absolute left-0 top-full lg:invisible lg:opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 delay-100">
-                <div class="w-full lg:pb-40 bg-white lg:border-b border-silverGrey flex items-start lg:pt-20">
-                  <div class="flex-1 hidden lg:block">
-                    <h4 class="w-7/12">Training & Community</h4>
-                    <p class="mt-8 w-7/12">
-                      Our mounting systems cover nearly the entire spectrum of
-                      possible roofing and soil classes.
-                    </p>
-                  </div>
-                  <div class="flex-1 flex flex-col lg:flex-row pt-4 lg:pt-0">
-                    <div class="flex-1">
-                      <ul class="border-l border-silverGrey ml-3 lg:ml-4 pl-6 lg:pl-8">
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">Training</a>
-                        </li>
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">Community</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="flex-1">
-                      <ul class="border-l border-silverGrey ml-3 lg:ml-0 pl-6 lg:pl-8">
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">FAQs</a>
-                        </li>
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">Webinare</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li
-              class="py-2 ml-0 border-b-2 border-transparent lg:hover:border-red lg:pb-8 lg:ml-4 2xl:ml-8 w-full lg:w-auto group transition-all duration-300">
-              <p class="group-hover:text-red cursor-default menuLink">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="mr-2 inline-block lg:hidden">
-                  <circle cx="12" cy="12" r="11.5" stroke="#FD0000"></circle>
-                  <path d="M7 12H17" stroke="#FD0000"></path>
-                  <path d="M12 17L12 7" stroke="#FD0000"></path>
-                </svg>
-                Unternehmen
-              </p>
-              <div
-                class="hidden lg:block w-full lg:border-t border-t-silverGrey static lg:absolute left-0 top-full lg:invisible lg:opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 delay-100">
-                <div class="w-full lg:pb-40 bg-white lg:border-b border-silverGrey flex items-start lg:pt-20">
-                  <div class="flex-1 hidden lg:block">
-                    <h4 class="w-7/12">Unternehmen</h4>
-                    <p class="mt-8 w-7/12">
-                      Our mounting systems cover nearly the entire spectrum of
-                      possible roofing and soil classes.
-                    </p>
-                  </div>
-                  <div class="flex-1 flex flex-col lg:flex-row pt-4 lg:pt-0">
-                    <div class="flex-1">
-                      <ul class="border-l border-silverGrey ml-3 lg:ml-4 pl-6 lg:pl-8">
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">Über uns</a>
-                        </li>
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">Standorte</a>
-                        </li>
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">Das Team</a>
-                        </li>
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">Qualitätsmanagement</a>
-                        </li>
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">Engagement</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="flex-1">
-                      <ul class="border-l border-silverGrey ml-3 lg:ml-0 pl-6 lg:pl-8">
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">Presse</a>
-                        </li>
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">Karriere</a>
-                        </li>
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">Kontakt</a>
-                        </li>
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">Neuigkeiten</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li
-              class="py-2 ml-0 border-b-2 border-transparent lg:hover:border-red lg:pb-8 lg:ml-4 2xl:ml-8 w-full lg:w-auto group transition-all duration-300">
-              <p class="group-hover:text-red cursor-default menuLink">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="mr-2 inline-block lg:hidden">
-                  <circle cx="12" cy="12" r="11.5" stroke="#FD0000"></circle>
-                  <path d="M7 12H17" stroke="#FD0000"></path>
-                  <path d="M12 17L12 7" stroke="#FD0000"></path>
-                </svg>
-                Kontakt & Support
-              </p>
-              <div
-                class="hidden lg:block w-full lg:border-t border-t-silverGrey static lg:absolute left-0 top-full lg:invisible lg:opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 delay-100">
-                <div class="w-full lg:pb-40 bg-white lg:border-b border-silverGrey flex items-start lg:pt-20">
-                  <div class="flex-1 hidden lg:block">
-                    <h4 class="w-7/12">Kontakt & Support</h4>
-                    <p class="mt-8 w-7/12">
-                      Our mounting systems cover nearly the entire spectrum of
-                      possible roofing and soil classes.
-                    </p>
-                  </div>
-                  <div class="flex-1 flex flex-col lg:flex-row pt-4 lg:pt-0">
-                    <div class="flex-1">
-                      <ul class="border-l border-silverGrey ml-3 lg:ml-4 pl-6 lg:pl-8">
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">Kontakt</a>
-                        </li>
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">Vertriebspartner finden</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="flex-1">
-                      <ul class="border-l border-silverGrey ml-3 lg:ml-0 pl-6 lg:pl-8">
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">Privatkunden</a>
-                        </li>
-                        <li class="pb-2">
-                          <a href="#" class="hover:text-red">Installateur finden
+                    <div class="basis-4/12 border-l border-silverGrey pl-8 hidden lg:block">
+                      <div class="relative group">
+                        <img src="img/navNews.jpg" alt="news" class="w-full" />
+                        <div
+                          class="absolute w-full h-full left-0 top-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
+                          <a href="#" class="bttn bttn-red">
+                            Mehr
+                            <span class="icon icon-arrow-right-14 h-3.5 w-3.5 ml-2"></span>
                           </a>
-                        </li>
-                      </ul>
+                        </div>
+                      </div>
+                      <p class="mt-6">
+                        <span class="font-medium">One login for all K2 services —</span>
+                        We are switching to new user accounts so that companies
+                        and traders can work even ...
+                      </p>
                     </div>
                   </div>
                 </div>
-              </div>
-            </li>
-          </ul>
-          <ul class="block w-full lg:hidden py-5 mt-5 border-y border-silverGrey">
-            <li class="flex items-center mb-2">
-              <span class="icon icon-katalog-slim-24 w-6 h-6 text-darkGrey"></span>
-              <a href="#" class="text-xs text-darkGrey ml-3">Produktkatalog</a>
-            </li>
-            <li class="flex items-center mb-2">
-              <span class="icon icon-search-slim-24 w-6 h-6 text-darkGrey"></span>
+              </li>
+              <li
+                class="py-2 ml-0 border-b-2 border-transparent lg:hover:border-red lg:pb-8 lg:ml-4 2xl:ml-8 w-full lg:w-auto group transition-all duration-300">
+                <p class="group-hover:text-red cursor-default menuLink">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="mr-2 inline-block lg:hidden">
+                    <circle cx="12" cy="12" r="11.5" stroke="#FD0000"></circle>
+                    <path d="M7 12H17" stroke="#FD0000"></path>
+                    <path d="M12 17L12 7" stroke="#FD0000"></path>
+                  </svg>
+                  Digitale Services
+                </p>
+                <div
+                  class="hidden lg:block w-full lg:border-t border-silverGrey static lg:absolute left-0 top-full lg:invisible lg:opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 delay-100 lg:shadow-b">
+                  <div class="w-full lg:pb-32 bg-white flex lg:pt-8">
+                    <div class="basis-full lg:basis-8/12 flex flex-col justify-between">
+                      <h3 class="w-7/12 hidden lg:block">Digitale Services</h3>
+                      <div class="flex flex-col lg:flex-row pt-4 lg:pt-0">
+                        <div class="flex-1 border-l border-silverGrey ml-3 lg:ml-4 pl-6 lg:pl-8">
+                          <ul>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">Übersicht</a>
+                            </li>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">K2 Base</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="flex-1 border-l border-silverGrey ml-3 lg:ml-4 pl-6 lg:pl-8">
+                          <ul>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">K2 Docu App</a>
+                            </li>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">K2 Guard</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="basis-4/12 border-l border-silverGrey pl-8 hidden lg:block">
+                      <img src="img/navNews.jpg" alt="news" />
+                      <p class="my-6">
+                        <span class="font-medium">One login for all K2 services —</span>
+                        We are switching to new user accounts so that companies
+                        and traders can work even ...
+                      </p>
+                      <a href="#" class="bttn bttn-red">
+                        Mehr
+                        <span class="icon icon-arrow-right-14 h-3.5 w-3.5 ml-2"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="py-2 ml-0 border-b-2 border-transparent lg:hover:border-red lg:pb-8 lg:ml-4 2xl:ml-8 w-full lg:w-auto group transition-all duration-300">
+                <p class="group-hover:text-red cursor-default menuLink">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="mr-2 inline-block lg:hidden">
+                    <circle cx="12" cy="12" r="11.5" stroke="#FD0000"></circle>
+                    <path d="M7 12H17" stroke="#FD0000"></path>
+                    <path d="M12 17L12 7" stroke="#FD0000"></path>
+                  </svg>
+                  Training & Community
+                </p>
+                <div
+                  class="hidden lg:block w-full lg:border-t border-silverGrey static lg:absolute left-0 top-full lg:invisible lg:opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 delay-100 lg:shadow-b">
+                  <div class="w-full lg:pb-32 bg-white flex lg:pt-8">
+                    <div class="basis-full lg:basis-8/12 flex flex-col justify-between">
+                      <h3 class="w-7/12 hidden lg:block">
+                        Training & Community
+                      </h3>
+                      <div class="flex flex-col lg:flex-row pt-4 lg:pt-0">
+                        <div class="flex-1 border-l border-silverGrey ml-3 lg:ml-0 pl-6 lg:pl-8">
+                          <ul>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">Training</a>
+                            </li>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">Community</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="flex-1 border-l border-silverGrey ml-3 lg:ml-0 pl-6 lg:pl-8">
+                          <ul>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">FAQs</a>
+                            </li>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">Webinare</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="basis-4/12 border-l border-silverGrey pl-8 hidden lg:block">
+                      <img src="img/navNews.jpg" alt="news" />
+                      <p class="my-6">
+                        <span class="font-medium">One login for all K2 services —</span>
+                        We are switching to new user accounts so that companies
+                        and traders can work even ...
+                      </p>
+                      <a href="#" class="bttn bttn-red">
+                        Mehr
+                        <span class="icon icon-arrow-right-14 h-3.5 w-3.5 ml-2"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="py-2 ml-0 border-b-2 border-transparent lg:hover:border-red lg:pb-8 lg:ml-4 2xl:ml-8 w-full lg:w-auto group transition-all duration-300">
+                <p class="group-hover:text-red cursor-default menuLink">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="mr-2 inline-block lg:hidden">
+                    <circle cx="12" cy="12" r="11.5" stroke="#FD0000"></circle>
+                    <path d="M7 12H17" stroke="#FD0000"></path>
+                    <path d="M12 17L12 7" stroke="#FD0000"></path>
+                  </svg>
+                  Unternehmen
+                </p>
+                <div
+                  class="hidden lg:block w-full lg:border-t border-silverGrey static lg:absolute left-0 top-full lg:invisible lg:opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 delay-100 lg:shadow-b">
+                  <div class="w-full lg:pb-32 bg-white flex lg:pt-8">
+                    <div class="basis-full lg:basis-8/12 flex flex-col justify-between">
+                      <h3 class="w-7/12 hidden lg:block">Unternehmen</h3>
+                      <div class="flex flex-col lg:flex-row pt-4 lg:pt-0">
+                        <div class="flex-1 border-l border-silverGrey ml-3 lg:ml-0 pl-6 lg:pl-8">
+                          <ul>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">Über uns</a>
+                            </li>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">Standorte</a>
+                            </li>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">Das Team</a>
+                            </li>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">Qualitätsmanagement</a>
+                            </li>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">Engagement</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="flex-1 border-l border-silverGrey ml-3 lg:ml-0 pl-6 lg:pl-8">
+                          <ul>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">Presse</a>
+                            </li>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">Karriere</a>
+                            </li>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">Kontakt</a>
+                            </li>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">Neuigkeiten</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="basis-4/12 border-l border-silverGrey pl-8 hidden lg:block">
+                      <img src="img/navNews.jpg" alt="news" />
+                      <p class="my-6">
+                        <span class="font-medium">One login for all K2 services —</span>
+                        We are switching to new user accounts so that companies
+                        and traders can work even ...
+                      </p>
+                      <a href="#" class="bttn bttn-red">
+                        Mehr
+                        <span class="icon icon-arrow-right-14 h-3.5 w-3.5 ml-2"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="py-2 ml-0 border-b-2 border-transparent lg:hover:border-red lg:pb-8 lg:ml-4 2xl:ml-8 w-full lg:w-auto group transition-all duration-300">
+                <p class="group-hover:text-red cursor-default menuLink">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="mr-2 inline-block lg:hidden">
+                    <circle cx="12" cy="12" r="11.5" stroke="#FD0000"></circle>
+                    <path d="M7 12H17" stroke="#FD0000"></path>
+                    <path d="M12 17L12 7" stroke="#FD0000"></path>
+                  </svg>
+                  Kontakt & Support
+                </p>
+                <div
+                  class="hidden lg:block w-full lg:border-t border-silverGrey static lg:absolute left-0 top-full lg:invisible lg:opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 delay-100 lg:shadow-b">
+                  <div class="w-full lg:pb-32 bg-white flex lg:pt-8">
+                    <div class="basis-full lg:basis-8/12 flex flex-col justify-between">
+                      <h3 class="w-7/12 hidden lg:block">Kontakt & Support</h3>
+                      <div class="flex flex-col lg:flex-row pt-4 lg:pt-0">
+                        <div class="flex-1 border-l border-silverGrey ml-3 lg:ml-0 pl-6 lg:pl-8">
+                          <ul>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">Kontakt</a>
+                            </li>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">Vertriebspartner finden</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="flex-1 border-l border-silverGrey ml-3 lg:ml-0 pl-6 lg:pl-8">
+                          <ul>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">Privatkunden</a>
+                            </li>
+                            <li class="pb-2">
+                              <a href="#" class="hover:text-red">Installateur finden
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="basis-4/12 border-l border-silverGrey pl-8 hidden lg:block">
+                      <img src="img/navNews.jpg" alt="news" />
+                      <p class="my-6">
+                        <span class="font-medium">One login for all K2 services —</span>
+                        We are switching to new user accounts so that companies
+                        and traders can work even ...
+                      </p>
+                      <a href="#" class="bttn bttn-red">
+                        Mehr
+                        <span class="icon icon-arrow-right-14 h-3.5 w-3.5 ml-2"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="block w-full lg:hidden py-5 mt-5 border-y border-silverGrey">
+              <li class="flex items-center mb-2">
+                <span class="icon icon-katalog-slim-24 w-6 h-6 text-darkGrey"></span>
+                <a href="#" class="text-xs text-darkGrey ml-3">Produktkatalog</a>
+              </li>
+              <li class="flex items-center mb-2 search-btn">
+                <span class="icon icon-search-slim-24 w-6 h-6 text-darkGrey"></span>
 
-              <a href="#" class="text-xs text-darkGrey ml-3">Search</a>
-            </li>
-            <li class="flex items-center mb-2">
-              <span class="icon icon-world-slim-24 w-6 h-6 text-darkGrey"></span>
+                <a href="#" class="text-xs text-darkGrey ml-3">Search</a>
+              </li>
+              <li class="flex items-center mb-2 lang-btn">
+                <span class="icon icon-world-slim-24 w-6 h-6 text-darkGrey"></span>
 
-              <a href="#" class="text-xs text-darkGrey ml-3">Language</a>
-            </li>
-            <li class="flex items-center mb-2">
-              <span class="icon icon-user-slim-24 w-6 h-6 text-darkGrey"></span>
+                <a href="#" class="text-xs text-darkGrey ml-3">Language</a>
+              </li>
+              <li class="flex items-center mb-2">
+                <span class="icon icon-user-slim-24 w-6 h-6 text-darkGrey"></span>
 
-              <a href="#" class="text-xs text-darkGrey ml-3">Account</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="inline-flex items-center absolute top-2 right-0 order-0 lg:static lg:order-1 lg:mb-8">
-          <p class="lg:hidden py-2 pr-4 border-r border-silverGrey menu-toggle">
-            Menü
-          </p>
-          <button
-            class="bttn bttn-black justify-center px-0 lg:px-5 w-[50px] h-[32px] lg:w-auto lg:h-auto ml-4 lg:ml-8">
-            P<span class="text-0xs xl:text-base xl:leading-[1.5rem]">rojekt Starten</span>
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-              class="ml-2">
-              <path d="M0 5H10" stroke="currentColor" stroke-width="1.5"></path>
-              <path d="M5 10L5 2.38419e-07" stroke="currentColor" stroke-width="1.5"></path>
-            </svg>
-          </button>
+                <a href="#" class="text-xs text-darkGrey ml-3">Account</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="inline-flex items-center absolute top-2 right-0 order-0 lg:static lg:order-1 lg:mb-8">
+            <p class="lg:hidden py-2 pr-4 border-r border-silverGrey menu-toggle">
+              Menü
+            </p>
+            <button
+              class="bttn bttn-black justify-center px-0 lg:px-5 w-[50px] h-[32px] lg:w-auto lg:h-auto ml-4 lg:ml-8">
+              P<span class="text-0xs xl:text-base xl:leading-[1.5rem]">rojekt Starten</span>
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                class="ml-2">
+                <path d="M0 5H10" stroke="currentColor" stroke-width="1.5"></path>
+                <path d="M5 10L5 2.38419e-07" stroke="currentColor" stroke-width="1.5"></path>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-  <main class="mt-20 lg:mt-0">
-    <section class="flex flex-col lg:flex-row">
-      <div class="flex-1 flex flex-col justify-center">
-        <div class="w-full lg:w-5/6 2xl:w-4/6">
-          <h2>Digital services</h2>
-          <p class="mt-8">
-            Our digital solutions work seemless together to ensure that you can get your work done in the shortest time
-            and with the
-            least amount of effort. This allows you to concentrate fully on your core business.
-          </p>
-          <a href="#" class="bttn bttn-red mt-8">Create myK2 Account
+    </header>
+    <main class="mt-20 lg:mt-0">
+      <section class="flex flex-col lg:flex-row">
+        <div class="flex-1 flex flex-col justify-center">
+          <div class="w-full lg:w-5/6 2xl:w-4/6">
+            <h2>Digital services</h2>
+            <p class="mt-8">
+              Our digital solutions work seemless together to ensure that you can get your work done in the shortest
+              time
+              and with the
+              least amount of effort. This allows you to concentrate fully on your core business.
+            </p>
+            <a href="#" class="bttn bttn-red mt-8">Create myK2 Account
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                class="ml-2">
+                <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="currentColor" stroke-width="1.5"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="flex-1 flex-shrink-0 mt-12 lg:mt-0">
+          <img src="./img/digital-services-shape.jpg" alt="Digital services" class="w-full" />
+        </div>
+      </section>
+      <section class="sticky top-0 mt-10 lg:mt-20 -mx-4 bg-white lg:-mx-8 z-20">
+        <div class="overflow-x-scroll no-scrollbar px-4 lg:px-8 py-4">
+          <div class="flex w-max lg:w-auto sticky-nav">
+            <a href="#process" class="inline-flex items-center group mr-8"><span
+                class="inline-block w-2 h-2 rounded-full group-hover:bg-red bg-red mr-2"></span>
+              Overview</a>
+            <a href="#base" class="inline-flex items-center group mr-8"><span
+                class="inline-block w-2 h-2 rounded-full group-hover:bg-red bg-cream mr-2"></span>
+              Project Start</a>
+            <a href="#docuapp" class="inline-flex items-center group mr-8"><span
+                class="inline-block w-2 h-2 rounded-full group-hover:bg-red bg-cream mr-2"></span>
+              Planning</a>
+            <a href="#aktuelle" class="inline-flex items-center group mr-8"><span
+                class="inline-block w-2 h-2 rounded-full group-hover:bg-red bg-cream mr-2"></span>
+              Installation</a>
+            <a href="#community" class="inline-flex items-center group mr-8"><span
+                class="inline-block w-2 h-2 rounded-full group-hover:bg-red bg-cream mr-2"></span>
+              Completion & Maintenance</a>
+          </div>
+        </div>
+        <div class="px-4 lg:px-8">
+          <div class="border-b border-silverGrey"></div>
+        </div>
+      </section>
+      <section id="process" class="pt-10 lg:pt-40">
+        <div class="flex-1">
+          <h2 class="mb-6 lg:mb-0 w-full lg:w-8/12">
+            K2 digital tools can help you throughout <span class="text-red">all</span> project phases.
+          </h2>
+        </div>
+      </section>
+      <section class="pt-10 lg:pt-48">
+        <!-- For Desktop only -->
+        <div class="hidden lg:flex items-center gap-y-8 lg:gap-0">
+          <!-- Expendable card (Project Start) -->
+          <div class="flex-grow-0 w-full lg:w-4/12 lg:hover:w-8/12  transition-all duration-900 relative lg:group">
+
+            <div class="card-perspective-1000 border border-silverGrey overflow-hidden rounded-2xl">
+              <div
+                class="h-40 lg:h-80 bg-forestGreen flex flex-col justify-between p-3 lg:p-6 relative overflow-hidden">
+                <div class="absolute left-0 -bottom-10 bg-white h-10 transform scale-150 skew-y-[-2.3deg] w-full"></div>
+              </div>
+              <div class="flex items-center justify-end pt-6 lg:pt-12 pb-10 lg:pb-20 px-6 lg:px-12">
+                <span class="icon icon-webinar-64 w-8 h-8 lg:w-16 lg:h-16 text-red hidden"></span>
+              </div>
+            </div>
+            <div class="absolute left-[13%] top-0 w-[80%] group">
+              <div class="h-40 lg:h-80 flex flex-col justify-between p-3 lg:p-6 relative">
+                <div class="group-hover:p-3 transition-all">
+                  <p class="text-forestGreenAccent text-lg lg:text-6xl font-medium ">1.</p>
+                  <div
+                    class="flex items-center justify-center w-10 h-10 rounded-full bg-forestGreenAccent transition-opacity opacity-0 group-hover:opacity-100">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 -2.62268e-07L7 12M7 12L13 6M7 12L1 6" stroke="#351625" stroke-width="1.5" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="absolute left-0 top-24 pl-20 w-full transition-opacity opacity-0 group-hover:opacity-100">
+                  <div class="w-8/12 mx-auto transition-opacity duration-150">
+                    <p class="text-lg font-medium text-white">Planning</p>
+                    <p class="text-white/60 text-xs lg:text-sm mt-4">Automatically upload onsite data from the <span
+                        class="font-medium text-white">K2
+                        DocuApp</span> to <span class="font-medium">K2 Base</span>. Plan quickly, safely and
+                      accurately.</p>
+                  </div>
+                </div>
+                <p class="text-white text-lg font-medium transition-opacity opacity-100 group-hover:opacity-0">
+                  Project Start</p>
+              </div>
+              <div class="flex items-center justify-end pt-6 pb-20 px-5 gap-4">
+                <img src="./img/icon-fileshare.svg" class="w-12" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- Expendable card (Planning) -->
+          <div class="flex-grow-0 w-full lg:w-4/12 lg:hover:w-8/12  transition-all duration-900 relative lg:group">
+
+            <div class="card-perspective-1000 border border-silverGrey overflow-hidden rounded-2xl">
+              <div class="h-40 lg:h-80 bg-orange flex flex-col justify-between p-3 lg:p-6 relative overflow-hidden">
+                <div class="absolute left-0 -bottom-10 bg-white h-10 transform scale-150 skew-y-[-2.3deg] w-full"></div>
+              </div>
+              <div class="flex items-center justify-end pt-6 lg:pt-12 pb-10 lg:pb-20 px-6 lg:px-12">
+                <span class="icon icon-webinar-64 w-8 h-8 lg:w-16 lg:h-16 text-red hidden"></span>
+              </div>
+            </div>
+            <div class="absolute left-[13%] top-0 w-[80%] group">
+              <div class="h-40 lg:h-80 flex flex-col justify-between p-3 lg:p-6 relative">
+                <div class="group-hover:p-3 transition-all">
+                  <p class="text-orangeAccent text-lg lg:text-6xl font-medium ">2.</p>
+                  <div
+                    class="flex items-center justify-center w-10 h-10 rounded-full bg-orangeAccent transition-opacity opacity-0 group-hover:opacity-100">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 -2.62268e-07L7 12M7 12L13 6M7 12L1 6" stroke="#351625" stroke-width="1.5" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="absolute left-0 top-24 pl-20 w-full transition-opacity opacity-0 group-hover:opacity-100">
+                  <div class="w-8/12 mx-auto transition-opacity duration-150">
+                    <p class="text-lg font-medium text-white">Planning</p>
+                    <p class="text-white/60 text-xs lg:text-sm mt-4">Automatically upload onsite data from the <span
+                        class="font-medium text-white">K2
+                        DocuApp</span> to <span class="font-medium">K2 Base</span>. Plan quickly, safely and
+                      accurately.</p>
+                  </div>
+                </div>
+                <p class="text-white text-lg font-medium transition-opacity opacity-100 group-hover:opacity-0">
+                  Planning</p>
+              </div>
+              <div class="flex items-center justify-end pt-6 pb-20 px-5 gap-4">
+                <img src="./img/icon-plan.svg" class="w-12" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- Expendable card (Installation) -->
+          <div class="flex-grow-0 w-full lg:w-4/12 lg:hover:w-8/12  transition-all duration-900 relative lg:group">
+            <div class="card-perspective-1000 border border-silverGrey overflow-hidden rounded-2xl">
+              <div class="h-40 lg:h-80 bg-pink flex flex-col justify-between p-3 lg:p-6 relative overflow-hidden">
+                <div class="absolute left-0 -bottom-10 bg-white h-10 transform scale-150 skew-y-[-2.3deg] w-full"></div>
+              </div>
+              <div class="flex items-center justify-end pt-6 lg:pt-12 pb-10 lg:pb-20 px-6 lg:px-12">
+                <span class="icon icon-webinar-64 w-8 h-8 lg:w-16 lg:h-16 text-red hidden"></span>
+              </div>
+            </div>
+            <div class="absolute left-[13%] top-0 w-[80%] group">
+              <div class="h-40 lg:h-80 flex flex-col justify-between p-3 lg:p-6 relative">
+                <div class="group-hover:p-3 transition-all">
+                  <p class="text-pinkAccent text-lg lg:text-6xl font-medium ">3.</p>
+                  <div
+                    class="flex items-center justify-center w-10 h-10 rounded-full bg-pinkAccent transition-opacity opacity-0 group-hover:opacity-100">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 -2.62268e-07L7 12M7 12L13 6M7 12L1 6" stroke="#351625" stroke-width="1.5" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="absolute left-0 top-24 pl-20 w-full transition-opacity opacity-0 group-hover:opacity-100">
+                  <div class="w-8/12 mx-auto transition-opacity duration-150">
+                    <p class="text-lg font-medium text-white">Installation</p>
+                    <p class="text-white/60 text-xs lg:text-sm mt-4">Automatically upload onsite data from the <span
+                        class="font-medium text-white">K2
+                        DocuApp</span> to <span class="font-medium">K2 Base</span>. Plan quickly, safely and
+                      accurately.</p>
+                  </div>
+                </div>
+                <p class="text-white text-lg font-medium transition-opacity opacity-100 group-hover:opacity-0">
+                  Installation</p>
+              </div>
+              <div class="flex items-center justify-end pt-6 pb-20 px-5 gap-4">
+                <img src="./img/icon-fileshare.svg" class="w-12" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- Expendable card (Completion) -->
+          <div class="flex-grow-0 w-full lg:w-4/12 lg:hover:w-8/12  transition-all duration-900 relative lg:group">
+            <div class="card-perspective-1000 border border-silverGrey overflow-hidden rounded-2xl">
+              <div class="h-40 lg:h-80 bg-purple flex flex-col justify-between p-3 lg:p-6 relative overflow-hidden">
+                <div class="absolute left-0 -bottom-10 bg-white h-10 transform scale-150 skew-y-[-2.3deg] w-full"></div>
+              </div>
+              <div class="flex items-center justify-end pt-6 lg:pt-12 pb-10 lg:pb-20 px-6 lg:px-12">
+                <span class="icon icon-webinar-64 w-8 h-8 lg:w-16 lg:h-16 text-red hidden"></span>
+              </div>
+            </div>
+            <div class="absolute left-[13%] top-0 w-[80%] group">
+              <div class="h-40 lg:h-80 flex flex-col justify-between p-3 lg:p-6 relative">
+                <div class="group-hover:p-3 transition-all">
+                  <p class="text-purpleAccent text-lg lg:text-6xl font-medium ">4.</p>
+                  <div
+                    class="flex items-center justify-center w-10 h-10 rounded-full bg-purpleAccent transition-opacity opacity-0 group-hover:opacity-100">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 -2.62268e-07L7 12M7 12L13 6M7 12L1 6" stroke="#351625" stroke-width="1.5" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="absolute left-0 top-24 pl-20 w-full transition-opacity opacity-0 group-hover:opacity-100">
+                  <div class="w-8/12 mx-auto transition-opacity duration-150">
+                    <p class="text-lg font-medium text-white">Installation</p>
+                    <p class="text-white/60 text-xs lg:text-sm mt-4">Automatically upload onsite data from the <span
+                        class="font-medium text-white">K2
+                        DocuApp</span> to <span class="font-medium">K2 Base</span>. Plan quickly, safely and
+                      accurately.</p>
+                  </div>
+                </div>
+                <p class="text-white text-lg font-medium transition-opacity opacity-100 group-hover:opacity-0">
+                  Completion</p>
+              </div>
+              <div class="flex items-center justify-end pt-6 pb-20 px-5 gap-4">
+                <img src="./img/icon-plan.svg" class="w-12" alt="">
+                <img src="./img/icon-fileshare.svg" class="w-12" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- For mobile only -->
+      <div class="grid lg:hidden grid-cols-2 gap-4">
+        <div class="relative w-40 mx-auto">
+          <svg class="w-full" viewBox="0 0 180 284" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.25 240.851C0.25 244.536 2.84445 247.711 6.45526 248.446L170.455 281.803C175.258 282.78 179.75 279.11 179.75 274.209V183.75H0.25V240.851Z"
+              fill="white" stroke="#A4ABB5" stroke-width="0.5" />
+            <path
+              d="M0 55.6865C0 52.0866 2.40447 48.93 5.87506 47.9738L169.875 2.78957C174.969 1.38615 180 5.2186 180 10.5022V184H0V55.6865Z"
+              class="fill-forestGreen" />
+          </svg>
+          <div class="absolute left-0 top-0 w-full px-3">
+            <div class="flex items-center gap-2 mt-14">
+              <p class="font-medium text-lg text-forestGreenAccent">1.</p>
+              <div class="flex items-center justify-center w-6 h-6 rounded-full bg-forestGreenAccent">
+                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.99687 0.700012L3.99687 7.30001M3.99687 7.30001L7.29687 4.00001M3.99687 7.30001L0.696875 4.00001"
+                    stroke="#351625" />
+                </svg>
+              </div>
+            </div>
+            <p class="font-medium text-xs text-white mt-10">Project Start</p>
+            <div class="flex items-center justify-end gap-3 pr-2 mt-8">
+              <img src="./img/icon-fileshare.svg" alt="name" class="w-8">
+            </div>
+          </div>
+        </div>
+        <div class="relative w-40 mx-auto">
+          <svg class="w-full" viewBox="0 0 180 284" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.25 240.851C0.25 244.536 2.84445 247.711 6.45526 248.446L170.455 281.803C175.258 282.78 179.75 279.11 179.75 274.209V183.75H0.25V240.851Z"
+              fill="white" stroke="#A4ABB5" stroke-width="0.5" />
+            <path
+              d="M0 55.6865C0 52.0866 2.40447 48.93 5.87506 47.9738L169.875 2.78957C174.969 1.38615 180 5.2186 180 10.5022V184H0V55.6865Z"
+              class="fill-brown" />
+          </svg>
+          <div class="absolute left-0 top-0 w-full px-3">
+            <div class="flex items-center gap-2 mt-14">
+              <p class="font-medium text-lg text-brownAccent">2.</p>
+              <div class="flex items-center justify-center w-6 h-6 rounded-full bg-brownAccent">
+                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.99687 0.700012L3.99687 7.30001M3.99687 7.30001L7.29687 4.00001M3.99687 7.30001L0.696875 4.00001"
+                    stroke="#351625" />
+                </svg>
+              </div>
+            </div>
+            <p class="font-medium text-xs text-white mt-10">Planning</p>
+            <div class="flex items-center justify-end gap-3 pr-2 mt-8">
+              <img src="./img/icon-plan.svg" alt="name" class="w-8">
+            </div>
+          </div>
+        </div>
+        <div class="relative w-40 mx-auto">
+          <svg class="w-full" viewBox="0 0 180 284" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.25 240.851C0.25 244.536 2.84445 247.711 6.45526 248.446L170.455 281.803C175.258 282.78 179.75 279.11 179.75 274.209V183.75H0.25V240.851Z"
+              fill="white" stroke="#A4ABB5" stroke-width="0.5" />
+            <path
+              d="M0 55.6865C0 52.0866 2.40447 48.93 5.87506 47.9738L169.875 2.78957C174.969 1.38615 180 5.2186 180 10.5022V184H0V55.6865Z"
+              class="fill-pink" />
+          </svg>
+          <div class="absolute left-0 top-0 w-full px-3">
+            <div class="flex items-center gap-2 mt-14">
+              <p class="font-medium text-lg text-pinkAccent">3.</p>
+              <div class="flex items-center justify-center w-6 h-6 rounded-full bg-pinkAccent">
+                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.99687 0.700012L3.99687 7.30001M3.99687 7.30001L7.29687 4.00001M3.99687 7.30001L0.696875 4.00001"
+                    stroke="#351625" />
+                </svg>
+              </div>
+            </div>
+            <p class="font-medium text-xs text-white mt-10">Installation</p>
+            <div class="flex items-center justify-end gap-3 pr-2 mt-8">
+              <img src="./img/icon-fileshare.svg" alt="name" class="w-8">
+            </div>
+          </div>
+        </div>
+        <div class="relative w-40 mx-auto">
+          <svg class="w-full" viewBox="0 0 180 284" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.25 240.851C0.25 244.536 2.84445 247.711 6.45526 248.446L170.455 281.803C175.258 282.78 179.75 279.11 179.75 274.209V183.75H0.25V240.851Z"
+              fill="white" stroke="#A4ABB5" stroke-width="0.5" />
+            <path
+              d="M0 55.6865C0 52.0866 2.40447 48.93 5.87506 47.9738L169.875 2.78957C174.969 1.38615 180 5.2186 180 10.5022V184H0V55.6865Z"
+              class="fill-purple" />
+          </svg>
+          <div class="absolute left-0 top-0 w-full px-3">
+            <div class="flex items-center gap-2 mt-14">
+              <p class="font-medium text-lg text-purpleAccent">4.</p>
+              <div class="flex items-center justify-center w-6 h-6 rounded-full bg-purpleAccent">
+                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.99687 0.700012L3.99687 7.30001M3.99687 7.30001L7.29687 4.00001M3.99687 7.30001L0.696875 4.00001"
+                    stroke="#351625" />
+                </svg>
+              </div>
+            </div>
+            <p class="font-medium text-xs text-white mt-10">Completion</p>
+            <div class="flex items-center justify-end gap-3 pr-2 mt-8">
+              <img src="./img/icon-people.svg" alt="name" class="w-8">
+              <img src="./img/icon-fileshare.svg" alt="name" class="w-8">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project Start -->
+      <section class="pt-28 lg:pt-56">
+        <div class="flex flex-col lg:flex-row items-start justify-between gap-14 lg:gap-0">
+          <div class="basis-4/12 relative">
+            <div class="flex items-start lg:items-center gap-4 lg:gap-6">
+              <div class="basis-auto flex-shrink-0 -mt-7 lg:mt-0">
+                <img src="./img/phase-card-1.svg" alt="phase" class="hidden lg:block">
+                <img src="./img/phase-card-sm-1.svg" alt="phase" class="flex-shrink-0 lg:hidden">
+              </div>
+              <div class="basis-9/12 lg:flex-1 lg:-mt-24">
+                <p class="text-lg font-medium">Project Start</p>
+                <p class="text-darkGrey text-xs lg:text-sm mt-6">Use <span class="text-red">K2 DocuApp</span> to record
+                  customer and
+                  project data
+                  and
+                  easily share information
+                  directly with your colleagues.</p>
+              </div>
+            </div>
+            <div id="rec1"
+              class="hidden lg:block absolute bottom-16 left-24 w-6 h-6 border-2 border-red rounded-full z-10">
+              <div class="absolute top-[23px] left-1/2 w-0.5 h-40 bg-red long-red-line-one"></div>
+            </div>
+          </div>
+          <div class="basis-7/12">
+            <img src="./img/aktuelle.jpg" alt="K2 Community" class="w-full" />
+            <div class="w-full mt-8 lg:mt-12">
+              <div class="flex items-center justify-between w-full mb-6 lg:mb-10">
+                <p class="text-lg lg:text-4xl font-medium">K2 DocuApp</p>
+                <div class="bg-white rounded-xl border border-silverGrey p-3">
+                  <img src="./img/icon-fileshare.svg" class="w-8 lg:w-12" alt="">
+                </div>
+              </div>
+              <div class="w-full lg:w-4/6">
+                <p class="mb-8">Record customer and project data with the <span class="text-red">DocuApp</span> direct
+                  on
+                  your smartphone or tablet.
+                  Share
+                  information directly with
+                  your colleagues.</p>
+                <a href="#" class="bttn bttn-red">Learn more
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    class="ml-2">
+                    <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="currentColor" stroke-width="1.5"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Planning -->
+      <section class="pt-28 lg:pt-56">
+        <div class="flex flex-col lg:flex-row items-start justify-between gap-14 lg:gap-0">
+          <div class="basis-4/12 relative">
+            <div id="rec2"
+              class="hidden lg:block absolute top-16 left-24 w-6 h-6 border-2 border-red rounded-full z-10">
+            </div>
+            <div class="flex items-start lg:items-center gap-4 lg:gap-6">
+              <div class="basis-auto flex-shrink-0 -mt-7 lg:mt-0">
+                <img src="./img/phase-card-2.svg" alt="phase" class="hidden lg:block">
+                <img src="./img/phase-card-sm-2.svg" alt="phase" class="flex-shrink-0 lg:hidden">
+              </div>
+              <div class="basis-9/12 lg:flex-1 lg:-mt-24">
+                <p class="text-lg font-medium">Planning</p>
+                <p class="text-darkGrey text-xs lg:text-sm mt-6">Automatically upload onsite data from the <span
+                    class="text-red">K2 DocuApp</span> to <span class="text-red">K2 Base</span>. Plan quickly, safely
+                  and
+                  accurately.</p>
+              </div>
+            </div>
+            <div id="rec3"
+              class="hidden lg:block absolute bottom-16 left-24 w-6 h-6 border-2 border-red rounded-full z-10">
+              <div class="absolute top-[23px] left-1/2 w-0.5 h-40 bg-red long-red-line-two"></div>
+            </div>
+          </div>
+          <div class="basis-7/12">
+            <img src="./img/aktuelle.jpg" alt="K2 Community" class="w-full" />
+            <div class="w-full mt-8 lg:mt-12">
+              <div class="flex items-center justify-between w-full mb-6 lg:mb-10">
+                <p class="text-lg lg:text-4xl font-medium">K2 Base</p>
+                <div class="bg-white rounded-xl border border-silverGrey p-3">
+                  <img src="./img/icon-plan.svg" class="w-8 lg:w-12" alt="">
+                </div>
+              </div>
+              <div class="w-full lg:w-4/6">
+                <p class="mb-8">Automomatically upload onsite data from the Docu App to K2 Base.
+                  Plan quickly, safely and accurately - In just Five Steps!</p>
+                <ul class="list-disc marker:text-silverGrey pl-6 mb-8">
+                  <li class="mb-1">
+                    Google Maps integration and graphic drawing tools facilitate your planning.
+                  </li>
+                  <li class="mb-1">
+                    Automatic determination of wind and snow loads.
+                  </li>
+                  <li class="mb-1">
+                    Intuitive editor for drawing roofs and module arrays.
+                  </li>
+                  <li class="mb-1">
+                    Automatic calculation and depiction of roof fasteners and ballasting.
+                  </li>
+                  <li class="mb-1">
+                    Result report including assembly plan and bill of materials.
+                  </li>
+                </ul>
+                <a href="#" class="bttn bttn-red">Learn more
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    class="ml-2">
+                    <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="currentColor" stroke-width="1.5"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Installation -->
+      <section class="pt-28 lg:pt-56">
+        <div class="flex flex-col lg:flex-row items-start justify-between gap-14 lg:gap-0">
+          <div class="basis-4/12 relative">
+            <div id="rec4"
+              class="hidden lg:block absolute top-16 left-24 w-6 h-6 border-2 border-red rounded-full z-10">
+            </div>
+            <div class="flex items-start lg:items-center gap-4 lg:gap-6">
+              <div class="basis-auto flex-shrink-0 -mt-7 lg:mt-0">
+                <img src="./img/phase-card-3.svg" alt="phase" class="hidden lg:block">
+                <img src="./img/phase-card-sm-3.svg" alt="phase" class="flex-shrink-0 lg:hidden">
+              </div>
+              <div class="basis-9/12 lg:flex-1 lg:-mt-24">
+                <p class="text-lg font-medium">Installation</p>
+                <p class="text-darkGrey text-xs lg:text-sm mt-6">Use <span class="text-red">K2 DocuApp</span> to record
+                  images, share on-site construction information with colleagues & set inspections intervals..</p>
+              </div>
+            </div>
+            <div id="rec5"
+              class="hidden lg:block absolute bottom-16 left-24 w-6 h-6 border-2 border-red rounded-full z-10">
+              <div class="absolute top-[23px] left-1/2 w-0.5 h-40 bg-red long-red-line-three"></div>
+            </div>
+          </div>
+          <div class="basis-7/12">
+            <img src="./img/aktuelle.jpg" alt="K2 Community" class="w-full" />
+            <div class="w-full mt-8 lg:mt-12">
+              <div class="flex items-center justify-between w-full mb-6 lg:mb-10">
+                <p class="text-lg lg:text-4xl font-medium">K2 DocuApp</p>
+                <div class="bg-white rounded-xl border border-silverGrey p-3">
+                  <img src="./img/icon-fileshare.svg" class="w-8 lg:w-12" alt="">
+                </div>
+              </div>
+              <div class="w-full lg:w-4/6">
+                <p class="mb-8">Record images via Smartphone while directly On-Site.
+                  Share on-site construction information with colleagues in the office in real time. Set inspections
+                  intervals.
+                  Don’t
+                  forget anything.</p>
+                <a href="#" class="bttn bttn-red">My K2 Anmelden
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    class="ml-2">
+                    <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="currentColor" stroke-width="1.5"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Completion -->
+      <section class="pt-28 lg:pt-56">
+        <div class="flex flex-col lg:flex-row items-start justify-between gap-14 lg:gap-0">
+          <div class="basis-4/12 relative">
+            <div id="rec6"
+              class="hidden lg:block absolute top-16 left-24 w-6 h-6 border-2 border-red rounded-full z-10">
+            </div>
+            <div class="flex items-start lg:items-center gap-4 lg:gap-6">
+              <div class="basis-auto flex-shrink-0 -mt-7 lg:mt-0">
+                <img src="./img/phase-card-4.svg" alt="phase" class="hidden lg:block">
+                <img src="./img/phase-card-sm-4.svg" alt="phase" class="flex-shrink-0 lg:hidden">
+              </div>
+              <div class="basis-9/12 lg:flex-1 lg:-mt-24">
+                <p class="text-lg font-medium">Completion</p>
+                <p class="text-darkGrey text-xs lg:text-sm mt-6">Use <span class="text-red">K2 DocuApp</span> and <span
+                    class="text-red">K2 Buddy</span> to record customer and project data and easily share information
+                  directly with your
+                  colleagues.</p>
+              </div>
+            </div>
+          </div>
+          <div class="basis-7/12">
+            <img src="./img/aktuelle.jpg" alt="K2 Community" class="w-full" />
+            <div class="w-full mt-8 lg:mt-12">
+              <div class="flex items-center justify-between w-full mb-6 lg:mb-10">
+                <p class="text-lg lg:text-4xl font-medium">K2 Buddy</p>
+                <div class="bg-white rounded-xl border border-silverGrey p-3">
+                  <img src="./img/icon-people.svg" class="w-8 lg:w-12" alt="">
+                </div>
+              </div>
+              <div class="w-full lg:w-4/6">
+                <p class="mb-8 font-medium">Ensure long longetivity for you PV Projects with K2 Buddy:</p>
+                <ul class="list-disc marker:text-silverGrey pl-6 mb-8">
+                  <li class="mb-1">
+                    Prepare all required documents electronically.
+                  </li>
+                  <li class="mb-1">
+                    Customer signature directly on cell phone or Ipad.
+                  </li>
+                  <li class="mb-1">
+                    Electronically send a pdf with all relevant information to your customer.
+                  </li>
+                  <li class="mb-1">
+                    Provide project specific registration instructions.
+                  </li>
+                  <li class="mb-1">
+                    Result report including assembly plan and bill of materials.
+                  </li>
+                </ul>
+                <a href="#" class="bttn bttn-red">Learn more
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    class="ml-2">
+                    <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="currentColor" stroke-width="1.5"></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="flex items-center justify-between w-full mb-6 lg:mb-10 mt-20">
+                <p class="text-lg lg:text-4xl font-medium">K2 DocuApp</p>
+                <div class="bg-white rounded-xl border border-silverGrey p-3">
+                  <img src="./img/icon-fileshare.svg" class="w-8 lg:w-12" alt="">
+                </div>
+              </div>
+              <div class="w-full lg:w-4/6">
+                <p class="mb-8 font-medium">Close out your project with K2 DocuApp:</p>
+                <ul class="list-disc marker:text-silverGrey pl-6 mb-8">
+                  <li class="mb-1">
+                    Prepare all required documents electronically.
+                  </li>
+                  <li class="mb-1">
+                    Customer signature directly on cell phone or Ipad.
+                  </li>
+                  <li class="mb-1">
+                    Electronically send a pdf with all relevant information to your customer.
+                  </li>
+                  <li class="mb-1">
+                    Provide project specific registration instructions.
+                  </li>
+                  <li class="mb-1">
+                    Result report including assembly plan and bill of materials.
+                  </li>
+                </ul>
+                <a href="#" class="bttn bttn-red">Learn more
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    class="ml-2">
+                    <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="currentColor" stroke-width="1.5"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-28 lg:mt-56 text-center">
+        <p class="text-label mb-5">Newsletter abbonieren</p>
+        <h4>Verpassen Sie keine News aus der Welt von K2</h4>
+        <form action="" class="relative mt-10">
+          <input type="email" placeholder="Add your email address" class="input input-md lg:input-lg flex" />
+          <button class="absolute roundcon roundcon-red lg:bttn lg:bttn-red lg:w-auto lg:h-auto top-3 lg:top-5 right-5">
+            <span class="text-0xs lg:text-base lg:leading-6">Go</span>
             <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-              class="ml-2">
+              class="ml-0 lg:ml-2 flex-shrink-0">
               <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="currentColor" stroke-width="1.5"></path>
             </svg>
-          </a>
-        </div>
-      </div>
-      <div class="flex-1 flex-shrink-0 mt-12 lg:mt-0">
-        <img src="./img/digital-services-shape.jpg" alt="Digital services" class="w-full" />
-      </div>
-    </section>
-    <section class="sticky top-0 mt-10 lg:mt-20 -mx-4 bg-white lg:-mx-8 z-20">
-      <div class="overflow-x-scroll no-scrollbar px-4 lg:px-8 py-4">
-        <div class="flex w-max lg:w-auto sticky-nav">
-          <a href="#process" class="inline-flex items-center group mr-8"><span
-              class="inline-block w-2 h-2 rounded-full group-hover:bg-red bg-red mr-2"></span>
-            Overview</a>
-          <a href="#base" class="inline-flex items-center group mr-8"><span
-              class="inline-block w-2 h-2 rounded-full group-hover:bg-red bg-cream mr-2"></span>
-            Project Start</a>
-          <a href="#docuapp" class="inline-flex items-center group mr-8"><span
-              class="inline-block w-2 h-2 rounded-full group-hover:bg-red bg-cream mr-2"></span>
-            Planning</a>
-          <a href="#aktuelle" class="inline-flex items-center group mr-8"><span
-              class="inline-block w-2 h-2 rounded-full group-hover:bg-red bg-cream mr-2"></span>
-            Installation</a>
-          <a href="#community" class="inline-flex items-center group mr-8"><span
-              class="inline-block w-2 h-2 rounded-full group-hover:bg-red bg-cream mr-2"></span>
-            Completion & Maintenance</a>
-        </div>
-      </div>
-      <div class="px-4 lg:px-8">
-        <div class="border-b border-silverGrey"></div>
-      </div>
-    </section>
-    <section id="process" class="pt-10 lg:pt-40">
-      <div class="flex-1">
-        <h2 class="mb-6 lg:mb-0 w-full lg:w-8/12">
-          K2 digital tools can help you throughout <span class="text-red">all</span> project phases.
-        </h2>
-      </div>
-    </section>
-    <section class="pt-20 lg:pt-48">
-      <div class="grid grid-cols-2 lg:flex items-center gap-y-8 lg:gap-0">
-        <div
-          class="flex-grow-0 w-full lg:w-4/12 lg:hover:w-8/12 card-perspective-1000 transition duration-900 border border-silverGrey overflow-hidden rounded-2xl lg:group">
-          <div class="h-40 lg:h-80 bg-forestGreen flex flex-col justify-between p-3 lg:p-6">
-            <p class="text-forestGreenAccent text-lg lg:text-6xl font-medium">1.</p>
-            <div class="hidden group-hover:block w-7/12 mx-auto">
-              <p class="text-lg font-medium">Planning</p>
-              <p class="text-white text-xs lg:text-sm mt-6">Automatically upload onsite data from the <span
-                  class="font-medium">K2
-                  DocuApp</span> to <span class="font-medium">K2 Base</span>. Plan quickly, safely and
-                accurately.</p>
-            </div>
-            <p class="text-white text-xs lg:text-lg font-medium group-hover:invisible">Project Start</p>
-          </div>
-          <div class="flex items-center justify-end bg-white pt-6 lg:pt-12 pb-10 lg:pb-20 px-6 lg:px-12">
-            <span class="icon icon-webinar-64 w-8 h-8 lg:w-16 lg:h-16 text-red"></span>
-          </div>
-        </div>
-        <div
-          class="flex-grow-0 w-full lg:w-4/12 lg:hover:w-8/12 card-perspective-1000 transition duration-900 border border-silverGrey overflow-hidden rounded-2xl">
-          <div class="h-40 lg:h-80 bg-brown flex flex-col justify-between p-3 lg:p-6">
-            <p class="text-brownAccent text-lg lg:text-6xl font-medium">2.</p>
-            <p class="text-white text-xs lg:text-lg font-medium">Planning</p>
-          </div>
-          <div class="flex items-center justify-end bg-white pt-6 lg:pt-12 pb-10 lg:pb-20 px-6 lg:px-12">
-            <span class="icon icon-webinar-64 w-8 h-8 lg:w-16 lg:h-16 text-red"></span>
-          </div>
-        </div>
-        <div
-          class="flex-grow-0  w-full lg:w-4/12 lg:hover:w-8/12 card-perspective-1000 transition duration-900 border border-silverGrey overflow-hidden rounded-2xl">
-          <div class="h-40 lg:h-80 bg-orange flex flex-col justify-between p-3 lg:p-6">
-            <p class="text-orangeAccent text-lg lg:text-6xl font-medium">3.</p>
-            <p class="text-white text-xs lg:text-lg font-medium">Installation</p>
-          </div>
-          <div class="flex items-center justify-end bg-white pt-6 lg:pt-12 pb-10 lg:pb-20 px-6 lg:px-12">
-            <span class="icon icon-webinar-64 w-8 h-8 lg:w-16 lg:h-16 text-red"></span>
-          </div>
-        </div>
-        <div
-          class="flex-grow-0  w-full lg:w-4/12 lg:hover:w-8/12 card-perspective-1000 transition duration-900 border border-silverGrey overflow-hidden rounded-2xl">
-          <div class="h-40 lg:h-80 bg-purple flex flex-col justify-between p-3 lg:p-6">
-            <p class="text-purpleAccent text-lg lg:text-6xl font-medium">4.</p>
-            <p class="text-white text-xs lg:text-lg font-medium">Completion</p>
-          </div>
-          <div class="flex items-center justify-end bg-white pt-6 lg:pt-12 pb-10 lg:pb-20 px-6 lg:px-12">
-            <span class="icon icon-webinar-64 w-8 h-8 lg:w-16 lg:h-16 text-red"></span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Project Start -->
-    <section id="base" class="pt-28 lg:pt-56">
-      <div class="flex flex-col lg:flex-row items-start justify-between gap-14 lg:gap-0">
-        <div class="basis-4/12 relative">
-          <div class="flex items-start lg:items-center gap-4 lg:gap-6">
-            <div
-              class="basis-3/12 lg:flex-1 rounded-2xl card-perspective-1000 overflow-hidden border border-silverGrey -mt-4 lg:mt-0">
-              <div class="h-auto lg:h-56 bg-forestGreen flex lg:flex-col justify-center lg:justify-between p-3 lg:p-6">
-                <p class="text-forestGreenAccent text-lg lg:text-6xl font-medium">1.</p>
-              </div>
-              <div class="hidden lg:flex items-center justify-end bg-white pt-8 pb-12 px-6">
-                <span class="icon icon-webinar-64 w-8 h-8 lg:w-12 lg:h-12 text-red"></span>
-              </div>
-            </div>
-            <div class="basis-9/12 lg:flex-1">
-              <p class="text-lg font-medium">Project Start</p>
-              <p class="text-darkGrey text-xs lg:text-sm mt-6">Use <span class="text-red">K2 DocuApp</span> to record
-                customer and
-                project data
-                and
-                easily share information
-                directly with your colleagues.</p>
-            </div>
-          </div>
-          <div id="rec1"
-            class="hidden lg:block absolute bottom-4 left-24 w-6 h-6 border-2 border-red rounded-full z-10">
-            <div class="absolute top-[23px] left-1/2 w-0.5 h-40 bg-red long-red-line-one"></div>
-          </div>
-        </div>
-        <div class="basis-7/12">
-          <img src="./img/aktuelle.jpg" alt="K2 Community" class="w-full" />
-          <div class="w-full mt-8 lg:mt-12">
-            <div class="flex items-center justify-between w-full mb-6 lg:mb-10">
-              <p class="text-lg lg:text-4xl font-medium">K2 DocuApp</p>
-              <div class="bg-white rounded-xl border border-silverGrey p-3">
-                <span class="icon icon-webinar-64 w-8 h-8 lg:w-12 lg:h-12 text-red"></span>
-              </div>
-            </div>
-            <div class="w-full lg:w-4/6">
-              <p class="mb-8">Record customer and project data with the <span class="text-red">DocuApp</span> direct on
-                your smartphone or tablet.
-                Share
-                information directly with
-                your colleagues.</p>
-              <a href="#" class="bttn bttn-red">Learn more
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                  class="ml-2">
-                  <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="currentColor" stroke-width="1.5"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Planning -->
-    <section id="base" class="pt-28 lg:pt-56">
-      <div class="flex flex-col lg:flex-row items-start justify-between gap-14 lg:gap-0">
-        <div class="basis-4/12 relative">
-          <div id="rec2" class="hidden lg:block absolute top-4 left-24 w-6 h-6 border-2 border-red rounded-full z-10">
-          </div>
-          <div class="flex items-start lg:items-center gap-4 lg:gap-6">
-            <div
-              class="basis-3/12 lg:flex-1 rounded-2xl card-perspective-1000 overflow-hidden border border-silverGrey -mt-4 lg:mt-0">
-              <div class="h-auto lg:h-56 bg-brown flex lg:flex-col justify-center lg:justify-between p-3 lg:p-6">
-                <p class="text-brownAccent text-lg lg:text-6xl font-medium">2.</p>
-              </div>
-              <div class="hidden lg:flex items-center justify-end bg-white pt-8 pb-12 px-6">
-                <span class="icon icon-webinar-64 w-8 h-8 lg:w-12 lg:h-12 text-red"></span>
-              </div>
-            </div>
-            <div class="basis-9/12 lg:flex-1">
-              <p class="text-lg font-medium">Planning</p>
-              <p class="text-darkGrey text-xs lg:text-sm mt-6">Automatically upload onsite data from the <span
-                  class="text-red">K2 DocuApp</span> to <span class="text-red">K2 Base</span>. Plan quickly, safely and
-                accurately.</p>
-            </div>
-          </div>
-          <div id="rec3"
-            class="hidden lg:block absolute bottom-4 left-24 w-6 h-6 border-2 border-red rounded-full z-10">
-            <div class="absolute top-[23px] left-1/2 w-0.5 h-40 bg-red long-red-line-two"></div>
-          </div>
-        </div>
-        <div class="basis-7/12">
-          <img src="./img/aktuelle.jpg" alt="K2 Community" class="w-full" />
-          <div class="w-full mt-8 lg:mt-12">
-            <div class="flex items-center justify-between w-full mb-6 lg:mb-10">
-              <p class="text-lg lg:text-4xl font-medium">K2 Base</p>
-              <div class="bg-white rounded-xl border border-silverGrey p-3">
-                <span class="icon icon-webinar-64 w-8 h-8 lg:w-12 lg:h-12 text-red"></span>
-              </div>
-            </div>
-            <div class="w-full lg:w-4/6">
-              <p class="mb-8">Automomatically upload onsite data from the Docu App to K2 Base.
-                Plan quickly, safely and accurately - In just Five Steps!</p>
-              <ul class="list-disc marker:text-silverGrey pl-6 mb-8">
-                <li class="mb-1">
-                  Google Maps integration and graphic drawing tools facilitate your planning.
-                </li>
-                <li class="mb-1">
-                  Automatic determination of wind and snow loads.
-                </li>
-                <li class="mb-1">
-                  Intuitive editor for drawing roofs and module arrays.
-                </li>
-                <li class="mb-1">
-                  Automatic calculation and depiction of roof fasteners and ballasting.
-                </li>
-                <li class="mb-1">
-                  Result report including assembly plan and bill of materials.
-                </li>
-              </ul>
-              <a href="#" class="bttn bttn-red">Learn more
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                  class="ml-2">
-                  <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="currentColor" stroke-width="1.5"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Installation -->
-    <section id="base" class="pt-28 lg:pt-56">
-      <div class="flex flex-col lg:flex-row items-start justify-between gap-14 lg:gap-0">
-        <div class="basis-4/12 relative">
-          <div id="rec4" class="hidden lg:block absolute top-4 left-24 w-6 h-6 border-2 border-red rounded-full z-10">
-          </div>
-          <div class="flex items-start lg:items-center gap-4 lg:gap-6">
-            <div
-              class="basis-3/12 lg:flex-1 rounded-2xl card-perspective-1000 overflow-hidden border border-silverGrey -mt-4 lg:mt-0">
-              <div class="h-auto lg:h-56 bg-orange flex lg:flex-col justify-center lg:justify-between p-3 lg:p-6">
-                <p class="text-orangeAccent text-lg lg:text-6xl font-medium">3.</p>
-              </div>
-              <div class="hidden lg:flex items-center justify-end bg-white pt-8 pb-12 px-6">
-                <span class="icon icon-webinar-64 w-8 h-8 lg:w-12 lg:h-12 text-red"></span>
-              </div>
-            </div>
-            <div class="basis-9/12 lg:flex-1">
-              <p class="text-lg font-medium">Installation</p>
-              <p class="text-darkGrey text-xs lg:text-sm mt-6">Use <span class="text-red">K2 DocuApp</span> to record
-                images, share on-site construction information with colleagues & set inspections intervals..</p>
-            </div>
-          </div>
-          <div id="rec5"
-            class="hidden lg:block absolute bottom-4 left-24 w-6 h-6 border-2 border-red rounded-full z-10">
-            <div class="absolute top-[23px] left-1/2 w-0.5 h-40 bg-red long-red-line-three"></div>
-          </div>
-        </div>
-        <div class="basis-7/12">
-          <img src="./img/aktuelle.jpg" alt="K2 Community" class="w-full" />
-          <div class="w-full mt-8 lg:mt-12">
-            <div class="flex items-center justify-between w-full mb-6 lg:mb-10">
-              <p class="text-lg lg:text-4xl font-medium">K2 DocuApp</p>
-              <div class="bg-white rounded-xl border border-silverGrey p-3">
-                <span class="icon icon-webinar-64 w-8 h-8 lg:w-12 lg:h-12 text-red"></span>
-              </div>
-            </div>
-            <div class="w-full lg:w-4/6">
-              <p class="mb-8">Record images via Smartphone while directly On-Site.
-                Share on-site construction information with colleagues in the office in real time. Set inspections
-                intervals.
-                Don’t
-                forget anything.</p>
-              <a href="#" class="bttn bttn-red">My K2 Anmelden
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                  class="ml-2">
-                  <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="currentColor" stroke-width="1.5"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Completion -->
-    <section id="base" class="pt-28 lg:pt-56">
-      <div class="flex flex-col lg:flex-row items-start justify-between gap-14 lg:gap-0">
-        <div class="basis-4/12 relative">
-          <div id="rec6" class="hidden lg:block absolute top-4 left-24 w-6 h-6 border-2 border-red rounded-full z-10">
-          </div>
-          <div class="flex items-start lg:items-center gap-4 lg:gap-6">
-            <div
-              class="basis-3/12 lg:flex-1 rounded-2xl card-perspective-1000 overflow-hidden border border-silverGrey -mt-4 lg:mt-0">
-              <div class="h-auto lg:h-56 bg-purple flex lg:flex-col justify-center lg:justify-between p-3 lg:p-6">
-                <p class="text-purpleAccent text-lg lg:text-6xl font-medium">4.</p>
-              </div>
-              <div class="hidden lg:flex items-center justify-end bg-white pt-8 pb-12 px-6">
-                <span class="icon icon-webinar-64 w-8 h-8 lg:w-12 lg:h-12 text-red"></span>
-              </div>
-            </div>
-            <div class="basis-9/12 lg:flex-1">
-              <p class="text-lg font-medium">Completion</p>
-              <p class="text-darkGrey text-xs lg:text-sm mt-6">Use <span class="text-red">K2 DocuApp</span> and <span
-                  class="text-red">K2 Buddy</span> to record customer and project data and easily share information
-                directly with your
-                colleagues.</p>
-            </div>
-          </div>
-        </div>
-        <div class="basis-7/12">
-          <img src="./img/aktuelle.jpg" alt="K2 Community" class="w-full" />
-          <div class="w-full mt-8 lg:mt-12">
-            <div class="flex items-center justify-between w-full mb-6 lg:mb-10">
-              <p class="text-lg lg:text-4xl font-medium">K2 Buddy</p>
-              <div class="bg-white rounded-xl border border-silverGrey p-3">
-                <span class="icon icon-webinar-64 w-8 h-8 lg:w-12 lg:h-12 text-red"></span>
-              </div>
-            </div>
-            <div class="w-full lg:w-4/6">
-              <p class="mb-8 font-medium">Ensure long longetivity for you PV Projects with K2 Buddy:</p>
-              <ul class="list-disc marker:text-silverGrey pl-6 mb-8">
-                <li class="mb-1">
-                  Prepare all required documents electronically.
-                </li>
-                <li class="mb-1">
-                  Customer signature directly on cell phone or Ipad.
-                </li>
-                <li class="mb-1">
-                  Electronically send a pdf with all relevant information to your customer.
-                </li>
-                <li class="mb-1">
-                  Provide project specific registration instructions.
-                </li>
-                <li class="mb-1">
-                  Result report including assembly plan and bill of materials.
-                </li>
-              </ul>
-              <a href="#" class="bttn bttn-red">Learn more
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                  class="ml-2">
-                  <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="currentColor" stroke-width="1.5"></path>
-                </svg>
-              </a>
-            </div>
-            <div class="flex items-center justify-between w-full mb-6 lg:mb-10 mt-20">
-              <p class="text-lg lg:text-4xl font-medium">K2 DocuApp</p>
-              <div class="bg-white rounded-xl border border-silverGrey p-3">
-                <span class="icon icon-webinar-64 w-8 h-8 lg:w-12 lg:h-12 text-red"></span>
-              </div>
-            </div>
-            <div class="w-full lg:w-4/6">
-              <p class="mb-8 font-medium">Close out your project with K2 DocuApp:</p>
-              <ul class="list-disc marker:text-silverGrey pl-6 mb-8">
-                <li class="mb-1">
-                  Prepare all required documents electronically.
-                </li>
-                <li class="mb-1">
-                  Customer signature directly on cell phone or Ipad.
-                </li>
-                <li class="mb-1">
-                  Electronically send a pdf with all relevant information to your customer.
-                </li>
-                <li class="mb-1">
-                  Provide project specific registration instructions.
-                </li>
-                <li class="mb-1">
-                  Result report including assembly plan and bill of materials.
-                </li>
-              </ul>
-              <a href="#" class="bttn bttn-red">Learn more
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                  class="ml-2">
-                  <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="currentColor" stroke-width="1.5"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="mt-28 lg:mt-56 text-center">
-      <p class="text-label mb-5">Newsletter abbonieren</p>
-      <h4>Verpassen Sie keine News aus der Welt von K2</h4>
-      <form action="" class="relative mt-10">
-        <input type="email" placeholder="Add your email address" class="input input-md lg:input-lg flex" />
-        <button class="absolute roundcon roundcon-red lg:bttn lg:bttn-red lg:w-auto lg:h-auto top-3 lg:top-5 right-5">
-          <span class="text-0xs lg:text-base lg:leading-6">Go</span>
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-            class="ml-0 lg:ml-2 flex-shrink-0">
-            <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="currentColor" stroke-width="1.5"></path>
-          </svg>
-        </button>
-      </form>
-    </section>
-  </main>
-  <footer class="mt-28 lg:mt-56">
-    <div class="flex flex-col lg:flex-row">
-      <div class="basis-1/6">
-        <p class="mb-4 lg:mb-2 flex items-center footerLinks">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-            class="mr-4 inline-block lg:hidden">
-            <circle cx="12" cy="12" r="11.5" stroke="#FD0000" />
-            <path d="M7 12H17" stroke="#FD0000" />
-            <path d="M12 17L12 7" stroke="#FD0000" />
-          </svg>
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="mt-28 lg:mt-56">
+      <div class="flex flex-col lg:flex-row">
+        <div class="basis-1/6">
+          <p class="mb-4 lg:mb-2 flex items-center footerLinks">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="mr-4 inline-block lg:hidden">
+              <circle cx="12" cy="12" r="11.5" stroke="#FD0000" />
+              <path d="M7 12H17" stroke="#FD0000" />
+              <path d="M12 17L12 7" stroke="#FD0000" />
+            </svg>
 
-          Produkte & Lösungen
-        </p>
-        <ul class="border-l border-silverGrey lg:border-none pl-6 lg:pl-0 ml-3 lg:ml-0 my-4 lg:my-0 hidden lg:block">
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">Flachdächer</a>
-          </li>
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">Ziegel</a>
-          </li>
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">Wellfaserzement</a>
-          </li>
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">Trapezblech</a>
-          </li>
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">Blechfalz</a>
-          </li>
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">Freilandanlagen</a>
-          </li>
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">Zubehör</a>
-          </li>
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">Dokumente Downloads</a>
-          </li>
-          <li><a href="#" class="text-darkGrey">Alle Produkte</a></li>
-        </ul>
-      </div>
-      <div class="basis-1/6">
-        <p class="mb-4 lg:mb-2 flex items-center footerLinks">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-            class="mr-4 inline-block lg:hidden">
-            <circle cx="12" cy="12" r="11.5" stroke="#FD0000" />
-            <path d="M7 12H17" stroke="#FD0000" />
-            <path d="M12 17L12 7" stroke="#FD0000" />
-          </svg>
-          Digital Produkte
-        </p>
-        <ul class="border-l border-silverGrey lg:border-none pl-6 lg:pl-0 ml-3 lg:ml-0 my-4 lg:my-0 hidden lg:block">
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">Base App</a>
-          </li>
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">K2 Check App</a>
-          </li>
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">K2 Docu App</a>
-          </li>
-          <li>
-            <a href="#" class="text-darkGrey">k2 Guard App</a>
-          </li>
-        </ul>
-      </div>
-      <div class="basis-1/6">
-        <p class="mb-4 lg:mb-2 flex items-center footerLinks">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-            class="mr-4 inline-block lg:hidden">
-            <circle cx="12" cy="12" r="11.5" stroke="#FD0000" />
-            <path d="M7 12H17" stroke="#FD0000" />
-            <path d="M12 17L12 7" stroke="#FD0000" />
-          </svg>
-          Digitale Service
-        </p>
-        <ul class="border-l border-silverGrey lg:border-none pl-6 lg:pl-0 ml-3 lg:ml-0 my-4 lg:my-0 hidden lg:block">
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">Service & Support</a>
-          </li>
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">Support Center</a>
-          </li>
-          <li>
-            <a href="#" class="text-darkGrey">Chat Bot</a>
-          </li>
-        </ul>
-      </div>
-      <div class="basis-1/6">
-        <p class="mb-4 lg:mb-2 flex items-center footerLinks">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-            class="mr-4 inline-block lg:hidden">
-            <circle cx="12" cy="12" r="11.5" stroke="#FD0000" />
-            <path d="M7 12H17" stroke="#FD0000" />
-            <path d="M12 17L12 7" stroke="#FD0000" />
-          </svg>
+            Produkte & Lösungen
+          </p>
+          <ul class="border-l border-silverGrey lg:border-none pl-6 lg:pl-0 ml-3 lg:ml-0 my-4 lg:my-0 hidden lg:block">
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">Flachdächer</a>
+            </li>
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">Ziegel</a>
+            </li>
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">Wellfaserzement</a>
+            </li>
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">Trapezblech</a>
+            </li>
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">Blechfalz</a>
+            </li>
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">Freilandanlagen</a>
+            </li>
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">Zubehör</a>
+            </li>
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">Dokumente Downloads</a>
+            </li>
+            <li><a href="#" class="text-darkGrey">Alle Produkte</a></li>
+          </ul>
+        </div>
+        <div class="basis-1/6">
+          <p class="mb-4 lg:mb-2 flex items-center footerLinks">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="mr-4 inline-block lg:hidden">
+              <circle cx="12" cy="12" r="11.5" stroke="#FD0000" />
+              <path d="M7 12H17" stroke="#FD0000" />
+              <path d="M12 17L12 7" stroke="#FD0000" />
+            </svg>
+            Digital Produkte
+          </p>
+          <ul class="border-l border-silverGrey lg:border-none pl-6 lg:pl-0 ml-3 lg:ml-0 my-4 lg:my-0 hidden lg:block">
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">Base App</a>
+            </li>
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">K2 Check App</a>
+            </li>
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">K2 Docu App</a>
+            </li>
+            <li>
+              <a href="#" class="text-darkGrey">k2 Guard App</a>
+            </li>
+          </ul>
+        </div>
+        <div class="basis-1/6">
+          <p class="mb-4 lg:mb-2 flex items-center footerLinks">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="mr-4 inline-block lg:hidden">
+              <circle cx="12" cy="12" r="11.5" stroke="#FD0000" />
+              <path d="M7 12H17" stroke="#FD0000" />
+              <path d="M12 17L12 7" stroke="#FD0000" />
+            </svg>
+            Digitale Service
+          </p>
+          <ul class="border-l border-silverGrey lg:border-none pl-6 lg:pl-0 ml-3 lg:ml-0 my-4 lg:my-0 hidden lg:block">
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">Service & Support</a>
+            </li>
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">Support Center</a>
+            </li>
+            <li>
+              <a href="#" class="text-darkGrey">Chat Bot</a>
+            </li>
+          </ul>
+        </div>
+        <div class="basis-1/6">
+          <p class="mb-4 lg:mb-2 flex items-center footerLinks">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="mr-4 inline-block lg:hidden">
+              <circle cx="12" cy="12" r="11.5" stroke="#FD0000" />
+              <path d="M7 12H17" stroke="#FD0000" />
+              <path d="M12 17L12 7" stroke="#FD0000" />
+            </svg>
 
-          Support & Wissen
-        </p>
-        <ul class="border-l border-silverGrey lg:border-none pl-6 lg:pl-0 ml-3 lg:ml-0 my-4 lg:my-0 hidden lg:block">
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">Lernen</a>
-          </li>
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">Event & Messen</a>
-          </li>
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">Webinare</a>
-          </li>
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">FAQs</a>
-          </li>
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">K2 Base Camp</a>
-          </li>
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">Best Practices</a>
-          </li>
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">Friends and Family</a>
-          </li>
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">Community</a>
-          </li>
-          <li><a href="#" class="text-darkGrey">Blog</a></li>
-        </ul>
-      </div>
-      <div class="basis-1/6">
-        <p class="mb-4 lg:mb-2 flex items-center footerLinks">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-            class="mr-4 inline-block lg:hidden">
-            <circle cx="12" cy="12" r="11.5" stroke="#FD0000" />
-            <path d="M7 12H17" stroke="#FD0000" />
-            <path d="M12 17L12 7" stroke="#FD0000" />
-          </svg>
+            Support & Wissen
+          </p>
+          <ul class="border-l border-silverGrey lg:border-none pl-6 lg:pl-0 ml-3 lg:ml-0 my-4 lg:my-0 hidden lg:block">
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">Lernen</a>
+            </li>
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">Event & Messen</a>
+            </li>
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">Webinare</a>
+            </li>
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">FAQs</a>
+            </li>
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">K2 Base Camp</a>
+            </li>
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">Best Practices</a>
+            </li>
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">Friends and Family</a>
+            </li>
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">Community</a>
+            </li>
+            <li><a href="#" class="text-darkGrey">Blog</a></li>
+          </ul>
+        </div>
+        <div class="basis-1/6">
+          <p class="mb-4 lg:mb-2 flex items-center footerLinks">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="mr-4 inline-block lg:hidden">
+              <circle cx="12" cy="12" r="11.5" stroke="#FD0000" />
+              <path d="M7 12H17" stroke="#FD0000" />
+              <path d="M12 17L12 7" stroke="#FD0000" />
+            </svg>
 
-          Unternehmen
-        </p>
-        <ul class="border-l border-silverGrey lg:border-none pl-6 lg:pl-0 ml-3 lg:ml-0 my-4 lg:my-0 hidden lg:block">
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">Über uns</a>
-          </li>
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">News & Stories</a>
-          </li>
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">Medien Kits</a>
-          </li>
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">Karriere</a>
-          </li>
-          <li><a href="#" class="text-darkGrey">Kontakt</a></li>
-        </ul>
-      </div>
-      <div class="basis-1/6">
-        <p class="mb-4 lg:mb-2 flex items-center footerLinks">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-            class="mr-4 inline-block lg:hidden">
-            <circle cx="12" cy="12" r="11.5" stroke="#FD0000" />
-            <path d="M7 12H17" stroke="#FD0000" />
-            <path d="M12 17L12 7" stroke="#FD0000" />
-          </svg>
+            Unternehmen
+          </p>
+          <ul class="border-l border-silverGrey lg:border-none pl-6 lg:pl-0 ml-3 lg:ml-0 my-4 lg:my-0 hidden lg:block">
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">Über uns</a>
+            </li>
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">News & Stories</a>
+            </li>
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">Medien Kits</a>
+            </li>
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">Karriere</a>
+            </li>
+            <li><a href="#" class="text-darkGrey">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="basis-1/6">
+          <p class="mb-4 lg:mb-2 flex items-center footerLinks">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="mr-4 inline-block lg:hidden">
+              <circle cx="12" cy="12" r="11.5" stroke="#FD0000" />
+              <path d="M7 12H17" stroke="#FD0000" />
+              <path d="M12 17L12 7" stroke="#FD0000" />
+            </svg>
 
-          Social media
-        </p>
-        <ul class="border-l border-silverGrey lg:border-none pl-6 lg:pl-0 ml-3 lg:ml-0 my-4 lg:my-0 hidden lg:block">
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">XING</a>
-          </li>
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">Linkedin</a>
-          </li>
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">Youtube chanel</a>
-          </li>
-          <li class="mb-2 lg:mb-1">
-            <a href="#" class="text-darkGrey">facebook</a>
-          </li>
-          <li><a href="#" class="text-darkGrey">Twitter</a></li>
-        </ul>
+            Social media
+          </p>
+          <ul class="border-l border-silverGrey lg:border-none pl-6 lg:pl-0 ml-3 lg:ml-0 my-4 lg:my-0 hidden lg:block">
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">XING</a>
+            </li>
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">Linkedin</a>
+            </li>
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">Youtube chanel</a>
+            </li>
+            <li class="mb-2 lg:mb-1">
+              <a href="#" class="text-darkGrey">facebook</a>
+            </li>
+            <li><a href="#" class="text-darkGrey">Twitter</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="flex items-center justify-between mt-14">
-      <p class="hidden text-2xs leading-5 tracking-wide text-darkGrey w-1/3 lg:block">
-        Interested in working with, working for K2? K2 Systems GmbH,
-        Industriestraße 18, 71272 Renningen, Germany 49 0 7159 42059 0, 490
-        7159 42059 177, info@systems.com
-      </p>
-      <p class="text-2xs leading-5 tracking-wide text-darkGrey w-8/12 block lg:hidden">
-        K2 Systems GmbH,Industriestraße 18, <br />
-        71272 Renningen, Germany <br />490 7159 42059 177, <br />
-        info@systems.com
-      </p>
-      <img src="./img/logo.svg" class="w-[72px] h-[72px] lg:w-auto lg:h-auto" alt="k2" />
-    </div>
-  </footer>
-  <script src="/js/main.js"></script>
+      <div class="flex items-center justify-between mt-14">
+        <p class="hidden text-2xs leading-5 tracking-wide text-darkGrey w-1/3 lg:block">
+          Interested in working with, working for K2? K2 Systems GmbH,
+          Industriestraße 18, 71272 Renningen, Germany 49 0 7159 42059 0, 490
+          7159 42059 177, info@systems.com
+        </p>
+        <p class="text-2xs leading-5 tracking-wide text-darkGrey w-8/12 block lg:hidden">
+          K2 Systems GmbH,Industriestraße 18, <br />
+          71272 Renningen, Germany <br />490 7159 42059 177, <br />
+          info@systems.com
+        </p>
+        <img src="./img/logo.svg" class="w-[72px] h-[72px] lg:w-auto lg:h-auto" alt="k2" />
+      </div>
+    </footer>
+  </div>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
